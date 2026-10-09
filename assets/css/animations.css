@@ -1,0 +1,187 @@
+/*
+ * Animations & Micro-Interactions
+ * GPU accelerated (transform & opacity)
+ */
+
+/* 🌟 Hero First Screen Animations */
+
+/* Breathing pulse & gentle rotation for concentric circles */
+@keyframes circlePulseOuter {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.05) rotate(4deg);
+    opacity: 1;
+  }
+}
+
+@keyframes circlePulseMid {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.04) rotate(-3deg);
+    opacity: 1;
+  }
+}
+
+@keyframes circlePulseInner {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.95;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
+
+.circle-bg-4 {
+  animation: circlePulseOuter 9s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.circle-bg-2 {
+  animation: circlePulseMid 7.5s ease-in-out infinite 0.5s;
+  transform-origin: center center;
+}
+
+.circle-bg-3 {
+  animation: circlePulseInner 6s ease-in-out infinite 1s;
+  transform-origin: center center;
+}
+
+.circle-bg-1-img {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
+}
+
+.circle-bg-1-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 48px var(--color-primary-30);
+}
+
+/* Floating stat chips in hero */
+@keyframes chipFloat1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes chipFloat2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-1.2deg);
+  }
+}
+
+@keyframes chipFloat3 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.figma-chip-doctors {
+  animation: chipFloat1 5.5s ease-in-out infinite;
+}
+
+.figma-chip-patients {
+  animation: chipFloat2 6s ease-in-out infinite 0.8s;
+}
+
+.figma-chip-directions {
+  animation: chipFloat3 5s ease-in-out infinite 1.6s;
+}
+
+.figma-chip {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.figma-chip:hover {
+  animation-play-state: paused;
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 32px var(--color-primary-20);
+}
+
+/* Hero CTA button pulsating glow */
+@keyframes heroBtnPulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--color-primary-glow), 0 4px 16px var(--color-primary-10);
+  }
+  70% {
+    box-shadow: 0 0 0 12px var(--color-primary-glow-0), 0 6px 20px var(--color-primary-15);
+  }
+  100% {
+    box-shadow: 0 0 0 0 var(--color-primary-glow-0), 0 4px 16px var(--color-primary-10);
+  }
+}
+
+.btn-hero-cta {
+  animation: heroBtnPulse 3s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.btn-hero-cta:hover {
+  animation: none;
+}
+
+/* Promo card action button bounce */
+@keyframes arrowPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.figma-promo-action-btn {
+  animation: arrowPulse 3s ease-in-out infinite 1.5s;
+}
+
+.figma-promo-action-btn:hover {
+  animation: none;
+  transform: scale(1.15) rotate(45deg);
+}
+
+/* Reveal elements on scroll */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay classes */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.414 10C18.1488 9.99994 17.8945 9.89455 17.707 9.707L15.293 7.293C15.1055 7.10551 15.0001 6.85119 15 6.586V3C15 2.73478 15.1054 2.48043 15.2929 2.29289C15.4804 2.10536 15.7348 2 16 2H34C34.2652 2 34.5196 2.10536 34.7071 2.29289C34.8946 2.48043 35 2.73478 35 3V6.586C34.9999 6.85119 34.8946 7.10551 34.707 7.293L32.293 9.707C32.1055 9.89455 31.8512 9.99994 31.586 10H18.414Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38 3H44C44.7956 3 45.5587 3.31607 46.1213 3.87868C46.6839 4.44129 47 5.20435 47 6V59C47 59.7956 46.6839 60.5587 46.1213 61.1213C45.5587 61.6839 44.7956 62 44 62H6C5.20435 62 4.44129 61.6839 3.87868 61.1213C3.31607 60.5587 3 59.7956 3 59V6C3 5.20435 3.31607 4.44129 3.87868 3.87868C4.44129 3.31607 5.20435 3 6 3H12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 8H8V57H42V8H38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28 20V15H22V20H17V26H22V31H28V26H33V20H28Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 37H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 37H35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 43H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 43H35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 49H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 49H35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M57 10L61 19V54C61 55.0609 60.5786 56.0783 59.8284 56.8284C59.0783 57.5786 58.0609 58 57 58C55.9391 58 54.9217 57.5786 54.1716 56.8284C53.4214 56.0783 53 55.0609 53 54V19L57 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61 19H53" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61 51H53" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

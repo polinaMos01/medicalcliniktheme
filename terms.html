@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="blue">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Пользовательское соглашение — Клиника Интегративной Медицины</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Armenian:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <style>
+        .legal-hero-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: clamp(32px, 4.5vw, 64px);
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: -2.5px;
+            text-transform: uppercase;
+            color: #000;
+            margin: 32px 0 32px;
+        }
+        .legal-content-body {
+            max-width: 900px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #2b353e;
+            margin-bottom: 80px;
+        }
+        .legal-content-body h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #000;
+            margin: 32px 0 12px;
+        }
+        .legal-content-body p {
+            margin-bottom: 16px;
+        }
+        .legal-content-body ul {
+            padding-left: 24px;
+            margin-bottom: 20px;
+        }
+        .legal-content-body li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🌟 UNIFIED 2-TIER HEADER (FIGMA 202:46) -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-top-row">
+            <a href="index.html" class="header-logo">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" class="header-logo-img">
+            </a>
+
+            <div class="header-meta-group">
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg" alt="Локация" class="header-meta-icon">
+                    <span data-i18n="nav.address">г. Москва, ул. Центральная, 57</span>
+                </div>
+
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg" alt="Время" class="header-meta-icon">
+                    <span data-i18n="nav.work_hours">Пн-Пт 09:00-20:00; Сб-Вс 10:00-18:00</span>
+                </div>
+            </div>
+
+            <div class="header-phone-group">
+                <a href="tel:+78005553535" class="header-phone-val">+7 (800) 555-35-35</a>
+                
+                <div class="lang-switcher">
+                    <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="hy">HY</button>
+                </div>
+
+                <a href="#booking" class="btn btn-primary" data-open-modal="booking" data-i18n="nav.call_request">Перезвоните мне</a>
+
+                <button class="burger-btn" id="burger-btn" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+                <!-- Bottom Row: Navigation Menu -->
+        <div class="header-nav-row">
+            <a href="doctors.html" data-i18n="nav.doctors">Врачи</a>
+            <a href="departments.html" data-i18n="nav.departments">Направления</a>
+            <a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a>
+            <a href="procedures.html" data-i18n="nav.procedures">Процедуры</a>
+            <a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a>
+            <div class="nav-item-dropdown">
+                <a href="about.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.about">О клинике</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="about.html" data-i18n="nav.about">О нас</a>
+                    <a href="licences.html" data-i18n="nav.licences">Лицензии</a>
+                    <a href="vacancies.html">Вакансии</a>
+                    <a href="blog.html" data-i18n="nav.blog">Блог</a>
+                </div>
+            </div>
+            <div class="nav-item-dropdown">
+                <a href="services.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.patients">Пациенту</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="promotions.html">Акции</a>
+                    <a href="tax-deduction.html">Налоговый вычет</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+            <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Fullscreen Menu -->
+<div class="mobile-menu-overlay" id="mobile-menu">
+    <ul class="mobile-nav-links">
+        <li><a href="doctors.html" data-i18n="nav.doctors">Врачи</a></li>
+        <li><a href="departments.html" data-i18n="nav.departments">Направления</a></li>
+        <li><a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a></li>
+        <li><a href="procedures.html" data-i18n="nav.procedures">Процедуры</a></li>
+        <li><a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a></li>
+        <li><a href="about.html" data-i18n="nav.about">О нас</a></li>
+        <li><a href="licences.html" data-i18n="nav.licences">Лицензии</a></li>
+        <li><a href="vacancies.html">Вакансии</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Блог</a></li>
+        <li><a href="promotions.html">Акции</a></li>
+        <li><a href="tax-deduction.html">Налоговый вычет</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+    </ul>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="lang-switcher" style="justify-content: center;">
+            <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="hy">HY</button>
+        </div>
+        <a href="#booking" class="btn btn-primary" style="width: 100%; text-align: center;" data-open-modal="booking" data-i18n="nav.book_appointment">Записаться на прием</a>
+    </div>
+</div>
+
+<main class="site-main">
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs" style="padding: 24px 0 12px; font-size: 14px; color: var(--color-gray-light);">
+            <a href="index.html" style="color: var(--color-secondary-gray); text-decoration: none;" data-i18n="nav.home">Главная</a> / 
+            <span style="color: var(--color-primary);">Пользовательское соглашение</span>
+        </div>
+
+        <h1 class="legal-hero-title">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</h1>
+
+        <!-- 🌟 LEGAL CONTENT (FIGMA 361:8058) -->
+        <div class="legal-content-body">
+            <p>Настоящее Пользовательское соглашение (далее — «Соглашение») регулирует отношения между Клиникой «Медикал Клиник» и физическим лицом (далее — «Пользователь») по использованию веб-сайта medical-clinic.demo и сервисов онлайн-записи.</p>
+
+            <h2>1. Предмет соглашения</h2>
+            <p>Администрация сайта предоставляет Пользователю доступ к информации об услугах клиники, врачах, стоимости приемов, статьям блога, а также к интерактивным сервисам записи на прием и заказа обратного звонка.</p>
+
+            <h2>2. Использование материалов сайта</h2>
+            <p>Все текстовые, графические материалы, фотоснимки интерьера и врачей, товарные знаки и элементы фирменного стиля, размещенные на сайте, являются объектами интеллектуальной собственности Клиники «Медикал Клиник» и защищены законодательством РФ. Копирование и распространение без письменного разрешения запрещено.</p>
+
+            <h2>3. Медицинская оговорка и противопоказания</h2>
+            <p>Информация, размещенная на сайте (включая статьи блога, описания методик и симптомов), носит исключительно информационно-ознакомительный характер и не может заменять очную консультацию квалифицированного врача. ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМА КОНСУЛЬТАЦИЯ СО СПЕЦИАЛИСТОМ.</p>
+
+            <h2>4. Ответственность сторон</h2>
+            <p>Клиника не несет ответственности за возможные последствия самостоятельного применения методик или препаратов без предварительной консультации с лечащим врачом клиники.</p>
+
+            <h2>5. Изменение условий</h2>
+            <p>Администрация оставляет за собой право вносить изменения в текст настоящего Соглашения в одностороннем порядке. Новая редакция вступает в силу с момента ее публикации на сайте.</p>
+        </div>
+    </div>
+</main>
+
+<!-- 🌟 UNIFIED FOOTER (FIGMA 202:26) -->
+<footer class="site-footer" id="contacts">
+    <div class="container">
+        <!-- Top Row: Logo, Hours, Address, Phone, CTA, Socials -->
+        <div class="footer-top-grid">
+            <a href="index.html">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" style="height: 48px;">
+            </a>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/clock.svg" alt="Время" style="width: 20px;" onerror="this.src='assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg';">
+                <span>Пн-Пт 09:00-20:00;<br>Сб-Вс 10:00-18:00</span>
+            </div>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/map.svg" alt="Адрес" style="width: 20px;" onerror="this.src='assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg';">
+                <span>г. Москва, ул. Центральная, д. 10</span>
+            </div>
+
+            <div style="font-size: 20px; font-weight: 600;">
+                +7 (800) 555-35-35
+            </div>
+
+            <a href="#booking" class="btn btn-primary" data-open-modal="booking">Перезвоните мне</a>
+
+            <div class="footer-social-row">
+                <a href="https://t.me/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Telegram">
+                    <img src="assets/icons/social-tg.svg" alt="Telegram">
+                </a>
+                <a href="https://wa.me/78005553535" class="footer-social-icon" target="_blank" rel="noopener" title="WhatsApp">
+                    <img src="assets/icons/social-wa.svg" alt="WhatsApp">
+                </a>
+                <a href="https://vk.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="VK">
+                    <img src="assets/icons/social-vk.svg" alt="VK">
+                </a>
+                <a href="https://instagram.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Instagram">
+                    <img src="assets/icons/social-ig.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+
+        <!-- Middle Row: Disclaimer and License Info -->
+        <div class="footer-mid-grid">
+            <div>
+                <p style="margin-bottom: 14px;">
+                    Сайт носит информационный характер и не является публичной офертой, согласно Статье 437 (2) ГК РФ. Цены приведены, как справочная информация и могут быть изменены. Для получения подробной информации о стоимости, сроках и условиях звоните по телефону клиники.
+                </p>
+                <p>
+                    Мы используем файлы cookie для того, чтобы предоставить пользователям больше возможностей при посещении сайта Медикал Клиник
+                </p>
+            </div>
+
+            <div>
+                <div class="footer-payment-group">
+                    <span class="footer-payment-title">Мы принимаем к оплате:</span>
+                    <div class="footer-payment-icons">
+                        <img src="assets/icons/payment-visa.svg" alt="Visa" class="footer-payment-icon">
+                        <img src="assets/icons/payment-mastercard.svg" alt="Mastercard" class="footer-payment-icon">
+                        <img src="assets/icons/payment-mir.svg" alt="МИР" class="footer-payment-icon">
+                        <img src="assets/icons/payment-sbp.svg" alt="СБП" class="footer-payment-icon">
+                    </div>
+                </div>
+                <p>
+                    Медицинские услуги лицензированы и предоставляются ООО "Клиника интегративной медицины" в медицинском центре по адресу: 420032, Россия, Республика Татарстан, г. Москва, ул. Энгельса, д. 7, корп. 3, помещение 1. Лицензия на медицинскую деятельность Л041-01181-16/00355613.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright and Links -->
+        <div class="footer-bottom-grid">
+            <div>© 2014 - 2025 Клиника интегративной медицины Все права защищены</div>
+            <a href="privacy.html" style="color: inherit; text-decoration: none;">Политика конфиденциальности</a>
+            <a href="terms.html" style="color: inherit; text-decoration: none;">Пользовательское соглашение</a>
+        </div>
+
+        <!-- Warning Bar (Bebas Neue Cyrillic) -->
+        <div class="footer-warning-bar">
+            ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМА КОНСУЛЬТАЦИЯ С ВРАЧОМ
+        </div>
+    </div>
+</footer>
+
+<!-- 4 Themes Demo Switcher Widget -->
+<div class="theme-switcher-widget">
+    <span style="font-size: 12px; font-weight: 600; color: #4a5660;" data-i18n="theme_switcher.title">Стиль:</span>
+    <div class="theme-dots">
+        <div class="theme-dot theme-dot-blue active" data-theme-val="blue" title="Голубой (Классика)"></div>
+        <div class="theme-dot theme-dot-green" data-theme-val="green" title="Зеленый (Wellness)"></div>
+        <div class="theme-dot theme-dot-cream" data-theme-val="cream" title="Кремовый (Премиум)"></div>
+        <div class="theme-dot theme-dot-rose" data-theme-val="rose" title="Пыльно-розовый (Эстетика)"></div>
+    </div>
+</div>
+
+<!-- Modal Dialog -->
+<div class="modal-overlay" id="booking-modal">
+    <div class="modal-dialog">
+        <button type="button" class="modal-close" id="modal-close-btn">✕</button>
+        <div id="booking-form-wrap">
+            <h3 style="font-size: 24px; margin-bottom: 8px;" data-i18n="booking_modal.title">Запись на прием к специалисту</h3>
+            <p style="font-size: 14px; color: #4a5660; margin-bottom: 20px;" data-i18n="booking_modal.subtitle">Оставьте заявку, и координатор перезвонит в течение 5 минут</p>
+            <form id="booking-form">
+                <input type="text" class="form-control" placeholder="Ваше имя *" required data-i18n="booking_modal.name_placeholder">
+                <input type="tel" class="form-control" placeholder="+7 (___) ___-__-__ *" required data-i18n="booking_modal.phone_placeholder">
+                <select class="form-control">
+                    <option value="" data-i18n="appointment_form.dept_default">Выберите отделение</option>
+                    <option value="endocrinology" data-i18n="dept.endocrinology">Эндокринология</option>
+                    <option value="spine" data-i18n="dept.spine">Позвоночник и суставы</option>
+                    <option value="neurology" data-i18n="dept.neurology">Неврология</option>
+                </select>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;" data-i18n="booking_modal.submit_btn">Подтвердить запись</button>
+            </form>
+        </div>
+        <div id="booking-success" style="display: none; text-align: center; padding: 20px 0;">
+            <div style="font-size: 40px; margin-bottom: 12px;">✅</div>
+            <h3 data-i18n="booking_modal.success_title">Заявка принята!</h3>
+            <p style="color: #4a5660; font-size: 14px;" data-i18n="booking_modal.success_desc">Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

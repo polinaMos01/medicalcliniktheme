@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="blue">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Иванов Алексей Сергеевич — Врач-остеопат, мануальный терапевт — Клиника Интегративной Медицины</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+<!-- 🌟 UNIFIED 2-TIER HEADER (FIGMA 202:46 / 297:5853) -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-top-row">
+            <a href="index.html" class="header-logo">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" class="header-logo-img">
+            </a>
+
+            <div class="header-meta-group">
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/fa4e0601aa41233c4f1beaace940c3db2812e019.svg" alt="Локация" class="header-meta-icon" onerror="this.src='assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg';">
+                    <span data-i18n="nav.address">г. Москва, ул. Центральная, д. 10</span>
+                </div>
+
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/f057dc2f4ed3a48007251aada1608b47ff63d8a6.svg" alt="Время" class="header-meta-icon" onerror="this.src='assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg';">
+                    <span data-i18n="nav.work_hours">Пн-Пт 09:00-20:00; Сб-Вс 10:00-18:00</span>
+                </div>
+            </div>
+
+            <div class="header-phone-group">
+                <a href="tel:+78005553535" class="header-phone-val">+7 (800) 555-35-35</a>
+                
+                <div class="lang-switcher">
+                    <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="hy">HY</button>
+                </div>
+
+                <a href="#booking" class="btn btn-primary" data-open-modal="booking" data-i18n="nav.call_request">Перезвоните мне</a>
+
+                <button class="burger-btn" id="burger-btn" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Navigation Menu -->
+        <div class="header-nav-row">
+            <a href="doctors.html" class="active" data-i18n="nav.doctors">Врачи</a>
+            <a href="departments.html" data-i18n="nav.departments">Направления</a>
+            <a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a>
+            <a href="procedures.html" data-i18n="nav.procedures">Процедуры</a>
+            <a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a>
+            <div class="nav-item-dropdown">
+                <a href="about.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.about">О клинике</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="about.html" data-i18n="nav.about">О нас</a>
+                    <a href="licences.html" data-i18n="nav.licences">Лицензии</a>
+                    <a href="vacancies.html">Вакансии</a>
+                    <a href="blog.html" data-i18n="nav.blog">Блог</a>
+                </div>
+            </div>
+            <div class="nav-item-dropdown">
+                <a href="services.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.patients">Пациенту</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="promotions.html">Акции</a>
+                    <a href="tax-deduction.html">Налоговый вычет</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+            <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Fullscreen Menu -->
+<div class="mobile-menu-overlay" id="mobile-menu">
+    <ul class="mobile-nav-links">
+        <li><a href="doctors.html" data-i18n="nav.doctors">Врачи</a></li>
+        <li><a href="departments.html" data-i18n="nav.departments">Направления</a></li>
+        <li><a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a></li>
+        <li><a href="procedures.html" data-i18n="nav.procedures">Процедуры</a></li>
+        <li><a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a></li>
+        <li><a href="about.html" data-i18n="nav.about">О нас</a></li>
+        <li><a href="licences.html" data-i18n="nav.licences">Лицензии</a></li>
+        <li><a href="vacancies.html">Вакансии</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Блог</a></li>
+        <li><a href="promotions.html">Акции</a></li>
+        <li><a href="tax-deduction.html">Налоговый вычет</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+    </ul>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="lang-switcher" style="justify-content: center;">
+            <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="hy">HY</button>
+        </div>
+        <a href="#booking" class="btn btn-primary" style="width: 100%; text-align: center;" data-open-modal="booking" data-i18n="nav.book_appointment">Записаться на прием</a>
+    </div>
+</div>
+
+<main class="site-main">
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs" style="padding: 24px 0 16px; font-size: 14px; color: var(--color-gray-light);">
+            <a href="index.html" style="color: var(--color-secondary-gray); text-decoration: none;" data-i18n="nav.home">Главная</a> / 
+            <a href="doctors.html" style="color: var(--color-secondary-gray); text-decoration: none;" data-i18n="nav.doctors">Врачи</a> / 
+            <span style="color: var(--color-primary);" data-i18n="doctors.doc1_name">Иванов Алексей Сергеевич</span>
+        </div>
+
+        <!-- 🌟 1. DOCTOR HERO PROFILE CARD (FIGMA 297:5855 / 297:5856) -->
+        <section class="doc-single-hero">
+            <div class="doc-single-profile-card reveal-on-scroll">
+                <div class="doc-single-photo-box">
+                    <div class="doc-single-photo-wrap">
+                        <img src="assets/images/doctor_1.png" alt="Иванов Алексей Сергеевич" onerror="this.src='assets/images/assets/2a1dbd9ac683b4b357ce2eae10e5ae613d8af76f.png';">
+                    </div>
+                    <div class="doc-single-tag-badge">Врач высшей категории</div>
+                </div>
+
+                <div class="doc-single-info">
+                    <div>
+                        <div class="doc-single-top-row">
+                            <div>
+                                <h1 class="doc-single-name" data-i18n="doctors.doc1_name">Иванов Алексей Сергеевич</h1>
+                                <div class="doc-single-specialty-row">
+                                    <span>Остеопат</span>
+                                    <span class="doc-blue-dot"></span>
+                                    <span>23 года стажа</span>
+                                </div>
+                            </div>
+
+                            <div class="doc-single-rating-box">
+                                <div class="rating-score">
+                                    <span>(4,8)</span>
+                                    <span style="color: #FDCB4D; font-size: 20px;">★</span>
+                                </div>
+                                <span class="reviews-count">24 отзыва</span>
+                            </div>
+                        </div>
+
+                        <div class="doc-single-tags">
+                            <span class="doc-spec-badge">Остеопат</span>
+                            <span class="doc-spec-badge">Мануальный терапевт</span>
+                            <span class="doc-spec-badge">Рефлексотерапевт</span>
+                        </div>
+
+                        <p class="doc-single-bio-brief">
+                            Врач мануальный терапевт, врач-рефлексотерапевт, врач-остеопат, врач второй категории
+                        </p>
+                    </div>
+
+                    <div class="doc-single-actions-row">
+                        <button type="button" class="btn btn-primary" style="height: 44px; padding: 0 40px;" data-open-modal="booking" data-i18n="hero.cta">Записаться на прием</button>
+
+                        <div class="doc-single-prices">
+                            <div class="doc-price-item">
+                                <div class="doc-price-label">
+                                    <span class="doc-blue-dot"></span>
+                                    <span>В клинике</span>
+                                </div>
+                                <div class="doc-price-val">2 999 ₽</div>
+                            </div>
+                            <div class="doc-price-item">
+                                <div class="doc-price-label">
+                                    <span class="doc-blue-dot"></span>
+                                    <span>Онлайн</span>
+                                </div>
+                                <div class="doc-price-val">2 999 ₽</div>
+                            </div>
+                            <div class="doc-price-item">
+                                <div class="doc-price-label">
+                                    <span class="doc-blue-dot"></span>
+                                    <span>На дом</span>
+                                </div>
+                                <div class="doc-price-val">2 999 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 2. ЗАПИСАТЬСЯ НА ПРИЕМ К ОСТЕОПАТУ (FIGMA 400:26449) -->
+        <section class="doc-booking-banner">
+            <div class="doc-booking-card">
+                <div>
+                    <h2 class="doc-booking-title">Записывайтесь<br>на прием к остеопату</h2>
+                    <p class="doc-booking-desc">
+                        Пожалуйста, заполните форму обратной связи ниже. Мы оперативно примем заявку и запишем вас на прием в ближайшее свободное время.
+                    </p>
+
+                    <form class="doc-booking-form" onsubmit="event.preventDefault(); alert('Спасибо! Заявка к остеопату принята. Администратор свяжется с вами в течение 10 минут.'); this.reset();">
+                        <input type="text" class="doc-form-input" placeholder="Имя" required>
+                        <input type="tel" class="doc-form-input mask-phone" placeholder="Номер телефона" required>
+                        <div class="doc-form-row-2col">
+                            <div class="doc-form-icon-wrap">
+                                <input type="text" class="doc-form-input" placeholder="Дата" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            </div>
+                            <div class="doc-form-icon-wrap">
+                                <select class="doc-form-input">
+                                    <option value="" disabled selected>Время</option>
+                                    <option value="09:00">09:00 - 10:00</option>
+                                    <option value="10:00">10:00 - 11:00</option>
+                                    <option value="11:00">11:00 - 12:00</option>
+                                    <option value="12:00">12:00 - 13:00</option>
+                                    <option value="14:00">14:00 - 15:00</option>
+                                    <option value="15:00">15:00 - 16:00</option>
+                                    <option value="16:00">16:00 - 17:00</option>
+                                    <option value="17:00">17:00 - 18:00</option>
+                                    <option value="18:00">18:00 - 19:00</option>
+                                    <option value="19:00">19:00 - 20:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <label class="doc-booking-agree">
+                            <input type="checkbox" required checked>
+                            <span>Нажимая кнопку Отправить, вы принимаете условия пользовательского соглашения и политики конфиденциальности</span>
+                        </label>
+
+                        <div>
+                            <button type="submit" class="btn btn-primary" style="padding: 12px 40px;">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="doc-booking-img-wrap">
+                    <img src="assets/images/assets/ff5218d5b484737ec9b28119305559d42a6de4a7.png" alt="Запись к остеопату" onerror="this.src='assets/images/banner_1click_figma.png';">
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 3. О ВРАЧЕ (FIGMA 297:5989) -->
+        <section class="doc-about-section">
+            <div class="doc-about-grid">
+                <div>
+                    <img src="assets/images/assets/8aee10234590df09eee4648c0a8905cd5e109ec5.png" alt="Иванов Алексей Сергеевич" class="doc-about-img" onerror="this.src='assets/images/why_us.png';">
+                </div>
+                <div class="doc-about-text">
+                    <h2 class="doc-section-h2">О враче</h2>
+                    <p>
+                        Иванов Алексей Сергеевич специализируется на диагностике и лечении различных нарушений опорно-двигательного аппарата, а также на комплексном подходе к улучшению общего состояния организма.
+                    </p>
+                    <p>
+                        В своей практике наш врач использует современные остеопатические техники, направленные на восстановление баланса в теле, снятие мышечного напряжения, улучшение кровообращения и стимуляцию естественных процессов саморегуляции организма. Он работает с пациентами всех возрастов — от младенцев до пожилых людей.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 4. СПЕЦИАЛИЗАЦИЯ (FIGMA 297:5915) -->
+        <section class="doc-detail-section">
+            <h2 class="doc-section-h2">Специализация</h2>
+            
+            <div class="doc-tabs-bar" id="spec-tabs">
+                <button type="button" class="doc-tab-btn active" data-tab-target="spec-adults">Взрослые</button>
+                <button type="button" class="doc-tab-btn" data-tab-target="spec-kids">Дети</button>
+            </div>
+
+            <!-- Tab 1: Adults -->
+            <div class="doc-card-eff7fd doc-spec-content" id="spec-adults">
+                <div class="doc-numbered-block">
+                    <div class="doc-numbered-heading">
+                        <span>1.</span>
+                        <span>Иванов Алексей Сергеевич ведет прием пациентов со следующими патологиями:</span>
+                    </div>
+                    <ul class="doc-bullet-list">
+                        <li>боли в спине, шее, пояснице;</li>
+                        <li>остеохондроз;</li>
+                        <li>грыжи и протрузии;</li>
+                        <li>головные боли;</li>
+                        <li>боль в суставах;</li>
+                        <li>все вопросы с ЖКТ, внутренними органами;</li>
+                        <li>нарушения сна;</li>
+                        <li>адаптация после перенесенных травм и стресса.</li>
+                    </ul>
+                </div>
+
+                <div class="doc-numbered-block">
+                    <div class="doc-numbered-heading">
+                        <span>2.</span>
+                        <span>Применяет в своей работе:</span>
+                    </div>
+                    <ul class="doc-bullet-list">
+                        <li>методы диагностики и коррекции соматических дисфункций опорно-двигательной системы, внутренних органов, краниосакральной системы;</li>
+                        <li>мягкие мануальные техники;</li>
+                        <li>постизометрическая релаксация;</li>
+                        <li>мышечно-энергетические техники;</li>
+                        <li>висцеральные техники.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tab 2: Kids -->
+            <div class="doc-card-eff7fd doc-spec-content" id="spec-kids" style="display: none;">
+                <div class="doc-numbered-block">
+                    <div class="doc-numbered-heading">
+                        <span>1.</span>
+                        <span>Остеопатическая помощь детям и подросткам:</span>
+                    </div>
+                    <ul class="doc-bullet-list">
+                        <li>родовые травмы, кривошея, гипертонус и асимметрия мышечного тонуса;</li>
+                        <li>нарушения осанки, сколиоз, вальгусная и варусная деформация стоп;</li>
+                        <li>задержка речевого и моторного развития, гиперактивность;</li>
+                        <li>частые простудные заболевания, нарушения сна и повышенная утомляемость;</li>
+                        <li>сопровождение ортодонтического лечения при исправлении прикуса.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 5. ОБРАЗОВАНИЕ (FIGMA 297:5945) -->
+        <section class="doc-detail-section">
+            <h2 class="doc-section-h2">Образование</h2>
+
+            <div class="doc-tabs-bar" id="edu-tabs">
+                <button type="button" class="doc-tab-btn active" data-tab-target="edu-2024">2024</button>
+                <button type="button" class="doc-tab-btn" data-tab-target="edu-2016">2016</button>
+                <button type="button" class="doc-tab-btn" data-tab-target="edu-2014">2014</button>
+                <button type="button" class="doc-tab-btn" data-tab-target="edu-2013">2013</button>
+            </div>
+
+            <!-- Tab 2024 -->
+            <div class="doc-card-eff7fd doc-edu-content" id="edu-2024">
+                <div class="doc-numbered-block">
+                    <div class="doc-numbered-heading">
+                        <span>1.</span>
+                        <span>Иванов Алексей Сергеевич прошел курс повышения квалификации по специальности «Остеопатия» на базе Русской Высшей Школы Остеопатической Медицины.</span>
+                    </div>
+                </div>
+                <div class="doc-numbered-block">
+                    <div class="doc-numbered-heading">
+                        <span>2.</span>
+                        <span>Углубленный практический цикл по теме: «Краниосакральная терапия и биодинамический подход в неврологии и вертебрологии».</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2016 -->
+            <div class="doc-card-eff7fd doc-edu-content" id="edu-2016" style="display: none;">
+                <div class="doc-numbered-block">
+                    <div class="doc-numbered-heading">
+                        <span>1.</span>
+                        <span>Сертификационный практический курс по прикладной кинезиологии и мануальному мышечному тестированию.</span>
+                    </div>
+                </div>
+                <div class="doc-numbered-block">
+                    <div class="doc-numbered-heading">
+                        <span>2.</span>
+                        <span>Повышение квалификации: «Миофасциальный релиз и триггерные точки в клинической практике врача-остеопата».</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2014 -->
+            <div class="doc-card-eff7fd doc-edu-content" id="edu-2014" style="display: none;">
+                <div class="doc-numbered-block">
+                    <div class="doc-numbered-heading">
+                        <span>1.</span>
+                        <span>Институт остеопатической медицины им. В.Л. Андрианова (г. Санкт-Петербург), присвоена квалификация доктора остеопатии (D.O.).</span>
+                    </div>
+                </div>
+                <div class="doc-numbered-block">
+                    <div class="doc-numbered-heading">
+                        <span>2.</span>
+                        <span>Международная стажировка по висцеральной остеопатии и коррекции дисфункций внутренних органов (Париж, Франция).</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2013 -->
+            <div class="doc-card-eff7fd doc-edu-content" id="edu-2013" style="display: none;">
+                <div class="doc-numbered-block">
+                    <div class="doc-numbered-heading">
+                        <span>1.</span>
+                        <span>Казанский государственный медицинский университет, специальность «Лечебное дело», диплом с отличием.</span>
+                    </div>
+                </div>
+                <div class="doc-numbered-block">
+                    <div class="doc-numbered-heading">
+                        <span>2.</span>
+                        <span>Клиническая интернатура и ординатура по специальности «Неврология и мануальная терапия».</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 6. ОПЫТ РАБОТЫ (FIGMA 297:5962) -->
+        <section class="doc-detail-section">
+            <h2 class="doc-section-h2">Опыт работы</h2>
+
+            <div class="doc-card-eff7fd">
+                <div class="doc-exp-item">
+                    <div class="doc-exp-year">2019 – 2024</div>
+                    <ul class="doc-bullet-list">
+                        <li>Остеопатический центр, г. Москва, врач мануальный терапевт, врач-остеопат.</li>
+                    </ul>
+                </div>
+                <div class="doc-exp-item">
+                    <div class="doc-exp-year">2014 – 2019</div>
+                    <ul class="doc-bullet-list">
+                        <li>Клиника интегративной и восстановительной медицины «Медикал Клиник», ведущий специалист отделения остеопатии.</li>
+                    </ul>
+                </div>
+                <div class="doc-exp-item">
+                    <div class="doc-exp-year">2008 – 2014</div>
+                    <ul class="doc-bullet-list">
+                        <li>Городской центр восстановительного лечения и реабилитации, врач-невролог, врач-рефлексотерапевт.</li>
+                    </ul>
+                </div>
+                <div class="doc-exp-item">
+                    <div class="doc-exp-year">2001 – 2008</div>
+                    <ul class="doc-bullet-list">
+                        <li>Городская клиническая больница №1, стационарное неврологическое отделение, врач-невролог.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 7. ОТЗЫВЫ (FIGMA 297:5996) -->
+        <section class="doc-detail-section" id="reviews">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                <h2 class="doc-section-h2" style="margin-bottom: 0;">Отзывы</h2>
+                <div style="display: flex; gap: 12px;">
+                    <button type="button" class="btn btn-secondary" id="doc-reviews-prev" style="width: 44px; height: 44px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 12px;">←</button>
+                    <button type="button" class="btn btn-secondary" id="doc-reviews-next" style="width: 44px; height: 44px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 12px;">→</button>
+                </div>
+            </div>
+
+            <div class="reviews-grid-3" style="margin-bottom: 24px;">
+                <div class="doc-card-eff7fd">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div style="display: flex; gap: 12px; align-items: center;">
+                            <img src="assets/images/assets/7e6c36c0d70ee2f995b9a8125f4b685bdf521b45.png" alt="Ирина" style="width: 48px; height: 48px; border-radius: 100px; object-fit: cover;" onerror="this.src='assets/images/assets/55f6b30bfe9501b009fd1a3545eb7bee7513a97a.png';">
+                            <div>
+                                <div style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; color: #000;">Ирина</div>
+                                <div style="font-family: 'Raleway', sans-serif; font-size: 16px; color: rgba(0,0,0,0.5);">21.04.2025</div>
+                            </div>
+                        </div>
+                        <div style="color: #FDCB4D; font-size: 18px;">★★★★★</div>
+                    </div>
+                    <p style="font-family: 'Raleway', sans-serif; font-size: 16px; line-height: 20px; color: #000; margin: 0;">
+                        Алексей Сергеевич проявил высокий уровень профессионализма: внимательно выслушал мои жалобы, провел тщательный осмотр и предложил индивидуальный план остеопатической коррекции. Уже после первого сеанса ушла многолетняя боль в пояснице!
+                    </p>
+                </div>
+
+                <div class="doc-card-eff7fd">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div style="display: flex; gap: 12px; align-items: center;">
+                            <img src="assets/images/assets/7e6c36c0d70ee2f995b9a8125f4b685bdf521b45.png" alt="Михаил" style="width: 48px; height: 48px; border-radius: 100px; object-fit: cover;" onerror="this.src='assets/images/assets/009bb99f71ff2e3701a0f705319e5d35472e92ad.png';">
+                            <div>
+                                <div style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; color: #000;">Михаил К.</div>
+                                <div style="font-family: 'Raleway', sans-serif; font-size: 16px; color: rgba(0,0,0,0.5);">18.04.2025</div>
+                            </div>
+                        </div>
+                        <div style="color: #FDCB4D; font-size: 18px;">★★★★★</div>
+                    </div>
+                    <p style="font-family: 'Raleway', sans-serif; font-size: 16px; line-height: 20px; color: #000; margin: 0;">
+                        Проходил курс мягкой мануальной терапии и остеопатии после спортивной травмы шеи. Результат превзошел все ожидания: полная подвижность восстановилась, головные боли полностью прекратились. Рекомендую доктора!
+                    </p>
+                </div>
+
+                <div class="doc-card-eff7fd">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div style="display: flex; gap: 12px; align-items: center;">
+                            <img src="assets/images/assets/7e6c36c0d70ee2f995b9a8125f4b685bdf521b45.png" alt="Елена" style="width: 48px; height: 48px; border-radius: 100px; object-fit: cover;" onerror="this.src='assets/images/assets/189cfa982fa45c762e0567ce96f42c81098f2191.png';">
+                            <div>
+                                <div style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; color: #000;">Елена В.</div>
+                                <div style="font-family: 'Raleway', sans-serif; font-size: 16px; color: rgba(0,0,0,0.5);">14.04.2025</div>
+                            </div>
+                        </div>
+                        <div style="color: #FDCB4D; font-size: 18px;">★★★★★</div>
+                    </div>
+                    <p style="font-family: 'Raleway', sans-serif; font-size: 16px; line-height: 20px; color: #000; margin: 0;">
+                        Очень чуткий и внимательный специалист. Сеансы проходят комфортно и деликатно, после каждого приема чувствуется необыкновенная легкость во всем теле. Огромная благодарность клинике интегративной медицины за таких докторов!
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <button type="button" class="btn btn-primary" style="padding: 12px 40px;" data-open-modal="review-modal">Оставьте отзыв</button>
+            </div>
+        </section>
+
+        <!-- 🌟 8. ДОКУМЕНТЫ (FIGMA 297:5936) -->
+        <section class="doc-detail-section" id="documents">
+            <h2 class="doc-section-h2">Документы</h2>
+
+            <div class="doc-tabs-bar" id="doc-docs-tabs">
+                <button type="button" class="doc-tab-btn active" data-tab-target="docs-diplomas">Дипломы</button>
+                <button type="button" class="doc-tab-btn" data-tab-target="docs-certs">Сертификаты</button>
+            </div>
+
+            <div class="doc-card-eff7fd">
+                <!-- Tab 1: Дипломы -->
+                <div class="doc-certs-flex doc-docs-content" id="docs-diplomas">
+                    <div class="doc-cert-preview" onclick="openCertLightbox(this)">
+                        <img src="assets/images/assets/afec6ea85ba8ef6660576d8b3cb90b6496dd6a37.png" alt="Диплом врача высшей категории" onerror="this.src='assets/images/gallery_1.png';">
+                    </div>
+                    <div class="doc-cert-preview" onclick="openCertLightbox(this)">
+                        <img src="assets/images/gallery_1.png" alt="Диплом КГМУ">
+                    </div>
+                    <div class="doc-cert-preview" onclick="openCertLightbox(this)">
+                        <img src="assets/images/gallery_2.png" alt="Диплом ординатуры по неврологии">
+                    </div>
+                    <div class="doc-cert-preview" onclick="openCertLightbox(this)">
+                        <img src="assets/images/gallery_3.png" alt="Диплом Доктора остеопатии D.O.">
+                    </div>
+                </div>
+
+                <!-- Tab 2: Сертификаты -->
+                <div class="doc-certs-flex doc-docs-content" id="docs-certs" style="display: none;">
+                    <div class="doc-cert-preview" onclick="openCertLightbox(this)">
+                        <img src="assets/images/gallery_4.png" alt="Сертификат остеопатии">
+                    </div>
+                    <div class="doc-cert-preview" onclick="openCertLightbox(this)">
+                        <img src="assets/images/gallery_5.png" alt="Сертификат кинезиологии">
+                    </div>
+                    <div class="doc-cert-preview" onclick="openCertLightbox(this)">
+                        <img src="assets/images/gallery_6.png" alt="Сертификат краниосакральной терапии">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 9. НАШИ ВРАЧИ (FIGMA 297:5998) -->
+        <section class="doc-detail-section" id="doctors">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+                <h2 class="doc-section-h2" style="margin-bottom: 0;">Наши врачи</h2>
+                <a href="doctors.html" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+                    <span>Все врачи</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <div class="doctors-grid-3col">
+                <!-- Doctor Card 1 -->
+                <div class="doctor-fig-card reveal-on-scroll">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_1.png" alt="Иванов Алексей" onerror="this.src='assets/images/assets/2a1dbd9ac683b4b357ce2eae10e5ae613d8af76f.png';">
+                        <div class="doctor-fig-tag">Врач высшей категории</div>
+                    </div>
+                    <div class="doc-single-rating-box" style="padding: 0 4px;">
+                        <span class="rating-score">(4,8) <span style="color:#FDCB4D">★</span></span>
+                        <span class="reviews-count">23 отзыва</span>
+                    </div>
+                    <div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; margin-bottom: 4px;">Иванов Алексей Сергеевич</h3>
+                        <div class="doc-single-specialty-row" style="font-size: 16px; font-weight: 400;">
+                            <span>Остеопат</span>
+                            <span class="doc-blue-dot"></span>
+                            <span>23 года стажа</span>
+                        </div>
+                    </div>
+                    <div class="doc-single-prices" style="width: 100%; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 12px;">
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>В клинике</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>Онлайн</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>На дом</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Подробнее о враче</a>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 2 -->
+                <div class="doctor-fig-card reveal-on-scroll delay-1">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_2.png" alt="Смирнова Елена" onerror="this.src='assets/images/assets/eeee5577c2e4b2fd83209c691016504608918387.png';">
+                        <div class="doctor-fig-tag">Врач высшей категории</div>
+                    </div>
+                    <div class="doc-single-rating-box" style="padding: 0 4px;">
+                        <span class="rating-score">(4,8) <span style="color:#FDCB4D">★</span></span>
+                        <span class="reviews-count">23 отзыва</span>
+                    </div>
+                    <div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; margin-bottom: 4px;">Смирнова Елена Викторовна</h3>
+                        <div class="doc-single-specialty-row" style="font-size: 16px; font-weight: 400;">
+                            <span>Эндокринолог</span>
+                            <span class="doc-blue-dot"></span>
+                            <span>18 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="doc-single-prices" style="width: 100%; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 12px;">
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>В клинике</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>Онлайн</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>На дом</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Подробнее о враче</a>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 3 -->
+                <div class="doctor-fig-card reveal-on-scroll delay-2">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_3.png" alt="Александров Михаил" onerror="this.src='assets/images/assets/d796a8fcd359b75d15978d27588ee0e4b9f4229c.png';">
+                        <div class="doctor-fig-tag">Врач высшей категории</div>
+                    </div>
+                    <div class="doc-single-rating-box" style="padding: 0 4px;">
+                        <span class="rating-score">(4,8) <span style="color:#FDCB4D">★</span></span>
+                        <span class="reviews-count">23 отзыва</span>
+                    </div>
+                    <div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; margin-bottom: 4px;">Александров Михаил Юрьевич</h3>
+                        <div class="doc-single-specialty-row" style="font-size: 16px; font-weight: 400;">
+                            <span>Невролог</span>
+                            <span class="doc-blue-dot"></span>
+                            <span>15 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="doc-single-prices" style="width: 100%; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 12px;">
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>В клинике</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>Онлайн</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>На дом</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 10. СТАТЬИ (FIGMA 297:5997) -->
+        <section class="doc-detail-section" style="padding-bottom: 80px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+                <h2 class="doc-section-h2" style="margin-bottom: 0;">Статьи</h2>
+                <div style="display: flex; gap: 12px;">
+                    <button type="button" class="btn btn-secondary" id="doc-news-prev" style="width: 44px; height: 44px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 12px;">←</button>
+                    <button type="button" class="btn btn-secondary" id="doc-news-next" style="width: 44px; height: 44px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 12px;">→</button>
+                </div>
+            </div>
+
+            <div class="reviews-grid-3" style="margin-bottom: 32px;">
+                <div class="doc-card-eff7fd" style="padding: 12px;">
+                    <div style="height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 16px;">
+                        <img src="assets/images/assets/72f897b8665ef22eb7b520e1f04cd74ae54ade40.png" alt="Статья 1" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='assets/images/blog1.png';">
+                    </div>
+                    <div style="padding: 0 8px 8px;">
+                        <div style="font-family: 'Raleway', sans-serif; font-size: 14px; color: rgba(0,0,0,0.4); margin-bottom: 6px;">21.04.2025</div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; color: #000; margin-bottom: 8px; line-height: 1.25;">Новые методы диагностики: что изменится в 2025 году?</h3>
+                        <p style="font-family: 'Raleway', sans-serif; font-size: 14px; line-height: 18px; color: #000; margin-bottom: 16px;">
+                            Узнайте о последних инновациях в интегративной медицине и остеопатии, которые позволяют быстрее выявлять причины болей.
+                        </p>
+                        <a href="article.html" style="font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 500; color: #000; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                            <span>Читать</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="doc-card-eff7fd" style="padding: 12px;">
+                    <div style="height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 16px;">
+                        <img src="assets/images/assets/ff5218d5b484737ec9b28119305559d42a6de4a7.png" alt="Статья 2" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='assets/images/blog2.png';">
+                    </div>
+                    <div style="padding: 0 8px 8px;">
+                        <div style="font-family: 'Raleway', sans-serif; font-size: 14px; color: rgba(0,0,0,0.4); margin-bottom: 6px;">18.04.2025</div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; color: #000; margin-bottom: 8px; line-height: 1.25;">Остеопатия при головных болях и мигренях</h3>
+                        <p style="font-family: 'Raleway', sans-serif; font-size: 14px; line-height: 18px; color: #000; margin-bottom: 16px;">
+                            Как мягкие техники восстанавливают венозный отток и снимают мышечно-фасциальные зажимы в шейно-воротниковой зоне.
+                        </p>
+                        <a href="article.html" style="font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 500; color: #000; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                            <span>Читать</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="doc-card-eff7fd" style="padding: 12px;">
+                    <div style="height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 16px;">
+                        <img src="assets/images/assets/8aee10234590df09eee4648c0a8905cd5e109ec5.png" alt="Статья 3" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='assets/images/blog3.png';">
+                    </div>
+                    <div style="padding: 0 8px 8px;">
+                        <div style="font-family: 'Raleway', sans-serif; font-size: 14px; color: rgba(0,0,0,0.4); margin-bottom: 6px;">15.04.2025</div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; color: #000; margin-bottom: 8px; line-height: 1.25;">Здоровье позвоночника: профилактика остеохондроза</h3>
+                        <p style="font-family: 'Raleway', sans-serif; font-size: 14px; line-height: 18px; color: #000; margin-bottom: 16px;">
+                            Простые ежедневные привычки и упражнения, помогающие поддерживать здоровье спины и суставов в любом возрасте.
+                        </p>
+                        <a href="article.html" style="font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 500; color: #000; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                            <span>Читать</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="blog.html" class="btn btn-primary" style="padding: 12px 40px;">Читать все статьи</a>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- 🌟 UNIFIED FOOTER (FIGMA 297:5854 / 202:26) -->
+<footer class="site-footer" id="contacts">
+    <div class="container">
+        <!-- Top Row: Logo, Hours, Address, Phone, CTA, Socials -->
+        <div class="footer-top-grid">
+            <a href="index.html">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" style="height: 48px;">
+            </a>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/assets/f057dc2f4ed3a48007251aada1608b47ff63d8a6.svg" alt="Время" style="width: 20px;" onerror="this.src='assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg';">
+                <span>Пн-Пт 09:00-20:00;<br>Сб-Вс 10:00-18:00</span>
+            </div>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/assets/fa4e0601aa41233c4f1beaace940c3db2812e019.svg" alt="Адрес" style="width: 20px;" onerror="this.src='assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg';">
+                <span>г. Москва, ул. Центральная, д. 10</span>
+            </div>
+
+            <div style="font-size: 20px; font-weight: 600;">
+                +7 (800) 555-35-35
+            </div>
+
+            <a href="#booking" class="btn btn-primary" data-open-modal="booking">Перезвоните мне</a>
+
+            <div class="footer-social-row">
+                <a href="https://t.me/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Telegram">
+                    <img src="assets/icons/social-tg.svg" alt="Telegram">
+                </a>
+                <a href="https://wa.me/78005553535" class="footer-social-icon" target="_blank" rel="noopener" title="WhatsApp">
+                    <img src="assets/icons/social-wa.svg" alt="WhatsApp">
+                </a>
+                <a href="https://vk.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="VK">
+                    <img src="assets/icons/social-vk.svg" alt="VK">
+                </a>
+                <a href="https://instagram.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Instagram">
+                    <img src="assets/icons/social-ig.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+
+        <!-- Middle Row: Disclaimer and License Info -->
+        <div class="footer-mid-grid">
+            <div>
+                <p style="margin-bottom: 14px;">
+                    Сайт носит информационный характер и не является публичной офертой, согласно Статье 437 (2) ГК РФ. Цены приведены, как справочная информация и могут быть изменены. Для получения подробной информации о стоимости, сроках и условиях звоните по телефону клиники.
+                </p>
+                <p>
+                    Мы используем файлы cookie для того, чтобы предоставить пользователям больше возможностей при посещении сайта Медикал Клиник
+                </p>
+            </div>
+
+            <div>
+                <div style="margin-bottom: 16px;">
+                    <span style="font-size: 14px; font-weight: 600; display: block; margin-bottom: 8px;">Мы принимаем к оплате:</span>
+                    <div style="display: flex; gap: 16px; align-items: center;">
+                        <span style="font-size: 18px; font-weight: bold; color: #1434cb;">VISA</span>
+                        <span style="font-size: 18px; font-weight: bold; color: #0f754e;">МИР</span>
+                        <span style="font-size: 18px; font-weight: bold; color: #eb001b;">MasterCard</span>
+                    </div>
+                </div>
+
+                <p style="font-size: 13px; color: var(--color-gray-light); line-height: 1.4;">
+                    Медицинские услуги лицензированы и предоставляются ООО "Клиника интегративной медицины" в медицинском центре по адресу: 420032, Россия, Республика Татарстан, г. Москва, ул. Энгельса, д. 7, корп. 3, помещение 1. Лицензия на медицинскую деятельность Л041-01181-16/00355613.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Copyright, Legal Links, Warning -->
+        <div class="footer-bot-flex">
+            <div>© 2014 - 2025 Клиника интегративной медицины Все права защищены</div>
+            <div style="display: flex; gap: 20px;">
+                <a href="privacy.html" style="color: var(--color-black); text-decoration: none;">Политика конфиденциальности</a>
+                <a href="terms.html" style="color: var(--color-black); text-decoration: none;">Пользовательское соглашение</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; padding-top: 24px; border-top: 1px solid rgba(0,0,0,0.1); color: var(--color-gray-light); font-size: 16px; font-weight: 500;">
+            Имеются противопоказания, необходима консультация с врачом
+        </div>
+    </div>
+</footer>
+
+<!-- 🌟 POPUP MODAL: BOOKING -->
+<div class="modal-backdrop" id="modal-booking" style="display: none;">
+    <div class="modal-dialog">
+        <button type="button" class="modal-close-btn" data-close-modal="booking" aria-label="Закрыть">✕</button>
+        <h3 class="modal-title">Запись к врачу</h3>
+        <p class="modal-subtitle">Иванов Алексей Сергеевич — Врач-остеопат</p>
+        
+        <form class="modal-form" onsubmit="event.preventDefault(); alert('Спасибо за заявку! Мы свяжемся с вами в ближайшее время.'); this.closest('.modal-backdrop').style.display='none'; this.reset();">
+            <div class="form-group">
+                <input type="text" class="form-control-fig" placeholder="Ваше имя *" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" class="form-control-fig mask-phone" placeholder="Телефон *" required>
+            </div>
+            <div class="form-group">
+                <select class="form-control-fig" required>
+                    <option value="clinic" selected>Приём в клинике — 2 999 ₽</option>
+                    <option value="online">Онлайн консультация — 2 999 ₽</option>
+                    <option value="home">Вызов на дом — 2 999 ₽</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="custom-checkbox-row">
+                    <input type="checkbox" required checked>
+                    <span>Согласен на обработку персональных данных</span>
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">Отправить заявку</button>
+        </form>
+    </div>
+</div>
+
+<!-- 🌟 POPUP MODAL: LEAVE REVIEW -->
+<div class="modal-backdrop" id="modal-review" style="display: none;">
+    <div class="modal-dialog">
+        <button type="button" class="modal-close-btn" data-close-modal="review-modal" aria-label="Закрыть">✕</button>
+        <h3 class="modal-title">Оставить отзыв</h3>
+        <p class="modal-subtitle">О враче: Иванов Алексей Сергеевич</p>
+        
+        <form class="modal-form" onsubmit="event.preventDefault(); alert('Спасибо за ваш отзыв! Он появится после модерации.'); this.closest('.modal-backdrop').style.display='none'; this.reset();">
+            <div class="form-group">
+                <input type="text" class="form-control-fig" placeholder="Ваше имя *" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" class="form-control-fig mask-phone" placeholder="Телефон (для подтверждения визита)">
+            </div>
+            <div class="form-group">
+                <label style="font-size: 14px; font-weight: 500; display: block; margin-bottom: 6px;">Ваша оценка:</label>
+                <div style="font-size: 24px; color: #FDCB4D; cursor: pointer;">
+                    ★★★★★
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control-fig" rows="4" placeholder="Ваш отзыв о приёме и результатах лечения *" required style="height: auto; padding: 12px;"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="custom-checkbox-row">
+                    <input type="checkbox" required checked>
+                    <span>Согласен на публикацию отзыва на сайте</span>
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">Опубликовать отзыв</button>
+        </form>
+    </div>
+</div>
+
+<script>
+// Tab switching for Specialization, Education, and Documents
+document.addEventListener('DOMContentLoaded', function() {
+    function setupTabs(tabBarId, contentGroupSelector) {
+        const tabBar = document.getElementById(tabBarId);
+        if (!tabBar) return;
+        const buttons = tabBar.querySelectorAll('.doc-tab-btn');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                buttons.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const targetId = this.getAttribute('data-tab-target');
+                if (targetId) {
+                    const allPanels = document.querySelectorAll(contentGroupSelector);
+                    allPanels.forEach(panel => {
+                        panel.style.display = 'none';
+                    });
+                    const activePanel = document.getElementById(targetId);
+                    if (activePanel) {
+                        activePanel.style.display = (targetId.startsWith('docs-') ? 'flex' : 'flex');
+                    }
+                }
+            });
+        });
+    }
+
+    setupTabs('spec-tabs', '.doc-spec-content');
+    setupTabs('edu-tabs', '.doc-edu-content');
+    setupTabs('doc-docs-tabs', '.doc-docs-content');
+
+    // Modal open/close handlers
+    document.querySelectorAll('[data-open-modal="booking"]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById('modal-booking').style.display = 'flex';
+        });
+    });
+
+    document.querySelectorAll('[data-open-modal="review-modal"]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById('modal-review').style.display = 'flex';
+        });
+    });
+
+    document.querySelectorAll('[data-close-modal]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.getElementById('modal-booking').style.display = 'none';
+            document.getElementById('modal-review').style.display = 'none';
+        });
+    });
+
+    // Mobile menu toggle
+    const burger = document.getElementById('burger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (burger && mobileMenu) {
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    }
+});
+
+function openCertLightbox(el) {
+    const img = el.querySelector('img');
+    if (!img) return;
+    const overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0,0,0,0.85)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+    overlay.style.zIndex = '9999';
+    overlay.style.cursor = 'pointer';
+
+    const bigImg = document.createElement('img');
+    bigImg.src = img.src;
+    bigImg.style.maxWidth = '90%';
+    bigImg.style.maxHeight = '90%';
+    bigImg.style.borderRadius = '12px';
+    bigImg.style.boxShadow = '0 10px 40px rgba(0,0,0,0.5)';
+
+    overlay.appendChild(bigImg);
+    overlay.addEventListener('click', () => overlay.remove());
+    document.body.appendChild(overlay);
+}
+</script>
+
+<!-- 4 Themes Demo Switcher Widget -->
+<div class="theme-switcher-widget">
+    <span style="font-size: 12px; font-weight: 600; color: #4a5660;" data-i18n="theme_switcher.title">Стиль:</span>
+    <div class="theme-dots">
+        <div class="theme-dot theme-dot-blue active" data-theme-val="blue" title="Голубой (Классика)"></div>
+        <div class="theme-dot theme-dot-green" data-theme-val="green" title="Зеленый (Wellness)"></div>
+        <div class="theme-dot theme-dot-cream" data-theme-val="cream" title="Кремовый (Премиум)"></div>
+        <div class="theme-dot theme-dot-rose" data-theme-val="rose" title="Пыльно-розовый (Эстетика)"></div>
+    </div>
+</div>
+
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

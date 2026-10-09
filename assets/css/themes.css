@@ -1,0 +1,161 @@
+/**
+ * MEDICAL CLINIC — 4 COMPREHENSIVE COLOR THEMES
+ * 1. Classic Blue (Default)
+ * 2. Emerald / Dental Green
+ * 3. Warm Ivory / Premium Cream
+ * 4. Dusty Rose / Aesthetic Cosmetology
+ */
+
+:root,
+[data-theme="blue"] {
+  --theme-name: 'blue';
+  --color-primary: #5AA6EB;
+  --color-primary-hover: #4593D8;
+  --color-primary-dark: #2A5A82;
+  --color-primary-10: rgba(90, 166, 235, 0.10);
+  --color-primary-15: rgba(90, 166, 235, 0.15);
+  --color-primary-20: rgba(90, 166, 235, 0.20);
+  --color-primary-30: rgba(90, 166, 235, 0.30);
+  --color-primary-glow: rgba(90, 166, 235, 0.55);
+  --color-primary-glow-0: rgba(90, 166, 235, 0);
+  --color-primary-gradient: linear-gradient(135deg, #5AA6EB 0%, #3B82F6 100%);
+  
+  --color-bg-1: #EFF7FD; /* footer, section bg, chips */
+  --color-bg-2: #F9FCFF; /* soft light background */
+  --color-bg-3: #DAEDFF; /* card highlight, photo placeholder */
+  --color-bg-4: #C5DEF4; /* badge / active tab */
+  --color-bg-hero: #FFFFFF;
+  --color-chip-bg: rgba(239, 247, 253, 0.45);
+  
+  --color-border: #C9D7E2;
+  --color-border-light: #E4ECF2;
+  --color-card-hover-border: #87BEED;
+  --color-card-bg: #FFFFFF;
+  --color-footer-bg: #EFF7FD;
+
+
+  /* Universal Neutrals */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-text-main: #000000;
+  --color-secondary-gray: #4A5660;
+  --color-tertiary: rgba(0, 0, 0, 0.4);
+  --color-quaternary: rgba(0, 0, 0, 0.2);
+  --color-gray-light: #959799;
+  --color-gray: #C1C1C1;
+  --color-border-gray: #AFAFAF;
+  --color-blue-gray: #B5BEC6;
+
+  /* System Accents & Brand Palette */
+  --color-rating: #FDCB4D;
+  --color-red: #E2001A;
+  --color-orange: #FF7A00;
+  --color-orange-light: #FFF2E8;
+  --color-turquoise: #00B4B6;
+  --color-turquoise-light: #E6FFFA;
+  --color-dark-blue: #1E3A56;
+  --color-pagination: #E7EBF0;
+  --color-whatsapp: #25D366;
+  --color-vk: #0077FF;
+  --color-telegram: #229ED9;
+
+  /* Layout & Radii */
+  --font-primary: 'Raleway', 'Noto Sans Armenian', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-numbers: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --container-desktop: 1200px;
+  --container-tablet: 704px;
+  --container-mobile: 358px;
+
+  --radius-btn: 12px;
+  --radius-card: 16px;
+  --radius-card-img: 10px;
+  --radius-photo: 20px;
+  --radius-chip: 16px;
+
+  --transition-theme: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, fill 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🟢 Theme 2: Emerald Green (Dental / Health / Wellness) */
+[data-theme="green"] {
+  --theme-name: 'green';
+  --color-primary: #10B981;
+  --color-primary-hover: #059669;
+  --color-primary-dark: #065F46;
+  --color-primary-10: rgba(16, 185, 129, 0.10);
+  --color-primary-15: rgba(16, 185, 129, 0.15);
+  --color-primary-20: rgba(16, 185, 129, 0.20);
+  --color-primary-30: rgba(16, 185, 129, 0.30);
+  --color-primary-glow: rgba(16, 185, 129, 0.55);
+  --color-primary-glow-0: rgba(16, 185, 129, 0);
+  --color-primary-gradient: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  
+  --color-bg-1: #ECFDF5;
+  --color-bg-2: #F0FDF4;
+  --color-bg-3: #D1FAE5;
+  --color-bg-4: #A7F3D0;
+  --color-bg-hero: #FFFFFF;
+  --color-chip-bg: rgba(236, 253, 245, 0.45);
+  
+  --color-border: #A7F3D0;
+  --color-border-light: #D1FAE5;
+  --color-card-hover-border: #34D399;
+  --color-card-bg: #FFFFFF;
+  --color-footer-bg: #ECFDF5;
+}
+
+/* 🟡 Theme 3: Warm Ivory / Cream (Premium / Aesthetic Clinic) */
+[data-theme="cream"] {
+  --theme-name: 'cream';
+  --color-primary: #C59A3F;
+  --color-primary-hover: #A67E28;
+  --color-primary-dark: #634710;
+  --color-primary-10: rgba(197, 154, 63, 0.12);
+  --color-primary-15: rgba(197, 154, 63, 0.18);
+  --color-primary-20: rgba(197, 154, 63, 0.24);
+  --color-primary-30: rgba(197, 154, 63, 0.34);
+  --color-primary-glow: rgba(197, 154, 63, 0.55);
+  --color-primary-glow-0: rgba(197, 154, 63, 0);
+  --color-primary-gradient: linear-gradient(135deg, #D4AF37 0%, #B38F24 100%);
+  
+  --color-bg-1: #FAF6ED;
+  --color-bg-2: #FFFDF9;
+  --color-bg-3: #F5EFE1;
+  --color-bg-4: #EBDDC2;
+  --color-bg-hero: #FFFFFF;
+  --color-chip-bg: rgba(250, 246, 237, 0.45);
+  
+  --color-border: #DEC8A2;
+  --color-border-light: #F0E5D3;
+  --color-card-hover-border: #D1B584;
+  --color-card-bg: #FFFFFF;
+  --color-footer-bg: #FAF6ED;
+}
+
+/* 🌸 Theme 4: Dusty Rose / Pink (Cosmetology / Dermatology) */
+[data-theme="rose"] {
+  --theme-name: 'rose';
+  --color-primary: #D9777F;
+  --color-primary-hover: #C6626B;
+  --color-primary-dark: #7C2D37;
+  --color-primary-10: rgba(217, 119, 127, 0.12);
+  --color-primary-15: rgba(217, 119, 127, 0.18);
+  --color-primary-20: rgba(217, 119, 127, 0.24);
+  --color-primary-30: rgba(217, 119, 127, 0.34);
+  --color-primary-glow: rgba(217, 119, 127, 0.55);
+  --color-primary-glow-0: rgba(217, 119, 127, 0);
+  --color-primary-gradient: linear-gradient(135deg, #D9777F 0%, #C05860 100%);
+  
+  --color-bg-1: #FFF5F6;
+  --color-bg-2: #FFF9F9;
+  --color-bg-3: #FFE4E6;
+  --color-bg-4: #FECDD3;
+  --color-bg-hero: #FFFFFF;
+  --color-chip-bg: rgba(255, 245, 246, 0.45);
+  
+  --color-border: #FCA5A5;
+  --color-border-light: #FEE2E2;
+  --color-card-hover-border: #F87171;
+  --color-card-bg: #FFFFFF;
+  --color-footer-bg: #FFF5F6;
+}

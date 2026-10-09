@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Medical drop & herbal/eco element -->
+  <path d="M24 8C24 8 13 22 13 29C13 35.1 17.9 40 24 40C30.1 40 35 35.1 35 29C35 22 24 8 24 8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" fill="currentColor" fill-opacity="0.15"/>
+  <path d="M24 20C22 23 20 26 20 29C20 31.2 21.8 33 24 33" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M24 14V34M19 24H29" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>

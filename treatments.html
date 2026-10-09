@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="blue">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Мы лечим — Заболевания и симптомы | Клиника интегративной медицины</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Armenian:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+<!-- 🌟 UNIFIED 2-TIER HEADER -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-top-row">
+            <a href="index.html" class="header-logo">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" class="header-logo-img">
+            </a>
+
+            <div class="header-meta-group">
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/fa4e0601aa41233c4f1beaace940c3db2812e019.svg" alt="Локация" class="header-meta-icon" onerror="this.src='assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg';">
+                    <span data-i18n="nav.address">г. Москва, ул. Центральная, д. 10</span>
+                </div>
+
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/f057dc2f4ed3a48007251aada1608b47ff63d8a6.svg" alt="Время" class="header-meta-icon" onerror="this.src='assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg';">
+                    <span data-i18n="nav.work_hours">Пн-Пт 09:00-20:00; Сб-Вс 10:00-18:00</span>
+                </div>
+            </div>
+
+            <div class="header-phone-group">
+                <a href="tel:+78005553535" class="header-phone-val">+7 (800) 555-35-35</a>
+                
+                <div class="lang-switcher">
+                    <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="hy">HY</button>
+                </div>
+
+                <a href="#booking" class="btn btn-primary" data-open-modal="booking" data-i18n="nav.call_request">Перезвоните мне</a>
+
+                <button class="burger-btn" id="burger-btn" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Navigation Menu -->
+        <div class="header-nav-row">
+            <a href="doctors.html" data-i18n="nav.doctors">Врачи</a>
+            <a href="departments.html" data-i18n="nav.departments">Направления</a>
+            <a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a>
+            <a href="procedures.html" data-i18n="nav.procedures">Процедуры</a>
+            <a href="treatments.html" class="active" data-i18n="nav.treatments">Мы лечим</a>
+            <div class="nav-item-dropdown">
+                <a href="about.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.about">О клинике</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="about.html" data-i18n="nav.about">О нас</a>
+                    <a href="licences.html" data-i18n="nav.licences">Лицензии</a>
+                    <a href="vacancies.html">Вакансии</a>
+                    <a href="blog.html" data-i18n="nav.blog">Блог</a>
+                </div>
+            </div>
+            <div class="nav-item-dropdown">
+                <a href="services.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.patients">Пациенту</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="promotions.html">Акции</a>
+                    <a href="tax-deduction.html">Налоговый вычет</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+            <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Fullscreen Menu -->
+<div class="mobile-menu-overlay" id="mobile-menu">
+    <ul class="mobile-nav-links">
+        <li><a href="doctors.html" data-i18n="nav.doctors">Врачи</a></li>
+        <li><a href="departments.html" data-i18n="nav.departments">Направления</a></li>
+        <li><a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a></li>
+        <li><a href="procedures.html" data-i18n="nav.procedures">Процедуры</a></li>
+        <li><a href="treatments.html" class="active" data-i18n="nav.treatments">Мы лечим</a></li>
+        <li><a href="about.html" data-i18n="nav.about">О нас</a></li>
+        <li><a href="licences.html" data-i18n="nav.licences">Лицензии</a></li>
+        <li><a href="vacancies.html">Вакансии</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Блог</a></li>
+        <li><a href="promotions.html">Акции</a></li>
+        <li><a href="tax-deduction.html">Налоговый вычет</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+    </ul>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="lang-switcher" style="justify-content: center;">
+            <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="hy">HY</button>
+        </div>
+        <a href="#booking" class="btn btn-primary" style="width: 100%; text-align: center;" data-open-modal="booking" data-i18n="nav.book_appointment">Записаться на прием</a>
+    </div>
+</div>
+
+<main class="site-main">
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs" style="padding: 24px 0 16px; font-size: 14px; color: var(--color-gray-light);">
+            <a href="index.html" style="color: var(--color-secondary-gray); text-decoration: none;" data-i18n="nav.home">Главная</a> / 
+            <span style="color: var(--color-primary);" data-i18n="nav.treatments">Мы лечим</span>
+        </div>
+
+        <!-- 🌟 PAGE HEADER -->
+        <section class="treatments-header-section" style="padding-bottom: 24px;">
+            <h1 class="h2-title" style="font-size: clamp(32px, 4vw, 48px); margin-bottom: 12px;" data-i18n="nav.treatments">Мы лечим</h1>
+            <p style="font-family: 'Raleway', sans-serif; font-size: 18px; line-height: 1.5; color: var(--color-secondary-gray); max-width: 860px; margin-bottom: 32px;">
+                Интегративный подход к лечению заболеваний позвоночника, суставов, нервной системы, внутренних органов и обменных процессов. Выберите проблему или симптом, чтобы узнать подробнее о методах лечения и ведущих специалистах клиники интегративной медицины.
+            </p>
+
+            <!-- Search and Filter Tabs -->
+            <div class="dept-controls" style="margin-bottom: 36px;">
+                <div class="dept-search-wrap" style="flex: 1; min-width: 280px;">
+                    <svg class="dept-search-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <input type="text" id="treatment-search-input" placeholder="Найти заболевание, симптом или проблему...">
+                </div>
+
+                <div class="dept-tabs-bar" id="treatment-category-tabs">
+                    <button type="button" class="dept-tab-btn active" data-filter="all">Все проблемы</button>
+                    <button type="button" class="dept-tab-btn" data-filter="spine">Позвоночник и спина</button>
+                    <button type="button" class="dept-tab-btn" data-filter="joints">Суставы и стопы</button>
+                    <button type="button" class="dept-tab-btn" data-filter="neuro">Неврология и голова</button>
+                    <button type="button" class="dept-tab-btn" data-filter="organs">ЖКТ и эндокринология</button>
+                    <button type="button" class="dept-tab-btn" data-filter="vascular">Сосуды и тонус</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 ПЛАШКИ С ЗАБОЛЕВАНИЯМИ И ПРОБЛЕМАМИ (CONDITIONS GRID) -->
+        <section class="conditions-catalog-section" style="margin-bottom: 64px;">
+            <div class="conditions-grid-4col" id="treatments-grid">
+                <!-- Card 1 -->
+                <a href="treatment-single.html?id=osteochondrosis" class="condition-card-item reveal-on-scroll" data-category="spine">
+                    <div class="condition-card-title">Остеохондроз</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="treatment-single.html?id=hernia" class="condition-card-item reveal-on-scroll delay-1" data-category="spine">
+                    <div class="condition-card-title">Грыжи и протрузии</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="treatment-single.html?id=gastro" class="condition-card-item reveal-on-scroll delay-2" data-category="organs">
+                    <div class="condition-card-title">Расстройства ЖКТ</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="treatment-single.html?id=endocrine" class="condition-card-item reveal-on-scroll delay-3" data-category="organs">
+                    <div class="condition-card-title">Эндокринные расстройства</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="treatment-single.html?id=headache" class="condition-card-item reveal-on-scroll" data-category="neuro">
+                    <div class="condition-card-title">Головные боли и слабость</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="treatment-single.html?id=joints" class="condition-card-item reveal-on-scroll delay-1" data-category="joints">
+                    <div class="condition-card-title">Боли в суставах и артроз</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 7 -->
+                <a href="treatment-single.html?id=scoliosis" class="condition-card-item reveal-on-scroll delay-2" data-category="spine">
+                    <div class="condition-card-title">Сколиоз и осанка</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 8 -->
+                <a href="treatment-single.html?id=sleep" class="condition-card-item reveal-on-scroll delay-3" data-category="neuro">
+                    <div class="condition-card-title">Нарушения сна и стресс</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 9 -->
+                <a href="treatment-single.html?id=varicose" class="condition-card-item reveal-on-scroll" data-category="vascular">
+                    <div class="condition-card-title">Варикоз и тяжесть в ногах</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 10 -->
+                <a href="treatment-single.html?id=fatigue" class="condition-card-item reveal-on-scroll delay-1" data-category="neuro">
+                    <div class="condition-card-title">Хроническая усталость</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 11 -->
+                <a href="treatment-single.html?id=sciatica" class="condition-card-item reveal-on-scroll delay-2" data-category="spine">
+                    <div class="condition-card-title">Защемление седалищного нерва (ишиас)</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 12 -->
+                <a href="treatment-single.html?id=tunnel" class="condition-card-item reveal-on-scroll delay-3" data-category="neuro">
+                    <div class="condition-card-title">Онемение рук и пальцев</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 13 -->
+                <a href="treatment-single.html?id=flatfoot" class="condition-card-item reveal-on-scroll" data-category="joints">
+                    <div class="condition-card-title">Плоскостопие и боли в стопе</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 14 -->
+                <a href="treatment-single.html?id=myofascial" class="condition-card-item reveal-on-scroll delay-1" data-category="spine">
+                    <div class="condition-card-title">Мышечные спазмы и зажимы</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 15 -->
+                <a href="treatment-single.html?id=dizziness" class="condition-card-item reveal-on-scroll delay-2" data-category="neuro">
+                    <div class="condition-card-title">Головокружения и шум в ушах</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 16 -->
+                <a href="treatment-single.html?id=post-trauma" class="condition-card-item reveal-on-scroll delay-3" data-category="spine">
+                    <div class="condition-card-title">Реабилитация после травм</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 17 -->
+                <a href="treatment-single.html?id=tmj" class="condition-card-item reveal-on-scroll" data-category="joints">
+                    <div class="condition-card-title">Дисфункция челюсти (ВНЧС)</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 18 -->
+                <a href="treatment-single.html?id=metabolic" class="condition-card-item reveal-on-scroll delay-1" data-category="organs">
+                    <div class="condition-card-title">Метаболический синдром</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 19 -->
+                <a href="treatment-single.html?id=whiplash" class="condition-card-item reveal-on-scroll delay-2" data-category="spine">
+                    <div class="condition-card-title">Хлыстовая травма шеи</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+
+                <!-- Card 20 -->
+                <a href="treatment-single.html?id=psychosomatic" class="condition-card-item reveal-on-scroll delay-3" data-category="neuro">
+                    <div class="condition-card-title">Психосоматические боли</div>
+                    <div class="condition-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 🌟 3 PILLARS (ПРИНЦИПЫ НАШЕГО ЛЕЧЕНИЯ) -->
+        <section class="service-pillars-3col" style="margin-bottom: 64px;">
+            <div class="service-pillar-item">
+                <div class="service-pillar-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                </div>
+                <h3 class="service-pillar-title">Комплексное лечение</h3>
+                <p class="service-pillar-desc">
+                    Мы не ограничиваемся снятием боли — наша цель найти и устранить истинную причину заболевания в организме.
+                </p>
+            </div>
+
+            <div class="service-pillar-item">
+                <div class="service-pillar-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                <h3 class="service-pillar-title">Современные методики</h3>
+                <p class="service-pillar-desc">
+                    Используем мягкие остеопатические техники, прикладную кинезиологию, высокоточную диагностику и восстановительную терапию.
+                </p>
+            </div>
+
+            <div class="service-pillar-item">
+                <div class="service-pillar-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                </div>
+                <h3 class="service-pillar-title">Индивидуальный подход</h3>
+                <p class="service-pillar-desc">
+                    Для каждого пациента составляется индивидуальная программа реабилитации с учетом возраста и сопутствующих факторов.
+                </p>
+            </div>
+        </section>
+
+        <!-- 🌟 НАШИ ВРАЧИ -->
+        <section class="section" style="padding: 20px 0 60px;">
+            <div class="section-title-wrap" style="margin-bottom: 32px;">
+                <h2 class="h2-title">Врачи, ведущие прием</h2>
+                <a href="doctors.html" class="btn btn-outline-dark">Все врачи →</a>
+            </div>
+
+            <div class="doctors-grid-3col">
+                <!-- Doctor 1 -->
+                <div class="doctor-fig-card reveal-on-scroll">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_1.png" alt="Иванов Алексей Сергеевич" onerror="this.src='assets/images/assets/2a1dbd9ac683b4b357ce2eae10e5ae613d8af76f.png';">
+                        <div class="doctor-fig-tag">Врач высшей категории</div>
+                    </div>
+                    <div class="doc-single-rating-box" style="padding: 0 4px;">
+                        <span class="rating-score">(4,8) <span style="color:#FDCB4D">★</span></span>
+                        <span class="reviews-count">23 отзыва</span>
+                    </div>
+                    <div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; margin-bottom: 4px;">Иванов Алексей Сергеевич</h3>
+                        <div class="doc-single-specialty-row" style="font-size: 16px; font-weight: 400;">
+                            <span>Остеопат, невролог</span>
+                            <span class="doc-blue-dot"></span>
+                            <span>23 года стажа</span>
+                        </div>
+                    </div>
+                    <div class="doc-single-prices" style="width: 100%; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 12px;">
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>В клинике</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>Онлайн</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>На дом</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Подробнее о враче</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-fig-card reveal-on-scroll delay-1">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_2.png" alt="Смирнова Елена Викторовна" onerror="this.src='assets/images/assets/eeee5577c2e4b2fd83209c691016504608918387.png';">
+                        <div class="doctor-fig-tag">Врач высшей категории</div>
+                    </div>
+                    <div class="doc-single-rating-box" style="padding: 0 4px;">
+                        <span class="rating-score">(4,9) <span style="color:#FDCB4D">★</span></span>
+                        <span class="reviews-count">34 отзыва</span>
+                    </div>
+                    <div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; margin-bottom: 4px;">Смирнова Елена Викторовна</h3>
+                        <div class="doc-single-specialty-row" style="font-size: 16px; font-weight: 400;">
+                            <span>Главный врач, остеопат</span>
+                            <span class="doc-blue-dot"></span>
+                            <span>18 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="doc-single-prices" style="width: 100%; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 12px;">
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>В клинике</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>Онлайн</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>На дом</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Подробнее о враче</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-fig-card reveal-on-scroll delay-2">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_3.png" alt="Александров Михаил Юрьевич" onerror="this.src='assets/images/assets/d796a8fcd359b75d15978d27588ee0e4b9f4229c.png';">
+                        <div class="doctor-fig-tag">Врач высшей категории</div>
+                    </div>
+                    <div class="doc-single-rating-box" style="padding: 0 4px;">
+                        <span class="rating-score">(4,8) <span style="color:#FDCB4D">★</span></span>
+                        <span class="reviews-count">23 отзыва</span>
+                    </div>
+                    <div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; margin-bottom: 4px;">Александров Михаил Юрьевич</h3>
+                        <div class="doc-single-specialty-row" style="font-size: 16px; font-weight: 400;">
+                            <span>Невролог, вертебролог</span>
+                            <span class="doc-blue-dot"></span>
+                            <span>15 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="doc-single-prices" style="width: 100%; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 12px;">
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>В клинике</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>Онлайн</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>На дом</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 FAQ SECTION -->
+        <section class="doc-detail-section" style="margin-bottom: 60px;">
+            <h2 class="doc-section-h2">Часто задаваемые вопросы</h2>
+            <div class="doc-card-eff7fd">
+                <div class="faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 16px;">
+                    <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 600; cursor: pointer;">
+                        <span>Как проходит первичный прием при боли в спине или суставах?</span>
+                        <span style="font-size: 20px; color: #5aa6eb;">+</span>
+                    </div>
+                    <div class="faq-answer" style="margin-top: 10px; font-family: 'Raleway', sans-serif; font-size: 15px; line-height: 22px; color: #333;">
+                        Врач проводит подробный опрос, визуальную и пальпаторную диагностику осанки и подвижности суставов, изучает имеющиеся снимки МРТ/КТ и подбирает индивидуальный план мягкой коррекции.
+                    </div>
+                </div>
+
+                <div class="faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 16px;">
+                    <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 600; cursor: pointer;">
+                        <span>Сколько сеансов обычно требуется для стойкого результата?</span>
+                        <span style="font-size: 20px; color: #5aa6eb;">+</span>
+                    </div>
+                    <div class="faq-answer" style="margin-top: 10px; font-family: 'Raleway', sans-serif; font-size: 15px; line-height: 22px; color: #333;">
+                        Облегчение наступает уже после 1-2 сеансов. Полный курс восстановления обычно составляет от 3 до 7 процедур с интервалом в 7-14 дней.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 600; cursor: pointer;">
+                        <span>Нужно ли делать МРТ перед визитом к врачу?</span>
+                        <span style="font-size: 20px; color: #5aa6eb;">+</span>
+                    </div>
+                    <div class="faq-answer" style="margin-top: 10px; font-family: 'Raleway', sans-serif; font-size: 15px; line-height: 22px; color: #333;">
+                        Если у вас уже есть снимки или анализы, обязательно возьмите их с собой. Если нет — врач проведет осмотр и при необходимости назначит точечное обследование.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 ФОРМА ОБРАТНОЙ СВЯЗИ -->
+        <section class="questions-section" style="margin-bottom: 60px;">
+            <div class="questions-card">
+                <div>
+                    <h2 class="doc-booking-title">Остались вопросы?</h2>
+                    <p class="doc-booking-desc">
+                        Если вы не нашли свое заболевание или хотите уточнить, какой специалист вам поможет — оставьте заявку, и наш врач-координатор проконсультирует вас.
+                    </p>
+                    <form id="questions-form" onsubmit="event.preventDefault(); alert('Спасибо! Мы ответим на ваш вопрос в течение 15 минут.'); this.reset();">
+                        <input type="text" class="form-control-fig" placeholder="Ваше имя *" required style="margin-bottom: 12px;">
+                        <input type="tel" class="form-control-fig mask-phone" placeholder="Телефон *" required style="margin-bottom: 12px;">
+                        <input type="text" class="form-control-fig" placeholder="Ваш вопрос или симптом *" required style="margin-bottom: 12px;">
+                        <label class="custom-checkbox-row" style="margin-bottom: 16px;">
+                            <input type="checkbox" required checked>
+                            <span>Нажимая кнопку Отправить, вы принимаете условия политики конфиденциальности</span>
+                        </label>
+                        <button type="submit" class="btn btn-primary" style="padding: 12px 36px;">Отправить</button>
+                    </form>
+                </div>
+                <div>
+                    <img src="assets/images/questions_doc.png" alt="Вопросы" style="width: 100%; height: 420px; border-radius: 20px; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- 🌟 UNIFIED FOOTER -->
+<footer class="site-footer" id="contacts">
+    <div class="container">
+        <!-- Top Row: Logo, Hours, Address, Phone, CTA, Socials -->
+        <div class="footer-top-grid">
+            <a href="index.html">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" style="height: 48px;">
+            </a>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/assets/f057dc2f4ed3a48007251aada1608b47ff63d8a6.svg" alt="Время" style="width: 20px;" onerror="this.src='assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg';">
+                <span>Пн-Пт 09:00-20:00;<br>Сб-Вс 10:00-18:00</span>
+            </div>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/assets/fa4e0601aa41233c4f1beaace940c3db2812e019.svg" alt="Адрес" style="width: 20px;" onerror="this.src='assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg';">
+                <span>г. Москва, ул. Центральная, д. 10</span>
+            </div>
+
+            <div style="font-size: 20px; font-weight: 600;">
+                +7 (800) 555-35-35
+            </div>
+
+            <a href="#booking" class="btn btn-primary" data-open-modal="booking">Перезвоните мне</a>
+
+            <div class="footer-social-row">
+                <a href="https://t.me/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Telegram">
+                    <img src="assets/icons/social-tg.svg" alt="Telegram">
+                </a>
+                <a href="https://wa.me/78005553535" class="footer-social-icon" target="_blank" rel="noopener" title="WhatsApp">
+                    <img src="assets/icons/social-wa.svg" alt="WhatsApp">
+                </a>
+                <a href="https://vk.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="VK">
+                    <img src="assets/icons/social-vk.svg" alt="VK">
+                </a>
+                <a href="https://instagram.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Instagram">
+                    <img src="assets/icons/social-ig.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+
+        <!-- Middle Row: Disclaimer and License Info -->
+        <div class="footer-mid-grid">
+            <div>
+                <p style="margin-bottom: 14px;">
+                    Сайт носит информационный характер и не является публичной офертой, согласно Статье 437 (2) ГК РФ. Цены приведены, как справочная информация и могут быть изменены. Для получения подробной информации о стоимости, сроках и условиях звоните по телефону клиники.
+                </p>
+                <p>
+                    Мы используем файлы cookie для того, чтобы предоставить пользователям больше возможностей при посещении сайта Медикал Клиник
+                </p>
+            </div>
+
+            <div>
+                <div style="margin-bottom: 16px;">
+                    <span style="font-size: 14px; font-weight: 600; display: block; margin-bottom: 8px;">Мы принимаем к оплате:</span>
+                    <div style="display: flex; gap: 16px; align-items: center;">
+                        <span style="font-size: 18px; font-weight: bold; color: #1434cb;">VISA</span>
+                        <span style="font-size: 18px; font-weight: bold; color: #0f754e;">МИР</span>
+                        <span style="font-size: 18px; font-weight: bold; color: #eb001b;">MasterCard</span>
+                    </div>
+                </div>
+
+                <p style="font-size: 13px; color: var(--color-gray-light); line-height: 1.4;">
+                    Медицинские услуги лицензированы и предоставляются ООО "Клиника интегративной медицины" в медицинском центре по адресу: 420032, Россия, Республика Татарстан, г. Москва, ул. Энгельса, д. 7, корп. 3, помещение 1. Лицензия на медицинскую деятельность Л041-01181-16/00355613.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Copyright, Legal Links, Warning -->
+        <div class="footer-bot-flex">
+            <div>© 2014 - 2025 Клиника интегративной медицины Все права защищены</div>
+            <div style="display: flex; gap: 20px;">
+                <a href="privacy.html" style="color: var(--color-black); text-decoration: none;">Политика конфиденциальности</a>
+                <a href="terms.html" style="color: var(--color-black); text-decoration: none;">Пользовательское соглашение</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; padding-top: 24px; border-top: 1px solid rgba(0,0,0,0.1); color: var(--color-gray-light); font-size: 16px; font-weight: 500;">
+            Имеются противопоказания, необходима консультация с врачом
+        </div>
+    </div>
+</footer>
+
+<!-- Modal Dialog -->
+<div class="modal-overlay" id="booking-modal">
+    <div class="modal-dialog">
+        <button type="button" class="modal-close" id="modal-close-btn" data-close-modal aria-label="Закрыть">✕</button>
+        <div id="booking-form-wrap">
+            <h3 style="font-size: 24px; margin-bottom: 8px;" data-i18n="booking_modal.title">Запись на прием к специалисту</h3>
+            <p style="font-size: 14px; color: #4a5660; margin-bottom: 20px;" data-i18n="booking_modal.subtitle">Оставьте заявку, и координатор перезвонит в течение 5 минут</p>
+            <form id="booking-form">
+                <input type="text" class="form-control" placeholder="Ваше имя *" required data-i18n="booking_modal.name_placeholder">
+                <input type="tel" class="form-control mask-phone" placeholder="+7 (___) ___-__-__ *" required data-i18n="booking_modal.phone_placeholder">
+                <select class="form-control" required>
+                    <option value="" disabled selected data-i18n="appointment_form.dept_default">Выберите направление / проблему</option>
+                    <option value="osteochondrosis" selected>Остеохондроз и боли в спине</option>
+                    <option value="spine">Позвоночник и грыжи</option>
+                    <option value="joints">Суставы и артроз</option>
+                    <option value="neurology">Неврология и головные боли</option>
+                    <option value="gastro">ЖКТ и эндокринология</option>
+                    <option value="vascular">Сосуды и тонус</option>
+                </select>
+                <div style="display: flex; gap: 8px; align-items: flex-start; margin-top: 8px; margin-bottom: 12px;">
+                    <input type="checkbox" id="modal-policy-treat" required style="margin-top: 3px; accent-color: var(--color-primary); cursor: pointer;" checked>
+                    <label for="modal-policy-treat" style="font-size: 13px; color: var(--color-secondary-gray); line-height: 1.4; cursor: pointer;" data-i18n="modal.policy">Я согласен на обработку персональных данных</label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="booking_modal.submit_btn">Подтвердить запись</button>
+            </form>
+        </div>
+        <div id="booking-success" style="display: none; text-align: center; padding: 20px 0;">
+            <div style="font-size: 40px; margin-bottom: 12px;">✅</div>
+            <h3 data-i18n="booking_modal.success_title">Заявка принята!</h3>
+            <p style="color: #4a5660; font-size: 14px;" data-i18n="booking_modal.success_desc">Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+</div>
+
+<!-- 4 Themes Demo Switcher Widget -->
+<div class="theme-switcher-widget">
+    <span style="font-size: 12px; font-weight: 600; color: #4a5660;" data-i18n="theme_switcher.title">Стиль:</span>
+    <div class="theme-dots">
+        <div class="theme-dot theme-dot-blue active" data-theme-val="blue" title="Голубой (Классика)"></div>
+        <div class="theme-dot theme-dot-green" data-theme-val="green" title="Зеленый (Wellness)"></div>
+        <div class="theme-dot theme-dot-cream" data-theme-val="cream" title="Кремовый (Премиум)"></div>
+        <div class="theme-dot theme-dot-rose" data-theme-val="rose" title="Пыльно-розовый (Эстетика)"></div>
+    </div>
+</div>
+
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+// Interactive search and filtering for treatments catalog
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('treatment-search-input');
+    const filterTabs = document.querySelectorAll('#treatment-category-tabs .dept-tab-btn');
+    const cards = document.querySelectorAll('#treatments-grid .condition-card-item');
+
+    let currentFilter = 'all';
+    let currentQuery = '';
+
+    function updateGrid() {
+        cards.forEach(card => {
+            const title = card.querySelector('.condition-card-title').textContent.toLowerCase();
+            const category = card.getAttribute('data-category');
+
+            const matchesSearch = title.includes(currentQuery);
+            const matchesFilter = (currentFilter === 'all' || category === currentFilter);
+
+            if (matchesSearch && matchesFilter) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    if (searchInput) {
+        searchInput.addEventListener('input', function(e) {
+            currentQuery = e.target.value.trim().toLowerCase();
+            updateGrid();
+        });
+    }
+
+    filterTabs.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterTabs.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            currentFilter = this.getAttribute('data-filter') || 'all';
+            updateGrid();
+        });
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(q => {
+        q.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const icon = this.querySelector('span:last-child');
+            if (answer.style.display === 'none' || !answer.style.display) {
+                answer.style.display = 'block';
+                if (icon) icon.textContent = '−';
+            } else {
+                answer.style.display = 'none';
+                if (icon) icon.textContent = '+';
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>

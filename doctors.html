@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="blue">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Все врачи — Клиника Интегративной Медицины</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Armenian:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+<!-- 🌟 UNIFIED 2-TIER HEADER (FIGMA 202:46) -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-top-row">
+            <a href="index.html" class="header-logo">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" class="header-logo-img">
+            </a>
+
+            <div class="header-meta-group">
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg" alt="Локация" class="header-meta-icon">
+                    <span data-i18n="nav.address">г. Москва, ул. Центральная, 57</span>
+                </div>
+
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg" alt="Время" class="header-meta-icon">
+                    <span data-i18n="nav.work_hours">Пн-Пт 09:00-20:00; Сб-Вс 10:00-18:00</span>
+                </div>
+            </div>
+
+            <div class="header-phone-group">
+                <a href="tel:+78005553535" class="header-phone-val">+7 (800) 555-35-35</a>
+                
+                <div class="lang-switcher">
+                    <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="hy">HY</button>
+                </div>
+
+                <a href="#booking" class="btn btn-primary" data-open-modal="booking" data-i18n="nav.call_request">Перезвоните мне</a>
+
+                <button class="burger-btn" id="burger-btn" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+                <!-- Bottom Row: Navigation Menu -->
+        <div class="header-nav-row">
+            <a href="doctors.html" data-i18n="nav.doctors">Врачи</a>
+            <a href="departments.html" data-i18n="nav.departments">Направления</a>
+            <a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a>
+            <a href="procedures.html" data-i18n="nav.procedures">Процедуры</a>
+            <a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a>
+            <div class="nav-item-dropdown">
+                <a href="about.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.about">О клинике</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="about.html" data-i18n="nav.about">О нас</a>
+                    <a href="licences.html" data-i18n="nav.licences">Лицензии</a>
+                    <a href="vacancies.html">Вакансии</a>
+                    <a href="blog.html" data-i18n="nav.blog">Блог</a>
+                </div>
+            </div>
+            <div class="nav-item-dropdown">
+                <a href="services.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.patients">Пациенту</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="promotions.html">Акции</a>
+                    <a href="tax-deduction.html">Налоговый вычет</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+            <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Fullscreen Menu -->
+<div class="mobile-menu-overlay" id="mobile-menu">
+    <ul class="mobile-nav-links">
+        <li><a href="doctors.html" data-i18n="nav.doctors">Врачи</a></li>
+        <li><a href="departments.html" data-i18n="nav.departments">Направления</a></li>
+        <li><a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a></li>
+        <li><a href="procedures.html" data-i18n="nav.procedures">Процедуры</a></li>
+        <li><a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a></li>
+        <li><a href="about.html" data-i18n="nav.about">О нас</a></li>
+        <li><a href="licences.html" data-i18n="nav.licences">Лицензии</a></li>
+        <li><a href="vacancies.html">Вакансии</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Блог</a></li>
+        <li><a href="promotions.html">Акции</a></li>
+        <li><a href="tax-deduction.html">Налоговый вычет</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+    </ul>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="lang-switcher" style="justify-content: center;">
+            <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="hy">HY</button>
+        </div>
+        <a href="#booking" class="btn btn-primary" style="width: 100%; text-align: center;" data-open-modal="booking" data-i18n="nav.book_appointment">Записаться на прием</a>
+    </div>
+</div>
+
+<!-- 🌟 MAIN SECTION: ALL DOCTORS CATALOG (FIGMA 367:6574) -->
+<main class="site-main doctors-page-section">
+    <div class="container">
+        <!-- Title -->
+        <h1 class="doctors-page-title">Все врачи</h1>
+
+        <!-- Filter Controls (Figma 367:6574: Специализация, Стаж, Ученая степень, Пол) -->
+        <div class="doctors-filter-row">
+            <div class="drop-down-field-parent">
+                <!-- Dropdown 1: Специализация -->
+                <div class="drop-down-field">
+                    <select id="filter-specialty" aria-label="Специализация">
+                        <option value="">Специализация</option>
+                        <option value="osteopath">Врач-остеопат</option>
+                        <option value="endocrinologist">Врач-эндокринолог</option>
+                        <option value="neurologist">Врач-невролог</option>
+                        <option value="orthopedist">Травматолог-ортопед</option>
+                        <option value="therapist">Врач-терапевт / кардиолог</option>
+                        <option value="podologist">Подолог</option>
+                        <option value="psychotherapist">Врач-психотерапевт</option>
+                        <option value="kinesiologist">Прикладной кинезиолог</option>
+                        <option value="phlebologist">Врач-флеболог</option>
+                        <option value="urologist">Врач-уролог / андролог</option>
+                        <option value="nutritionist">Диетолог-нутрициолог</option>
+                        <option value="epileptologist">Эпилептолог</option>
+                        <option value="integrative">Врач интегративной медицины</option>
+                    </select>
+                    <div class="left-content">
+                        <span class="label2" id="label-specialty">Специализация</span>
+                        <span class="dropdown-icon">
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Dropdown 2: Стаж -->
+                <div class="drop-down-field">
+                    <select id="filter-experience" aria-label="Стаж">
+                        <option value="">Стаж</option>
+                        <option value="5-10">До 10 лет</option>
+                        <option value="10-15">От 10 до 15 лет</option>
+                        <option value="15-20">От 15 до 20 лет</option>
+                        <option value="20+">Более 20 лет</option>
+                    </select>
+                    <div class="left-content">
+                        <span class="label2" id="label-experience">Стаж</span>
+                        <span class="dropdown-icon">
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Dropdown 3: Ученая степень -->
+                <div class="drop-down-field">
+                    <select id="filter-degree" aria-label="Ученая степень">
+                        <option value="">Ученая степень</option>
+                        <option value="highest">Врач высшей категории</option>
+                        <option value="kmn">Кандидат мед. наук</option>
+                        <option value="lead">Ведущий специалист / Эксперт</option>
+                    </select>
+                    <div class="left-content">
+                        <span class="label2" id="label-degree">Ученая степень</span>
+                        <span class="dropdown-icon">
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Dropdown 4: Пол -->
+                <div class="drop-down-field">
+                    <select id="filter-gender" aria-label="Пол">
+                        <option value="">Пол</option>
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                    </select>
+                    <div class="left-content">
+                        <span class="label2" id="label-gender">Пол</span>
+                        <span class="dropdown-icon">
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <!-- Dropdown 5: Сортировка -->
+                <div class="drop-down-field sort-dropdown-field">
+                    <select id="sort-doctors" aria-label="Сортировка">
+                        <option value="default">Сортировка</option>
+                        <option value="name-asc">По имени (А–Я)</option>
+                        <option value="name-desc">По имени (Я–А)</option>
+                        <option value="price-asc">По стоимости (сначала дешевле)</option>
+                        <option value="price-desc">По стоимости (сначала дороже)</option>
+                        <option value="exp-desc">По стажу (больше стаж)</option>
+                        <option value="exp-asc">По стажу (меньше стаж)</option>
+                        <option value="rating-desc">По рейтингу (высокий рейтинг)</option>
+                    </select>
+                    <div class="left-content">
+                        <span class="label2" id="label-sort">Сортировка</span>
+                        <span class="dropdown-icon">
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Tag Chips & Reset Button -->
+            <div class="frame-container">
+                <div class="label-parent" id="active-filter-chip" title="Сбросить фильтр" style="display: none;">
+                    <span class="label2" id="active-filter-chip-text">Врач высшей категории</span>
+                    <svg class="close-icon" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L11 11M11 1L1 11" stroke="currentColor" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <button type="button" class="filter-reset-icon-btn" id="filter-reset-btn" title="Сбросить все фильтры" aria-label="Сбросить фильтры">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="3 6 5 6 21 6"></polyline>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Doctors Catalog Grid (15 Doctor Cards matching Figma) -->
+        <div class="doctors-catalog-grid" id="doctors-catalog-grid">
+            <!-- Row 1: Doctor 1 -->
+            <div class="doc-card" data-specialty="osteopath" data-experience="23" data-degree="highest" data-gender="male" data-name="Иванов Алексей Сергеевич" data-price="2999" data-rating="4.8">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_1.png" alt="Иванов Алексей Сергеевич" onerror="this.src='assets/images/doctor1.jpg';">
+                    <div class="tag">Врач высшей категории</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,8)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">23 отзыва</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Иванов Алексей Сергеевич</a>
+                        <div class="parent4">
+                            <span class="label2">Остеопат</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">23 года стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 1: Doctor 2 -->
+            <div class="doc-card" data-specialty="endocrinologist" data-experience="18" data-degree="highest" data-gender="female" data-name="Смирнова Елена Викторовна" data-price="3500" data-rating="4.9">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_2.png" alt="Смирнова Елена Викторовна" onerror="this.src='assets/images/doctor2.jpg';">
+                    <div class="tag">Врач высшей категории</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,9)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">34 отзыва</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Смирнова Елена Викторовна</a>
+                        <div class="parent4">
+                            <span class="label2">Главный врач, эндокринолог</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">18 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">3 500 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">3 000 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">6 000 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 1: Doctor 3 -->
+            <div class="doc-card" data-specialty="neurologist" data-experience="15" data-degree="highest" data-gender="male" data-name="Александров Михаил Юрьевич" data-price="3200" data-rating="4.8">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_3.png" alt="Александров Михаил Юрьевич" onerror="this.src='assets/images/doctor3.jpg';">
+                    <div class="tag">Врач высшей категории</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,8)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">28 отзывов</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Александров Михаил Юрьевич</a>
+                        <div class="parent4">
+                            <span class="label2">Невролог, вертебролог</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">15 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">3 200 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 800 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">5 500 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Doctor 4 -->
+            <div class="doc-card" data-specialty="endocrinologist" data-experience="16" data-degree="kmn" data-gender="female" data-name="Варданян Асмик Кареновна" data-price="3800" data-rating="5">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_2.png" alt="Варданян Асмик Кареновна" onerror="this.src='assets/images/doctor2.jpg';">
+                    <div class="tag">Кандидат мед. наук</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(5,0)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">42 отзыва</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Варданян Асмик Кареновна</a>
+                        <div class="parent4">
+                            <span class="label2">Гинеколог-эндокринолог</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">16 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">3 800 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">3 200 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">6 500 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Doctor 5 -->
+            <div class="doc-card" data-specialty="orthopedist" data-experience="14" data-degree="highest" data-gender="male" data-name="Сергеев Дмитрий Николаевич" data-price="3200" data-rating="4.9">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_1.png" alt="Сергеев Дмитрий Николаевич" onerror="this.src='assets/images/doctor1.jpg';">
+                    <div class="tag">Врач высшей категории</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,9)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">37 отзывов</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Сергеев Дмитрий Николаевич</a>
+                        <div class="parent4">
+                            <span class="label2">Травматолог-ортопед</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">14 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">3 200 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 800 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">5 500 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Doctor 6 -->
+            <div class="doc-card" data-specialty="therapist" data-experience="12" data-degree="highest" data-gender="female" data-name="Петрова Анна Васильевна" data-price="2900" data-rating="4.8">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_3.png" alt="Петрова Анна Васильевна" onerror="this.src='assets/images/doctor3.jpg';">
+                    <div class="tag">Врач высшей категории</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,8)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">19 отзывов</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Петрова Анна Васильевна</a>
+                        <div class="parent4">
+                            <span class="label2">Кардиолог, диагност</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">12 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">2 900 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 500 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">5 000 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: Doctor 7 -->
+            <div class="doc-card" data-specialty="podologist" data-experience="11" data-degree="lead" data-gender="male" data-name="Хабибуллин Рамиль Ильдарович" data-price="2999" data-rating="4.8">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_1.png" alt="Хабибуллин Рамиль Ильдарович" onerror="this.src='assets/images/doctor1.jpg';">
+                    <div class="tag">Ведущий подолог</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,8)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">23 отзыва</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Хабибуллин Рамиль Ильдарович</a>
+                        <div class="parent4">
+                            <span class="label2">Специалист-подолог</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">11 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: Doctor 8 -->
+            <div class="doc-card" data-specialty="psychotherapist" data-experience="19" data-degree="highest" data-gender="female" data-name="Захарова Ольга Павловна" data-price="4000" data-rating="4.9">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_2.png" alt="Захарова Ольга Павловна" onerror="this.src='assets/images/doctor2.jpg';">
+                    <div class="tag">Врач высшей категории</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,9)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">31 отзыв</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Захарова Ольга Павловна</a>
+                        <div class="parent4">
+                            <span class="label2">Врач-психотерапевт</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">19 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">4 000 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">3 500 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">7 000 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: Doctor 9 -->
+            <div class="doc-card" data-specialty="kinesiologist" data-experience="10" data-degree="lead" data-gender="male" data-name="Гарипов Булат Маратович" data-price="2999" data-rating="4.8">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_3.png" alt="Гарипов Булат Маратович" onerror="this.src='assets/images/doctor3.jpg';">
+                    <div class="tag">Ведущий специалист</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,8)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">25 отзывов</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Гарипов Булат Маратович</a>
+                        <div class="parent4">
+                            <span class="label2">Прикладной кинезиолог</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">10 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 4: Doctor 10 -->
+            <div class="doc-card" data-specialty="phlebologist" data-experience="13" data-degree="highest" data-gender="female" data-name="Сафина Лейсан Ринатовна" data-price="2999" data-rating="4.8">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_2.png" alt="Сафина Лейсан Ринатовна" onerror="this.src='assets/images/doctor2.jpg';">
+                    <div class="tag">Врач высшей категории</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,8)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">22 отзыва</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Сафина Лейсан Ринатовна</a>
+                        <div class="parent4">
+                            <span class="label2">Врач-флеболог</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">13 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 4: Doctor 11 -->
+            <div class="doc-card" data-specialty="therapist" data-experience="17" data-degree="highest" data-gender="male" data-name="Кузнецов Артем Валерьевич" data-price="3100" data-rating="4.9">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_1.png" alt="Кузнецов Артем Валерьевич" onerror="this.src='assets/images/doctor1.jpg';">
+                    <div class="tag">Врач высшей категории</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,9)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">29 отзывов</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Кузнецов Артем Валерьевич</a>
+                        <div class="parent4">
+                            <span class="label2">Врач-терапевт, гастроэнтеролог</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">17 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 4: Doctor 12 -->
+            <div class="doc-card" data-specialty="urologist" data-experience="21" data-degree="kmn" data-gender="male" data-name="Мингазов Ильяс Фаридович" data-price="3500" data-rating="4.8">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_3.png" alt="Мингазов Ильяс Фаридович" onerror="this.src='assets/images/doctor3.jpg';">
+                    <div class="tag">Кандидат мед. наук</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,8)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">27 отзывов</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Мингазов Ильяс Фаридович</a>
+                        <div class="parent4">
+                            <span class="label2">Врач-уролог, андролог</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">21 год стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 5: Doctor 13 -->
+            <div class="doc-card" data-specialty="nutritionist" data-experience="9" data-degree="lead" data-gender="female" data-name="Федорова Екатерина Дмитриевна" data-price="2800" data-rating="4.8">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_2.png" alt="Федорова Екатерина Дмитриевна" onerror="this.src='assets/images/doctor2.jpg';">
+                    <div class="tag">Нутрициолог эксперт</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,8)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">18 отзывов</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Федорова Екатерина Дмитриевна</a>
+                        <div class="parent4">
+                            <span class="label2">Диетолог-нутрициолог</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">9 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 5: Doctor 14 -->
+            <div class="doc-card" data-specialty="epileptologist" data-experience="16" data-degree="highest" data-gender="male" data-name="Садыков Тимур Рашидович" data-price="3400" data-rating="4.9">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_1.png" alt="Садыков Тимур Рашидович" onerror="this.src='assets/images/doctor1.jpg';">
+                    <div class="tag">Врач высшей категории</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,9)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">33 отзыва</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Садыков Тимур Рашидович</a>
+                        <div class="parent4">
+                            <span class="label2">Эпилептолог, невролог</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">16 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 5: Doctor 15 -->
+            <div class="doc-card" data-specialty="integrative" data-experience="15" data-degree="highest" data-gender="female" data-name="Ахметова Гузель Ильсуровна" data-price="2999" data-rating="4.8">
+                <div class="rectangle-parent">
+                    <img class="frame-child" src="assets/images/doctor_3.png" alt="Ахметова Гузель Ильсуровна" onerror="this.src='assets/images/doctor3.jpg';">
+                    <div class="tag">Врач высшей категории</div>
+                </div>
+                <div class="frame-div">
+                    <div class="parent2">
+                        <div class="label2">(4,8)</div>
+                        <div class="icons7">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <div class="div14">23 отзыва</div>
+                </div>
+                <div class="frame-parent2">
+                    <div class="parent3">
+                        <a href="doctor-single.html" class="doc-name-link">Ахметова Гузель Ильсуровна</a>
+                        <div class="parent4">
+                            <span class="label2">Врач интегративной медицины</span>
+                            <div class="frame-item"></div>
+                            <span class="label2">15 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="frame-parent3">
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">В клинике</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">Онлайн</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                        <div class="frame-parent4">
+                            <div class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="label2">На дом</div>
+                            </div>
+                            <div class="div19">2 999 <span class="span2">₽</span></div>
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <button type="button" class="buttons2" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="buttons3">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination Bar matching Figma -->
+        <div class="doc-pagination-bar">
+            <button type="button" class="p-arrow" id="p-prev" aria-label="Предыдущая страница">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="7 13 1 7 7 1"></polyline>
+                </svg>
+            </button>
+            <div class="p-numbers">
+                <span class="p-num active" data-page="1">1</span>
+                <span class="p-num" data-page="2">2</span>
+                <span class="p-num" data-page="3">3</span>
+                <span class="p-num" data-page="4">4</span>
+                <span class="p-dots">...</span>
+                <span class="p-num" data-page="12">12</span>
+            </div>
+            <button type="button" class="p-arrow" id="p-next" aria-label="Следующая страница">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="1 13 7 7 1 1"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+</main>
+
+<!-- 🌟 UNIFIED FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <!-- Top Row -->
+        <div class="footer-top-row">
+            <a href="index.html" class="footer-logo">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" style="max-height: 52px; width: auto;">
+            </a>
+
+            <div class="footer-meta-stack">
+                <div class="footer-meta-item">
+                    <img src="assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg" alt="Время" class="footer-meta-icon">
+                    <span>Пн-Пт 09:00-20:00; Сб-Вс 10:00-18:00</span>
+                </div>
+                <div class="footer-meta-item">
+                    <img src="assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg" alt="Локация" class="footer-meta-icon">
+                    <span>г. Москва, ул. Центральная, 57</span>
+                </div>
+            </div>
+
+            <div class="footer-contacts-stack">
+                <a href="tel:+78005553535" class="footer-phone">+7 (800) 555-35-35</a>
+                <a href="#booking" class="btn btn-primary" data-open-modal="booking">Перезвоните мне</a>
+            </div>
+        </div>
+
+        <!-- Social Icons Row -->
+        <div class="footer-social-row">
+            <a href="https://t.me/medclinic_demo" class="footer-social-btn" aria-label="Telegram" target="_blank" rel="noopener">
+                <img src="assets/icons/social-tg.svg" alt="Telegram">
+            </a>
+            <a href="https://wa.me/78005553535" class="footer-social-btn" aria-label="WhatsApp" target="_blank" rel="noopener">
+                <img src="assets/icons/social-wa.svg" alt="WhatsApp">
+            </a>
+            <a href="https://vk.com/medclinic_demo" class="footer-social-btn" aria-label="ВКонтакте" target="_blank" rel="noopener">
+                <img src="assets/icons/social-vk.svg" alt="VK">
+            </a>
+            <a href="https://instagram.com/medclinic_demo" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+                <img src="assets/icons/social-ig.svg" alt="Instagram">
+            </a>
+        </div>
+
+        <!-- Middle Legal Grid -->
+        <div class="footer-middle-grid">
+            <div class="footer-disclaimer-col">
+                <p>
+                    Сайт носит информационный характер и не является публичной офертой, согласно Статье 437 (2) ГК РФ. Цены приведены как справочная информация и могут быть изменены. Для получения подробной информации о стоимости, сроках и условиях звоните по телефону клиники.
+                </p>
+                <p>
+                    Мы используем файлы cookie для того, чтобы предоставить пользователям больше возможностей при посещении сайта Медикал Клиник.
+                </p>
+            </div>
+            <div class="footer-payment-col">
+                <div class="footer-payment-wrap">
+                    <span class="footer-payment-title">Мы принимаем к оплате:</span>
+                    <div class="footer-payment-icons">
+                        <img src="assets/icons/payment-visa.svg" alt="Visa" class="footer-payment-icon">
+                        <img src="assets/icons/payment-mastercard.svg" alt="Mastercard" class="footer-payment-icon">
+                        <img src="assets/icons/payment-mir.svg" alt="МИР" class="footer-payment-icon">
+                        <img src="assets/icons/payment-sbp.svg" alt="СБП" class="footer-payment-icon">
+                    </div>
+                </div>
+                <p>
+                    Медицинские услуги лицензированы и предоставляются ООО "Клиника интегративной медицины" в медицинском центре по адресу: 420032, Россия, Республика Татарстан, г. Москва, ул. Энгельса, д. 7, корп. 3, помещение 1. Лицензия на медицинскую деятельность Л041-01181-16/00355613.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright and Links -->
+        <div class="footer-bottom-grid">
+            <div>© 2014 - 2025 Клиника интегративной медицины Все права защищены</div>
+            <a href="privacy.html" style="color: inherit; text-decoration: none;">Политика конфиденциальности</a>
+            <a href="terms.html" style="color: inherit; text-decoration: none;">Пользовательское соглашение</a>
+        </div>
+
+        <!-- Warning Bar (Bebas Neue Cyrillic) -->
+        <div class="footer-warning-bar">
+            ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМА КОНСУЛЬТАЦИЯ С ВРАЧОМ
+        </div>
+    </div>
+</footer>
+
+<!-- 4 Themes Demo Switcher Widget -->
+<div class="theme-switcher-widget">
+    <span style="font-size: 12px; font-weight: 600; color: #4a5660;" data-i18n="theme_switcher.title">Стиль:</span>
+    <div class="theme-dots">
+        <div class="theme-dot theme-dot-blue active" data-theme-val="blue" title="Голубой (Классика)"></div>
+        <div class="theme-dot theme-dot-green" data-theme-val="green" title="Зеленый (Wellness)"></div>
+        <div class="theme-dot theme-dot-cream" data-theme-val="cream" title="Кремовый (Премиум)"></div>
+        <div class="theme-dot theme-dot-rose" data-theme-val="rose" title="Пыльно-розовый (Эстетика)"></div>
+    </div>
+</div>
+
+<!-- Modal Dialog -->
+<div class="modal-overlay" id="booking-modal">
+    <div class="modal-dialog">
+        <button type="button" class="modal-close" id="modal-close-btn" data-close-modal aria-label="Закрыть">✕</button>
+        <div id="booking-form-wrap">
+            <h3 style="font-size: 24px; margin-bottom: 8px;" data-i18n="booking_modal.title">Запись на прием к специалисту</h3>
+            <p style="font-size: 14px; color: #4a5660; margin-bottom: 20px;" data-i18n="booking_modal.subtitle">Оставьте заявку, и координатор перезвонит в течение 5 минут</p>
+            <form id="booking-form">
+                <input type="text" class="form-control" placeholder="Ваше имя *" required data-i18n="booking_modal.name_placeholder">
+                <input type="tel" class="form-control mask-phone" placeholder="+7 (___) ___-__-__ *" required data-i18n="booking_modal.phone_placeholder">
+                <select class="form-control" required>
+                    <option value="" disabled selected data-i18n="appointment_form.dept_default">Выберите отделение</option>
+                    <option value="osteopathy" selected>Остеопатия</option>
+                    <option value="endocrinology" data-i18n="dept.endocrinology">Эндокринология</option>
+                    <option value="neurology" data-i18n="dept.neurology">Неврология</option>
+                    <option value="spine" data-i18n="dept.spine">Позвоночник и суставы</option>
+                    <option value="gastroenterology">Гастроэнтерология</option>
+                    <option value="gynecology">Гинекология</option>
+                    <option value="cardiology">Кардиология</option>
+                </select>
+                <div style="display: flex; gap: 8px; align-items: flex-start; margin-top: 8px; margin-bottom: 12px;">
+                    <input type="checkbox" id="modal-policy" required style="margin-top: 3px; accent-color: var(--color-primary); cursor: pointer;">
+                    <label for="modal-policy" style="font-size: 13px; color: var(--color-secondary-gray); line-height: 1.4; cursor: pointer;" data-i18n="modal.policy">Я согласен на обработку персональных данных</label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="booking_modal.submit_btn">Подтвердить запись</button>
+            </form>
+        </div>
+        <div id="booking-success" style="display: none; text-align: center; padding: 20px 0;">
+            <div style="font-size: 40px; margin-bottom: 12px;">✅</div>
+            <h3 data-i18n="booking_modal.success_title">Заявка принята!</h3>
+            <p style="color: #4a5660; font-size: 14px;" data-i18n="booking_modal.success_desc">Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

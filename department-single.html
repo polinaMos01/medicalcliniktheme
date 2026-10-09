@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="blue">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Эндокринология в нашем медицинском центре — Клиника Интегративной Медицины</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Armenian:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+<!-- 🌟 UNIFIED 2-TIER HEADER (FIGMA 202:46) -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-top-row">
+            <a href="index.html" class="header-logo">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" class="header-logo-img">
+            </a>
+
+            <div class="header-meta-group">
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg" alt="Локация" class="header-meta-icon">
+                    <span data-i18n="nav.address">г. Москва, ул. Центральная, 57</span>
+                </div>
+
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg" alt="Время" class="header-meta-icon">
+                    <span data-i18n="nav.work_hours">Пн-Пт 09:00-20:00; Сб-Вс 10:00-18:00</span>
+                </div>
+            </div>
+
+            <div class="header-phone-group">
+                <a href="tel:+78005553535" class="header-phone-val">+7 (800) 555-35-35</a>
+                
+                <div class="lang-switcher">
+                    <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="hy">HY</button>
+                </div>
+
+                <a href="#booking" class="btn btn-primary" data-open-modal="booking" data-i18n="nav.call_request">Перезвоните мне</a>
+
+                <button class="burger-btn" id="burger-btn" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+                <!-- Bottom Row: Navigation Menu -->
+        <div class="header-nav-row">
+            <a href="doctors.html" data-i18n="nav.doctors">Врачи</a>
+            <a href="departments.html" data-i18n="nav.departments">Направления</a>
+            <a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a>
+            <a href="procedures.html" data-i18n="nav.procedures">Процедуры</a>
+            <a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a>
+            <div class="nav-item-dropdown">
+                <a href="about.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.about">О клинике</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="about.html" data-i18n="nav.about">О нас</a>
+                    <a href="licences.html" data-i18n="nav.licences">Лицензии</a>
+                    <a href="vacancies.html">Вакансии</a>
+                    <a href="blog.html" data-i18n="nav.blog">Блог</a>
+                </div>
+            </div>
+            <div class="nav-item-dropdown">
+                <a href="services.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.patients">Пациенту</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="promotions.html">Акции</a>
+                    <a href="tax-deduction.html">Налоговый вычет</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+            <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Fullscreen Menu -->
+<div class="mobile-menu-overlay" id="mobile-menu">
+    <ul class="mobile-nav-links">
+        <li><a href="doctors.html" data-i18n="nav.doctors">Врачи</a></li>
+        <li><a href="departments.html" data-i18n="nav.departments">Направления</a></li>
+        <li><a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a></li>
+        <li><a href="procedures.html" data-i18n="nav.procedures">Процедуры</a></li>
+        <li><a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a></li>
+        <li><a href="about.html" data-i18n="nav.about">О нас</a></li>
+        <li><a href="licences.html" data-i18n="nav.licences">Лицензии</a></li>
+        <li><a href="vacancies.html">Вакансии</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Блог</a></li>
+        <li><a href="promotions.html">Акции</a></li>
+        <li><a href="tax-deduction.html">Налоговый вычет</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+    </ul>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="lang-switcher" style="justify-content: center;">
+            <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="hy">HY</button>
+        </div>
+        <a href="#booking" class="btn btn-primary" style="width: 100%; text-align: center;" data-open-modal="booking" data-i18n="nav.book_appointment">Записаться на прием</a>
+    </div>
+</div>
+
+<main class="site-main">
+
+    <!-- 🌟 1. HERO SECTION (FIGMA 484:13542) -->
+    <section class="dept-single-hero">
+        <div class="container">
+            <div style="font-size: 14px; color: var(--color-gray-light); margin-bottom: 24px;">
+                <a href="index.html" style="color: var(--color-secondary-gray); text-decoration: none;" data-i18n="nav.home">Главная</a> / 
+                <a href="departments.html" style="color: var(--color-secondary-gray); text-decoration: none;" data-i18n="nav.departments">Направления</a> / 
+                <span style="color: var(--color-primary);">Эндокринология</span>
+            </div>
+
+            <h1 class="dept-single-title">ПРОФЕССИОНАЛЬНАЯ ЭНДОКРИНОЛОГИЯ В КАЗАНИ – ПОЛНЫЙ ЦИКЛ ДИАГНОСТИКИ И ЛЕЧЕНИЯ</h1>
+            <p class="dept-single-subtitle">В нашей эндокринологической клинике вас ждут врачи с многолетним опытом, применяющие современные подходы в лечении гормональных нарушений и заболеваний эндокринной системы.</p>
+            <button type="button" class="btn btn-primary" data-open-modal="booking" style="padding: 14px 40px; font-weight: 600; border-radius: 12px;">Записаться на приём</button>
+        </div>
+    </section>
+
+    <!-- 🌟 2. НАПРАВЛЕНИЯ ЭНДОКРИНОЛОГИИ (FIGMA 484:13557) -->
+    <section class="dept-scope-section">
+        <div class="container">
+            <h2 class="h2-title" style="margin-bottom: 32px;">Направления эндокринологии,<br>с которыми мы работаем:</h2>
+            
+            <div class="dept-scope-top-grid">
+                <div>
+                    <p style="font-size: 16px; line-height: 24px; color: var(--color-black); margin-bottom: 24px;">
+                        Мы предлагаем полный цикл услуг: от первичной консультации и точной диагностики (анализы крови, УЗИ щитовидной железы, гормональные исследования) до эффективного лечения и динамического наблюдения.
+                    </p>
+                    <button type="button" class="btn btn-primary" data-open-modal="booking" style="padding: 12px 32px; border-radius: 12px; font-weight: 600;">Записаться на приём</button>
+                </div>
+                <div>
+                    <img src="assets/images/dept_why_rectangle9.png" alt="Эндокринология" class="dept-scope-photo" onerror="this.src='assets/images/about_hero_main.png';">
+                </div>
+            </div>
+
+            <div class="dept-scope-features-3col">
+                <div class="dept-scope-feature-item reveal-on-scroll">
+                    <div class="dept-scope-icon-wrap">
+                        <img src="assets/icons/icon-diabetes-figma.svg" alt="Сахарный диабет">
+                    </div>
+                    <h3 class="dept-scope-feature-title">Сахарный диабет</h3>
+                    <p class="dept-scope-feature-text">Нарушения углеводного обмена (контроль глюкозы и инсулина)</p>
+                </div>
+
+                <div class="dept-scope-feature-item reveal-on-scroll delay-1">
+                    <div class="dept-scope-icon-wrap">
+                        <img src="assets/icons/icon-thyroid-figma.svg" alt="Заболевания щитовидной железы">
+                    </div>
+                    <h3 class="dept-scope-feature-title">Заболевания щитовидной железы</h3>
+                    <p class="dept-scope-feature-text">Гипотиреоз, гипертиреоз, узлы</p>
+                </div>
+
+                <div class="dept-scope-feature-item reveal-on-scroll delay-2">
+                    <div class="dept-scope-icon-wrap">
+                        <img src="assets/icons/icon-hormone-figma.svg" alt="Гормональные дисбалансы">
+                    </div>
+                    <h3 class="dept-scope-feature-title">Гормональные дисбалансы</h3>
+                    <p class="dept-scope-feature-text">У женщин и мужчин (коррекция гормонального фона)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 3. СИМПТОМЫ ГОРМОНАЛЬНОГО СБОЯ (FIGMA 484:13644) -->
+    <section class="dept-symptoms-section">
+        <div class="container">
+            <h2 class="h2-title" style="margin-bottom: 16px;">Симптомы гормонального сбоя, с которыми стоит<br>обратиться в нашу клинику эндокринологии</h2>
+            <p style="font-size: 16px; line-height: 24px; color: var(--color-secondary-gray); max-width: 800px;">
+                Если вы заметили у себя один или несколько из этих симптомов, не откладывайте визит к врачу. Вовремя выявленное эндокринологическое заболевание поможет сохранить здоровье и качество жизни!
+            </p>
+
+            <div class="dept-symptoms-grid">
+                <!-- Left 8 Symptoms -->
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Резкие изменения веса (набор или похудение)</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Постоянная слабость, быстрая утомляемость, синдром хронической усталости</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Нарушения температуры тела (ощущение жара или холода, скачки температуры)</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Перепады настроения, эмоциональная нестабильность</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Нарушения сна (бессонница, сонливость, долгое засыпание)</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Изменение аппетита (отсутствие или повышение аппетита)</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Постоянная жажда, сухость во рту</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Учащённое мочеиспускание</p>
+                    </div>
+                </div>
+
+                <!-- Right 8 Symptoms -->
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Выпадение волос (алопеция), ломкость или облысение</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Ломкость, хрупкость ногтей</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Сухость кожи, шелушение, пигментные пятна, потемнение кожи</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Акне, угревая сыпь, себорея, розацеа, жирная кожа, высыпания на лице и теле</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Нарушение менструального цикла (обильные, скудные или сухие месячные, наступление менопаузы)</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Гирсутизм (чрезмерный рост волос)</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Выделения из молочных желез</p>
+                    </div>
+                    <div class="dept-symptom-item">
+                        <span class="dept-symptom-bullet"></span>
+                        <p class="dept-symptom-text">Снижение либидо</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 4. НАШИ ЭНДОКРИНОЛОГИ (FIGMA 484:13636) -->
+    <section class="doctors-section" id="doctors">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="h2-title" style="max-width: 800px;">Для записи к конкретному специалисту посмотрите наших эндокринологов</h2>
+                <a href="doctors.html" class="btn btn-outline-dark" data-i18n="doctors.all_btn">Все врачи →</a>
+            </div>
+
+            <div class="doctors-grid-3col">
+                <!-- Doctor Card 1 -->
+                <div class="doctor-fig-card reveal-on-scroll">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_2.png" alt="Смирнова Елена Викторовна">
+                        <div class="doctor-fig-tag">Врач высшей категории</div>
+                    </div>
+                    <div class="doctor-rating-row">
+                        <span class="star-badge">(4,9) ★</span>
+                        <span style="color: var(--color-gray-light);">• 34 отзыва</span>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 18px; margin-bottom: 4px;">Смирнова Елена Викторовна</h3>
+                        <div style="font-size: 14px; color: var(--color-secondary-gray);">Главный врач, эндокринолог • 18 лет стажа</div>
+                    </div>
+                    <div class="doctor-price-row">
+                        <div class="price-item"><span>В клинике</span><strong>2 999 ₽</strong></div>
+                        <div class="price-item"><span>Онлайн</span><strong>2 999 ₽</strong></div>
+                        <div class="price-item"><span>На дом</span><strong>2 999 ₽</strong></div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking" data-i18n="hero.cta">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-outline-dark" style="width: 100%;">Подробнее о враче</a>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 2 -->
+                <div class="doctor-fig-card reveal-on-scroll delay-1">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_1.png" alt="Иванов Алексей Сергеевич">
+                        <div class="doctor-fig-tag">Кандидат мед. наук</div>
+                    </div>
+                    <div class="doctor-rating-row">
+                        <span class="star-badge">(4,8) ★</span>
+                        <span style="color: var(--color-gray-light);">• 28 отзывов</span>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 18px; margin-bottom: 4px;">Иванов Алексей Сергеевич</h3>
+                        <div style="font-size: 14px; color: var(--color-secondary-gray);">Эндокринолог, диабетолог • 14 лет стажа</div>
+                    </div>
+                    <div class="doctor-price-row">
+                        <div class="price-item"><span>В клинике</span><strong>2 999 ₽</strong></div>
+                        <div class="price-item"><span>Онлайн</span><strong>2 999 ₽</strong></div>
+                        <div class="price-item"><span>На дом</span><strong>2 999 ₽</strong></div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking" data-i18n="hero.cta">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-outline-dark" style="width: 100%;">Подробнее о враче</a>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 3 -->
+                <div class="doctor-fig-card reveal-on-scroll delay-2">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_3.png" alt="Александров Михаил Юрьевич">
+                        <div class="doctor-fig-tag">Врач высшей категории</div>
+                    </div>
+                    <div class="doctor-rating-row">
+                        <span class="star-badge">(4,8) ★</span>
+                        <span style="color: var(--color-gray-light);">• 23 отзыва</span>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 18px; margin-bottom: 4px;">Александров Михаил Юрьевич</h3>
+                        <div style="font-size: 14px; color: var(--color-secondary-gray);">Эндокринолог, нутрициолог • 15 лет стажа</div>
+                    </div>
+                    <div class="doctor-price-row">
+                        <div class="price-item"><span>В клинике</span><strong>2 999 ₽</strong></div>
+                        <div class="price-item"><span>Онлайн</span><strong>2 999 ₽</strong></div>
+                        <div class="price-item"><span>На дом</span><strong>2 999 ₽</strong></div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking" data-i18n="hero.cta">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-outline-dark" style="width: 100%;">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 5. СПИСОК ЗАБОЛЕВАНИЙ (BENTO GRID) (FIGMA 484:13746) -->
+    <section class="dept-diseases-section">
+        <div class="container">
+            <h2 class="h2-title" style="margin-bottom: 16px;">Список заболеваний, которые лечат<br>в нашем отделении эндокринологии</h2>
+            <p style="font-size: 16px; line-height: 24px; color: var(--color-secondary-gray); max-width: 800px;">
+                Эндокринология охватывает все органы и процессы в организме. При любом нарушении гормонального фона важно своевременно обратиться к врачу — опытные специалисты нашей клиники помогут сохранить ваше здоровье!
+            </p>
+
+            <div class="dept-bento-grid">
+                <!-- Row 1 -->
+                <div class="dept-bento-card col-span-1">
+                    <div class="dept-bento-card-title">Сахарный диабет<br>(1 и 2 типа)</div>
+                </div>
+                <div class="dept-bento-card col-span-1">
+                    <div class="dept-bento-card-title">Несахарный диабет</div>
+                </div>
+                <div class="dept-bento-card col-span-2">
+                    <div class="dept-bento-card-title">Диабетические осложнения</div>
+                    <p class="dept-bento-card-desc">(нефропатия, ретинопатия, синдром диабетической стопы)</p>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="dept-bento-card col-span-2">
+                    <div class="dept-bento-card-title">Нарушения полового развития и функции</div>
+                    <p class="dept-bento-card-desc">(бесплодие, эректильная дисфункция, гормональные нарушения, синдром Клайнфельтера, синдром Каллманна)</p>
+                </div>
+                <div class="dept-bento-card col-span-1">
+                    <div class="dept-bento-card-title">Нарушения обмена веществ</div>
+                    <p class="dept-bento-card-desc">(в том числе ожирение)</p>
+                </div>
+                <div class="dept-bento-card col-span-1">
+                    <div class="dept-bento-card-title">Нарушения метаболизма кальция</div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="dept-bento-card col-span-2">
+                    <div class="dept-bento-card-title">Заболевания щитовидной железы</div>
+                    <p class="dept-bento-card-desc">(гипотиреоз, тиреоидиты, узловой токсический зоб, диффузный токсический зоб, узловой зоб, эндокринная офтальмопатия)</p>
+                </div>
+                <div class="dept-bento-card col-span-2">
+                    <div class="dept-bento-card-title">Заболевания паращитовидных желез</div>
+                    <p class="dept-bento-card-desc">(гиперпаратиреоз, гипопаратиреоз, псевдогипопаратиреоз, послеоперационный гипопаратиреоз, псевдопсевдогипопаратиреоз)</p>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="dept-bento-card col-span-2">
+                    <div class="dept-bento-card-title">Заболевания надпочечников</div>
+                    <p class="dept-bento-card-desc">(феохромоцитома, синдром Иценко-Кушинга, гиперальдостеронизм, врождённая дисфункция коры надпочечников, надпочечниковая недостаточность)</p>
+                </div>
+                <div class="dept-bento-card col-span-2">
+                    <div class="dept-bento-card-title">Заболевания гипофиза и гипоталамуса</div>
+                    <p class="dept-bento-card-desc">(акромегалия, аденома гипофиза, гипофизарная недостаточность, гиперпролактинемия, гипоталамо-гипофизарные заболевания)</p>
+                </div>
+
+                <!-- Row 5 -->
+                <div class="dept-bento-card col-span-1">
+                    <div class="dept-bento-card-title">Аутоиммунные полигландулярные синдромы</div>
+                </div>
+                <div class="dept-bento-card col-span-1">
+                    <div class="dept-bento-card-title">Заболевания шишковидной железы</div>
+                </div>
+                <div class="dept-bento-card col-span-2">
+                    <div class="dept-bento-card-title">Эндокринные опухоли</div>
+                    <p class="dept-bento-card-desc">(инсулинома, глюкагонома, випома, гастринома, множественные эндокринные неоплазии)</p>
+                </div>
+
+                <!-- Row 6 -->
+                <div class="dept-bento-card col-span-2">
+                    <div class="dept-bento-card-title">Синдром поликистозных яичников</div>
+                </div>
+                <div class="dept-bento-card col-span-2">
+                    <div class="dept-bento-card-title">Гормональная контрацепция и коррекция гормональных нарушений</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 6. КОНСУЛЬТАЦИЯ ЭНДОКРИНОЛОГА В 1 КЛИК (FIGMA 484:13731) -->
+    <section class="contacts-questions-section">
+        <div class="container">
+            <div class="contacts-questions-card reveal-on-scroll">
+                <div class="questions-card-left">
+                    <h2 class="questions-card-title">Консультация<br>Эндокринолога<br>в 1 клик</h2>
+                    <p class="questions-card-desc">
+                        Пожалуйста, заполните форму обратной связи ниже. Мы свяжемся с вами в кратчайшие сроки для проведения консультации.
+                    </p>
+                    <form id="dept-1click-form" class="questions-form-stack" onsubmit="event.preventDefault(); alert('Спасибо! Заявка принята, мы свяжемся с вами.'); this.reset();">
+                        <input type="text" name="name" class="questions-form-input" placeholder="Ваше имя *" required>
+                        <input type="tel" name="phone" class="questions-form-input mask-phone" placeholder="+7 (___) ___-__-__ *" required>
+                        <div class="questions-policy-row">
+                            <input type="checkbox" id="dept-q-policy" required style="width: 20px; height: 20px; margin-top: 2px; accent-color: var(--color-primary); cursor: pointer;">
+                            <label for="dept-q-policy" class="questions-policy-label">Нажимая кнопку Отправить, вы принимаете условия пользовательского соглашения и политики конфиденциальности</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary questions-submit-btn">Отправить</button>
+                    </form>
+                </div>
+                <div class="questions-photo-wrap">
+                    <img src="assets/images/contact_form_doctor_figma.png" alt="Консультация" class="questions-photo-img" onerror="this.src='assets/images/contacts_help_figma.png';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 7. ДИАГНОСТИЧЕСКИЙ ЦЕНТР ЭНДОКРИНОЛОГИИ (FIGMA 484:15541) -->
+    <section class="dept-center-section">
+        <div class="container">
+            <div class="dept-center-grid">
+                <div>
+                    <h2 class="h2-title" style="margin-bottom: 16px;">Диагностический центр эндокринологии «Клиника интегративной медицины</h2>
+                    <p style="font-size: 16px; line-height: 24px; color: var(--color-secondary-gray); margin-bottom: 24px;">
+                        Инновационные подходы к лечению гормональных нарушений. В нашем центре эндокринологии применяются передовые методы коррекции эндокринных заболеваний, включая:
+                    </p>
+
+                    <div class="dept-center-rows">
+                        <div class="dept-center-row">
+                            <span class="dept-center-circle-bullet"></span>
+                            <div>
+                                <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 4px;">Персонализированную диетотерапию</h4>
+                                <p style="font-size: 14px; line-height: 20px; color: var(--color-secondary-gray); margin: 0;">Индивидуальный подбор рациона для восстановления баланса гормонов и обмена веществ.</p>
+                            </div>
+                        </div>
+
+                        <div class="dept-center-row">
+                            <span class="dept-center-circle-bullet"></span>
+                            <div>
+                                <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 4px;">Коррекцию образа жизни</h4>
+                                <p style="font-size: 14px; line-height: 20px; color: var(--color-secondary-gray); margin: 0;">Разработка программ по отказу от вредных привычек, дозированным физическим нагрузкам и нормализации режима сна.</p>
+                            </div>
+                        </div>
+
+                        <div class="dept-center-row">
+                            <span class="dept-center-circle-bullet"></span>
+                            <div>
+                                <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 4px;">Точную медикаментозную терапию</h4>
+                                <p style="font-size: 14px; line-height: 20px; color: var(--color-secondary-gray); margin: 0;">При гипофункции желез используются современные гормонозамещающие препараты, а при гиперфункции – лекарства, регулирующие активность эндокринных органов.</p>
+                            </div>
+                        </div>
+
+                        <div class="dept-center-row">
+                            <span class="dept-center-circle-bullet"></span>
+                            <div>
+                                <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 4px;">Хирургические решения</h4>
+                                <p style="font-size: 14px; line-height: 20px; color: var(--color-secondary-gray); margin: 0;">Удаление опухолей желез и лечение сложных патологий, устойчивых к консервативной терапии, с применением малоинвазивных технологий.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/images/about_hero_main.png" alt="Центр эндокринологии" class="dept-center-photo" onerror="this.src='assets/images/gallery_1.png';">
+                </div>
+            </div>
+
+            <div class="dept-center-bottom-bar">
+                <p style="font-size: 16px; line-height: 22px; color: var(--color-black); margin: 0; max-width: 820px;">
+                    В «Клинике интегративной медицины» мы сочетаем доказательную медицину с индивидуальным подходом, чтобы обеспечить каждому пациенту эффективное и безопасное лечение в области эндокринологии.
+                </p>
+                <button type="button" class="btn btn-primary" data-open-modal="booking" style="padding: 12px 32px; font-weight: 600; border-radius: 12px;">Оставить заявку</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 8. ЭНДОКРИНОЛОГИЧЕСКИЕ УСЛУГИ (FIGMA 484:16054) -->
+    <section class="departments-section" id="services" style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="h2-title" style="margin-bottom: 24px;">Эндокринологические услуги клиники интегративной медицины</h2>
+
+            <div class="dept-controls">
+                <div class="dept-search-wrap">
+                    <svg class="dept-search-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <input type="text" id="dept-search-input" placeholder="Поиск услуг эндокринологии...">
+                </div>
+
+                <div class="dept-tabs-bar">
+                    <button type="button" class="dept-tab-btn active" data-category="all">Все</button>
+                    <button type="button" class="dept-tab-btn" data-category="consult">Приём</button>
+                    <button type="button" class="dept-tab-btn" data-category="diagnostics">Диагностика</button>
+                    <button type="button" class="dept-tab-btn" data-category="tests">Анализы</button>
+                    <button type="button" class="dept-tab-btn" data-category="procedures">Процедуры</button>
+                </div>
+            </div>
+
+            <div class="dept-grid-fignode" id="dept-grid-container">
+                <a href="#booking" class="dept-card-fignode" data-category="consult all" data-open-modal="booking">
+                    <div class="dept-card-text-fig">
+                        <div class="dept-card-top-row">
+                            <span class="dept-card-badge">Приём</span>
+                            <span class="dept-card-price">2 999 ₽</span>
+                        </div>
+                        <div class="dept-card-name">Первичный приём врача-эндокринолога</div>
+                    </div>
+                </a>
+                <a href="#booking" class="dept-card-fignode" data-category="consult all" data-open-modal="booking">
+                    <div class="dept-card-text-fig">
+                        <div class="dept-card-top-row">
+                            <span class="dept-card-badge">Приём</span>
+                            <span class="dept-card-price">2 499 ₽</span>
+                        </div>
+                        <div class="dept-card-name">Повторный приём врача-эндокринолога</div>
+                    </div>
+                </a>
+                <a href="#booking" class="dept-card-fignode" data-category="diagnostics all" data-open-modal="booking">
+                    <div class="dept-card-text-fig">
+                        <div class="dept-card-top-row">
+                            <span class="dept-card-badge">УЗИ</span>
+                            <span class="dept-card-price">1 800 ₽</span>
+                        </div>
+                        <div class="dept-card-name">УЗИ щитовидной и паращитовидных желез</div>
+                    </div>
+                </a>
+                <a href="#booking" class="dept-card-fignode" data-category="tests all" data-open-modal="booking">
+                    <div class="dept-card-text-fig">
+                        <div class="dept-card-top-row">
+                            <span class="dept-card-badge">Анализы</span>
+                            <span class="dept-card-price">3 200 ₽</span>
+                        </div>
+                        <div class="dept-card-name">Комплексный анализ гормонального профиля (ТТГ, Т3, Т4, АТ-ТПО)</div>
+                    </div>
+                </a>
+                <a href="#booking" class="dept-card-fignode" data-category="procedures all" data-open-modal="booking">
+                    <div class="dept-card-text-fig">
+                        <div class="dept-card-top-row">
+                            <span class="dept-card-badge">Обучение</span>
+                            <span class="dept-card-price">4 500 ₽</span>
+                        </div>
+                        <div class="dept-card-name">Школа диабета и коррекции веса</div>
+                    </div>
+                </a>
+                <a href="#booking" class="dept-card-fignode wide-2col" data-category="diagnostics all" data-open-modal="booking">
+                    <div class="dept-card-text-fig">
+                        <div class="dept-card-top-row">
+                            <span class="dept-card-badge">Check-up</span>
+                            <span class="dept-card-price">6 999 ₽</span>
+                        </div>
+                        <div class="dept-card-name">Check-up «Здоровье щитовидной железы» (консультация + УЗИ + анализы)</div>
+                    </div>
+                </a>
+                <a href="#booking" class="dept-card-fignode" data-category="tests all" data-open-modal="booking">
+                    <div class="dept-card-text-fig">
+                        <div class="dept-card-top-row">
+                            <span class="dept-card-badge">Анализы</span>
+                            <span class="dept-card-price">2 100 ₽</span>
+                        </div>
+                        <div class="dept-card-name">Суточный мониторинг глюкозы и гликированный гемоглобин</div>
+                    </div>
+                </a>
+                <a href="#booking" class="dept-card-fignode" data-category="diagnostics all" data-open-modal="booking">
+                    <div class="dept-card-text-fig">
+                        <div class="dept-card-top-row">
+                            <span class="dept-card-badge">Диагностика</span>
+                            <span class="dept-card-price">3 900 ₽</span>
+                        </div>
+                        <div class="dept-card-name">Тонкоигольная аспирационная биопсия (ТАБ) узлов щитовидной железы</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 9. ОТЗЫВЫ (FIGMA 484:13827) -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="h2-title" data-i18n="reviews.title">Отзывы</h2>
+                <div style="display: flex; gap: 8px;">
+                    <button type="button" class="btn btn-secondary" id="reviews-prev" style="padding: 8px 16px;">←</button>
+                    <button type="button" class="btn btn-secondary" id="reviews-next" style="padding: 8px 16px;">→</button>
+                </div>
+            </div>
+
+            <div class="reviews-grid-3" id="reviews-track">
+                <div class="review-card-fig reveal-on-scroll">
+                    <div class="review-user-row">
+                        <div class="user-avatar-name">
+                            <img src="assets/images/assets/55f6b30bfe9501b009fd1a3545eb7bee7513a97a.png" alt="Ирина">
+                            <div>
+                                <div style="font-weight: 600;">Ирина</div>
+                                <div style="font-size: 12px; color: var(--color-gray-light);">21.04.2025</div>
+                            </div>
+                        </div>
+                        <div style="color: var(--color-rating);">★★★★★</div>
+                    </div>
+                    <p style="font-size: 14px; line-height: 22px; color: var(--color-secondary-gray);">
+                        Благодаря Елене Викторовне удалось нормализовать работу щитовидной железы и вернуть энергию. Очень чуткий и грамотный доктор, который объясняет все процессы доступным языком!
+                    </p>
+                </div>
+
+                <div class="review-card-fig reveal-on-scroll delay-1">
+                    <div class="review-user-row">
+                        <div class="user-avatar-name">
+                            <img src="assets/images/assets/009bb99f71ff2e3701a0f705319e5d35472e92ad.png" alt="Алексей">
+                            <div>
+                                <div style="font-weight: 600;">Алексей М.</div>
+                                <div style="font-size: 12px; color: var(--color-gray-light);">18.04.2025</div>
+                            </div>
+                        </div>
+                        <div style="color: var(--color-rating);">★★★★★</div>
+                    </div>
+                    <p style="font-size: 14px; line-height: 22px; color: var(--color-secondary-gray);">
+                        Проходил Check-up щитовидной железы. За один визит сдал анализы, прошел УЗИ и получил консультацию. Всё чётко, профессионально и без лишних очередей.
+                    </p>
+                </div>
+
+                <div class="review-card-fig reveal-on-scroll delay-2">
+                    <div class="review-user-row">
+                        <div class="user-avatar-name">
+                            <img src="assets/images/assets/189cfa982fa45c762e0567ce96f42c81098f2191.png" alt="Елена">
+                            <div>
+                                <div style="font-weight: 600;">Елена В.</div>
+                                <div style="font-size: 12px; color: var(--color-gray-light);">14.04.2025</div>
+                            </div>
+                        </div>
+                        <div style="color: var(--color-rating);">★★★★★</div>
+                    </div>
+                    <p style="font-size: 14px; line-height: 22px; color: var(--color-secondary-gray);">
+                        Отличная клиника! Помогли сбалансировать сахар в крови и скорректировать питание. Чувствую себя прекрасно. Рекомендую всем отделение эндокринологии!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 10. FAQ ЭНДОКРИНОЛОГИИ (FIGMA 484:13836) -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="h2-title" style="margin-bottom: 32px;">Часто задаваемые вопросы</h2>
+
+            <div class="faq-fig-item active reveal-on-scroll">
+                <button type="button" class="faq-fig-trigger">
+                    <span><strong>1.</strong>&nbsp;&nbsp;Какое эндокринное заболевание является наиболее распространенным?</span>
+                    <span>⌃</span>
+                </button>
+                <div class="faq-fig-answer">
+                    <p>Наиболее распространенным эндокринным заболеванием в мире является сахарный диабет, в частности диабет 2 типа. По данным ВОЗ, им страдают сотни миллионов людей. Также часто встречаются патологии щитовидной железы (гипотиреоз, узловой зоб) и метаболический синдром.</p>
+                </div>
+            </div>
+
+            <div class="faq-fig-item reveal-on-scroll">
+                <button type="button" class="faq-fig-trigger">
+                    <span><strong>2.</strong>&nbsp;&nbsp;Что будет, если не лечить эндокринную систему?</span>
+                    <span>⌄</span>
+                </button>
+                <div class="faq-fig-answer">
+                    <p>Гормональные нарушения влияют на работу всех органов: сердечно-сосудистой системы, обмена веществ, репродуктивной функции и нервной системы. Без своевременного лечения возможно развитие тяжелых хронических осложнений.</p>
+                </div>
+            </div>
+
+            <div class="faq-fig-item reveal-on-scroll">
+                <button type="button" class="faq-fig-trigger">
+                    <span><strong>3.</strong>&nbsp;&nbsp;Какая цена полного обследования у эндокринолога?</span>
+                    <span>⌄</span>
+                </button>
+                <div class="faq-fig-answer">
+                    <p>Стоимость комплексного скрининга начинается от 6 999 ₽ и включает экспертную консультацию врача, УЗИ щитовидной железы и ключевой гормональный профиль анализов.</p>
+                </div>
+            </div>
+
+            <div class="faq-fig-item reveal-on-scroll">
+                <button type="button" class="faq-fig-trigger">
+                    <span><strong>4.</strong>&nbsp;&nbsp;Есть ли скидки на повторные консультации?</span>
+                    <span>⌄</span>
+                </button>
+                <div class="faq-fig-answer">
+                    <p>Да, для пациентов клиники стоимость повторного приема составляет 2 499 ₽ вместо 2 999 ₽.</p>
+                </div>
+            </div>
+
+            <div class="faq-fig-item reveal-on-scroll">
+                <button type="button" class="faq-fig-trigger">
+                    <span><strong>5.</strong>&nbsp;&nbsp;Как записаться к эндокринологу в клинике интегративной медицины?</span>
+                    <span>⌄</span>
+                </button>
+                <div class="faq-fig-answer">
+                    <p>Вы можете записаться через онлайн-форму на сайте, нажав кнопку «Записаться на приём», либо позвонив по телефону +7 (800) 555-35-35.</p>
+                </div>
+            </div>
+
+            <div class="faq-fig-item reveal-on-scroll">
+                <button type="button" class="faq-fig-trigger">
+                    <span><strong>6.</strong>&nbsp;&nbsp;Можно ли вызвать эндокринолога на дом в нашем медицинском центре?</span>
+                    <span>⌄</span>
+                </button>
+                <div class="faq-fig-answer">
+                    <p>Да, наши врачи выезжают на дом для осмотра, забора анализов и консультации маломобильных пациентов.</p>
+                </div>
+            </div>
+
+            <div class="faq-fig-item reveal-on-scroll">
+                <button type="button" class="faq-fig-trigger">
+                    <span><strong>7.</strong>&nbsp;&nbsp;Нужно ли направление от терапевта?</span>
+                    <span>⌄</span>
+                </button>
+                <div class="faq-fig-answer">
+                    <p>Нет, направление не требуется. Вы можете обратиться к эндокринологу напрямую при наличии жалоб или для профилактического осмотра.</p>
+                </div>
+            </div>
+
+            <div class="faq-fig-item reveal-on-scroll">
+                <button type="button" class="faq-fig-trigger">
+                    <span><strong>8.</strong>&nbsp;&nbsp;Работают ли эндокринологи в выходные дни?</span>
+                    <span>⌄</span>
+                </button>
+                <div class="faq-fig-answer">
+                    <p>Да, клиника работает без выходных: в субботу и воскресенье с 10:00 до 18:00.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 32px;">
+                <button type="button" class="btn btn-primary" data-open-modal="booking" style="padding: 12px 32px;">Задайте свой вопрос</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 11. ЗАПИСАТЬСЯ В ДВА КЛИКА (FIGMA 484:13835 - ПОСЛЕ FAQ) -->
+    <section class="banner-1click-form-section" style="padding: 60px 0;">
+        <div class="container">
+            <div class="contacts-questions-card" style="align-items: center; min-height: 540px;">
+                <div class="questions-card-left">
+                    <h2 class="h2-title" style="margin-bottom: 16px; font-size: clamp(26px, 2.6vw, 36px); line-height: 1.15;">Записаться в два клика<br>в отделение эндокринологии клиники интегративной медицины</h2>
+                    <p class="questions-card-desc" style="margin-bottom: 20px;">
+                        Пожалуйста, заполните форму обратной связи ниже. Мы оперативно примем заявку и запишем вас на прием в ближайшее свободнее время.
+                    </p>
+                    <form class="questions-form-stack" onsubmit="event.preventDefault(); alert('Спасибо! Заявка принята. Мы свяжемся с вами в ближайшее время.');">
+                        <input type="text" class="questions-form-input" placeholder="Имя" required>
+                        <input type="tel" class="questions-form-input phone-mask" placeholder="Номер телефона" required>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                            <input type="text" class="questions-form-input" placeholder="Дата" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                            <input type="text" class="questions-form-input" placeholder="Время" onfocus="(this.type='time')" onblur="if(!this.value)this.type='text'">
+                        </div>
+                        <div class="questions-policy-row">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                            </label>
+                            <span class="questions-policy-label">Нажимая кнопку Отправить, вы принимаете условия <a href="privacy.html" target="_blank" style="text-decoration: underline; color: inherit;">пользовательского соглашения</a> и <a href="privacy.html" target="_blank" style="text-decoration: underline; color: inherit;">политики конфиденциальности</a></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary questions-submit-btn">Отправить</button>
+                    </form>
+                </div>
+                <div class="questions-photo-wrap" style="height: 100%; min-height: 480px; align-self: stretch;">
+                    <img src="assets/images/dept_booking_photo.png" alt="Записаться на прием" style="width: 100%; height: 100%; min-height: 480px; max-height: 540px; border-radius: 20px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 12. КАК ПОДГОТОВИТЬСЯ К ПРИЕМУ (FIGMA 484:13901) -->
+    <section class="dept-prep-section">
+        <div class="container">
+            <h2 class="h2-title" style="margin-bottom: 32px;">Как подготовиться к приему эндокринолога?</h2>
+
+            <div class="dept-prep-grid">
+                <div class="dept-prep-card reveal-on-scroll">
+                    <div class="dept-prep-icon">
+                        <img src="assets/icons/prep_icon_sheet.svg" alt="Документы и данные" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3 class="dept-prep-title">Документы и данные:</h3>
+                    <ul class="dept-prep-list">
+                        <li>Паспорт для оформления карты</li>
+                        <li>Предыдущие анализы (даже старые — гормоны, УЗИ, МРТ)</li>
+                        <li>Выписки от других специалистов (гинеколога, терапевта, невролога)</li>
+                    </ul>
+                </div>
+
+                <div class="dept-prep-card reveal-on-scroll delay-1">
+                    <div class="dept-prep-icon">
+                        <img src="assets/icons/prep_icon_pen.svg" alt="Запишите заранее" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3 class="dept-prep-title">Запишите заранее:</h3>
+                    <ul class="dept-prep-list">
+                        <li>Все симптомы с датами их появления</li>
+                        <li>Вопросы к врачу по схеме лечения</li>
+                        <li>Динамику изменений веса и давления</li>
+                    </ul>
+                </div>
+
+                <div class="dept-prep-card reveal-on-scroll delay-2">
+                    <div class="dept-prep-icon">
+                        <img src="assets/icons/prep_icon_medical.svg" alt="Особые условия" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3 class="dept-prep-title">Особые условия:</h3>
+                    <ul class="dept-prep-list">
+                        <li><strong>Натощак:</strong> если планируется анализ крови — не ешьте 8-12 часов</li>
+                        <li><strong>Прием лекарств:</strong> возьмите список препаратов с точными дозировками</li>
+                        <li><strong>В день приема:</strong> приходите на 15 минут раньше для регистрации</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 13. КЛЮЧЕВЫЕ ПРИНЦИПЫ ЭНДОКРИНОЛОГИИ (FIGMA 484:13957) -->
+    <section class="why-us-section">
+        <div class="container">
+            <h2 class="h2-title" style="margin-bottom: 32px;">Ключевые принципы эндокринологии<br>в нашей клинике:</h2>
+            
+            <div class="why-us-grid">
+                <div>
+                    <p style="font-size: 16px; line-height: 24px; color: var(--color-black); margin-bottom: 24px;">
+                        Интегративный подход в эндокринологии, который применяют наши врачи, направлен на выявление первопричин гормональных сбоев и составление персонализированного плана восстановления организма.
+                    </p>
+
+                    <div class="why-stats-2x2">
+                        <div class="why-stat-box">
+                            <div class="stat-big-num">90+</div>
+                            <div class="stat-sub">лет суммарный опыт наших врачей</div>
+                        </div>
+                        <div class="why-stat-box">
+                            <div class="stat-big-num">40+</div>
+                            <div class="stat-sub">принимающих врачей-специалистов</div>
+                        </div>
+                        <div class="why-stat-box">
+                            <div class="stat-big-num">30к+</div>
+                            <div class="stat-sub">пациентов в год</div>
+                        </div>
+                        <div class="why-stat-box">
+                            <div class="stat-big-num">20+</div>
+                            <div class="stat-sub">медицинских направлений</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/images/why_us.png" alt="О клинике" style="width: 100%; height: 460px; border-radius: 20px; object-fit: cover; box-shadow: 0 16px 40px rgba(0,0,0,0.06);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 14. ДИАГНОСТИКА И ЛЕЧЕНИЕ (FIGMA 484:16648) -->
+    <section class="dept-proto-section" id="diagnostics-treatment">
+        <div class="container">
+            <h2 class="h2-title" style="margin-bottom: 16px;">Диагностика и лечение эндокринных заболеваний</h2>
+            <p style="font-size: 16px; line-height: 20px; color: var(--color-black); margin-bottom: 24px;">
+                Комплексный подход в клинике интегративной медицины — от первичного обследования до контроля результатов.
+            </p>
+
+            <div class="dept-proto-tabs-bar">
+                <button type="button" class="dept-proto-tab active" data-tab="tab-reception">Прием</button>
+                <button type="button" class="dept-proto-tab" data-tab="tab-diagnostics">Диагностика</button>
+                <button type="button" class="dept-proto-tab" data-tab="tab-treatment">Лечение</button>
+                <button type="button" class="dept-proto-tab" data-tab="tab-prep">Подготовка</button>
+            </div>
+
+            <!-- TAB 1: ПРИЕМ (ACTIVE) -->
+            <div class="dept-proto-grid dept-proto-pane" id="tab-reception">
+                <div class="dept-proto-img-wrap">
+                    <img src="assets/images/dept_proto_image.png" alt="Прием эндокринолога" class="dept-proto-img">
+                </div>
+                <div class="dept-proto-body">
+                    <h3 class="dept-proto-body-title">Прием</h3>
+                    <div class="dept-proto-body-content">
+                        <div>
+                            <p style="margin-bottom: 6px;"><strong style="font-weight: 600;">Что входит:</strong><br>Анализ симптомов и истории болезни</p>
+                            <ul class="dept-proto-list-bullets">
+                                <li>Физикальный осмотр (оценка кожи, волос, щитовидной железы)</li>
+                                <li>Составление плана обследования</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="dept-proto-item-header">Как подготовиться к первому приему?</p>
+                            <ul class="dept-proto-list-bullets">
+                                <li>Запишите симптомы и их длительность</li>
+                                <li>Возьмите предыдущие анализы (если есть)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="dept-proto-item-header">Перед анализами:</p>
+                            <ul class="dept-proto-list-bullets">
+                                <li>Кровь на гормоны: натощак (8-12 часов без пищи)</li>
+                                <li>УЗИ щитовидной железы: без подготовки</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 2: ДИАГНОСТИКА -->
+            <div class="dept-proto-grid dept-proto-pane" id="tab-diagnostics" style="display: none;">
+                <div class="dept-proto-img-wrap">
+                    <img src="assets/images/dept_proto_image.png" alt="Диагностика" class="dept-proto-img">
+                </div>
+                <div class="dept-proto-body">
+                    <h3 class="dept-proto-body-title">Диагностика</h3>
+                    <div class="dept-proto-body-content">
+                        <div>
+                            <p class="dept-proto-item-header">Лабораторные исследования:</p>
+                            <ul class="dept-proto-list-bullets">
+                                <li>Комплексный профиль гормонов щитовидной железы (ТТГ, Т3, Т4 свободный, АТ-ТПО, АТ-ТГ)</li>
+                                <li>Глюкозотолерантный тест, гликированный гемоглобин и уровень инсулина</li>
+                                <li>Гормоны надпочечников и репродуктивной системы</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="dept-proto-item-header">Инструментальные методы:</p>
+                            <ul class="dept-proto-list-bullets">
+                                <li>УЗИ экспертного класса с оценкой кровотока в режимах ЦДК и эластографии</li>
+                                <li>Тонкоигольная аспирационная биопсия (ТАБ) подозрительных узлов щитовидной железы</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 3: ЛЕЧЕНИЕ -->
+            <div class="dept-proto-grid dept-proto-pane" id="tab-treatment" style="display: none;">
+                <div class="dept-proto-img-wrap">
+                    <img src="assets/images/dept_proto_image.png" alt="Лечение" class="dept-proto-img">
+                </div>
+                <div class="dept-proto-body">
+                    <h3 class="dept-proto-body-title">Лечение</h3>
+                    <div class="dept-proto-body-content">
+                        <div>
+                            <p class="dept-proto-item-header">Индивидуальный протокол терапии:</p>
+                            <ul class="dept-proto-list-bullets">
+                                <li>Подбор и точная коррекция дозировок препаратов заместительной гормональной терапии</li>
+                                <li>Современные сахароснижающие схемы при диабете 1 и 2 типа</li>
+                                <li>Нутрицевтическая поддержка и восстановление метаболического баланса</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="dept-proto-item-header">Контроль динамики:</p>
+                            <ul class="dept-proto-list-bullets">
+                                <li>Регулярный мониторинг показателей и плановые контрольные консультации</li>
+                                <li>Коррекция рациона и режима физической активности</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 4: ПОДГОТОВКА -->
+            <div class="dept-proto-grid dept-proto-pane" id="tab-prep" style="display: none;">
+                <div class="dept-proto-img-wrap">
+                    <img src="assets/images/dept_proto_image.png" alt="Подготовка" class="dept-proto-img">
+                </div>
+                <div class="dept-proto-body">
+                    <h3 class="dept-proto-body-title">Подготовка</h3>
+                    <div class="dept-proto-body-content">
+                        <div>
+                            <p class="dept-proto-item-header">Рекомендации перед сдачей крови:</p>
+                            <ul class="dept-proto-list-bullets">
+                                <li>Кровь сдается утром натощак (8-12 часов голодания, разрешена только негазированная вода)</li>
+                                <li>За 24 часа исключите алкоголь, жирную пищу и интенсивные спортивные тренировки</li>
+                                <li>За 1 час до сдачи крови воздержитесь от курения и эмоциональных перегрузок</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="dept-proto-item-header">Особенности приема лекарств:</p>
+                            <ul class="dept-proto-list-bullets">
+                                <li>Утренний прием гормонов щитовидной железы (Эутирокс/L-Тироксин) осуществляется ПОСЛЕ сдачи крови</li>
+                                <li>Препараты йода согласуются с лечащим врачом</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 15. АКЦИИ (FIGMA 484:14001) -->
+    <section class="promotions-fignode-section" style="padding: 70px 0;">
+        <div class="container">
+            <div class="promotions-header-row">
+                <h2 class="promotions-header-title">Акции</h2>
+                <div class="promotions-arrows-wrap">
+                    <button type="button" class="promo-circle-arrow-btn" id="promo-prev-btn" aria-label="Назад">←</button>
+                    <button type="button" class="promo-circle-arrow-btn" id="promo-next-btn" aria-label="Вперед">→</button>
+                </div>
+            </div>
+
+            <div class="promotions-cards-grid">
+                <div class="promotion-card-item reveal-on-scroll">
+                    <div class="promo-card-thumb-wrap">
+                        <img src="assets/images/assets/ae96da2b5d2ff4a3ded07ee033fb6c3f7f2bbd45.png" alt="Скидка" class="promo-card-thumb-img">
+                    </div>
+                    <div class="promo-card-info-col">
+                        <p class="promo-card-desc-text">Полная диагностика щитовидной железы у эндокринолога: консультация, узи, анализы</p>
+                        <div class="promo-card-price-text">6 999 ₽</div>
+                    </div>
+                    <button type="button" class="promo-card-action-btn" data-open-modal="booking" title="Записаться">↗</button>
+                </div>
+
+                <div class="promotion-card-item reveal-on-scroll delay-1">
+                    <div class="promo-card-thumb-wrap">
+                        <img src="assets/images/card_image.png" alt="Скидка" class="promo-card-thumb-img">
+                    </div>
+                    <div class="promo-card-info-col">
+                        <p class="promo-card-desc-text">Комплексный Check-up «Гормональный баланс 360» со скидкой 30%</p>
+                        <div class="promo-card-price-text">14 900 ₽</div>
+                    </div>
+                    <button type="button" class="promo-card-action-btn" data-open-modal="booking" title="Записаться">↗</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 16. ЭНДОКРИНОЛОГИ В КАЗАНИ / КОНТАКТЫ И КАРТА (FIGMA 484:14038) -->
+    <section class="dept-contacts-map-section" id="location">
+        <div class="container">
+            <div class="dept-contacts-map-card">
+                <div class="dept-contacts-left">
+                    <h2 class="h2-title" style="margin-bottom: 20px; line-height: 1;">Эндокринологи в нашем медицинском центре</h2>
+                    <p style="font-size: 16px; line-height: 20px; color: var(--color-black); margin-bottom: 28px;">
+                        В нашей команде работают опытные врачи различных специальностей, которые постоянно повышают свою квалификацию и следят<br>за последними достижениями медицины.
+                    </p>
+                    <div class="dept-contacts-meta-stack">
+                        <div class="dept-contact-meta-row">
+                            <img src="assets/icons/phone.svg" alt="Телефон" class="dept-contact-ico">
+                            <a href="tel:+78005553535" class="dept-contact-val">+7 (800) 555-35-35</a>
+                        </div>
+                        <div class="dept-contact-meta-row">
+                            <img src="assets/icons/location.svg" alt="Адрес" class="dept-contact-ico">
+                            <span class="dept-contact-val">г. Москва, ул. Центральная, д. 10</span>
+                        </div>
+                        <div class="dept-contact-meta-row">
+                            <img src="assets/icons/clock.svg" alt="Режим работы" class="dept-contact-ico">
+                            <span class="dept-contact-val">Пн-Пт 09:00-20:00;<br>Сб-Вс 10:00-18:00</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-open-modal="booking">Записаться на приём</button>
+                </div>
+                <div class="dept-contacts-map-wrap">
+                    <img src="assets/images/dept_map_figma.png" alt="Карта проезда" style="width: 100%; height: 434px; border-radius: 20px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- 🌟 UNIFIED FOOTER (FIGMA 202:26) -->
+<footer class="site-footer" id="contacts">
+    <div class="container">
+        <!-- Top Row: Logo, Hours, Address, Phone, CTA, Socials -->
+        <div class="footer-top-grid">
+            <a href="index.html">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" style="height: 48px;">
+            </a>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/clock.svg" alt="Время" style="width: 20px;" onerror="this.src='assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg';">
+                <span>Пн-Пт 09:00-20:00;<br>Сб-Вс 10:00-18:00</span>
+            </div>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/map.svg" alt="Адрес" style="width: 20px;" onerror="this.src='assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg';">
+                <span>г. Москва, ул. Центральная, д. 10</span>
+            </div>
+
+            <div style="font-size: 20px; font-weight: 600;">
+                +7 (800) 555-35-35
+            </div>
+
+            <a href="#booking" class="btn btn-primary" data-open-modal="booking">Перезвоните мне</a>
+
+            <div class="footer-social-row">
+                <a href="https://t.me/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Telegram">
+                    <img src="assets/icons/social-tg.svg" alt="Telegram">
+                </a>
+                <a href="https://wa.me/78005553535" class="footer-social-icon" target="_blank" rel="noopener" title="WhatsApp">
+                    <img src="assets/icons/social-wa.svg" alt="WhatsApp">
+                </a>
+                <a href="https://vk.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="VK">
+                    <img src="assets/icons/social-vk.svg" alt="VK">
+                </a>
+                <a href="https://instagram.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Instagram">
+                    <img src="assets/icons/social-ig.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+
+        <!-- Middle Row: Disclaimer and License Info -->
+        <div class="footer-mid-grid">
+            <div>
+                <p style="margin-bottom: 14px;">
+                    Сайт носит информационный характер и не является публичной офертой, согласно Статье 437 (2) ГК РФ. Цены приведены, как справочная информация и могут быть изменены. Для получения подробной информации о стоимости, сроках и условиях звоните по телефону клиники.
+                </p>
+                <p>
+                    Мы используем файлы cookie для того, чтобы предоставить пользователям больше возможностей при посещении сайта Медикал Клиник
+                </p>
+            </div>
+
+            <div>
+                <div class="footer-payment-group">
+                    <span class="footer-payment-title">Мы принимаем к оплате:</span>
+                    <div class="footer-payment-icons">
+                        <img src="assets/icons/payment-visa.svg" alt="Visa" class="footer-payment-icon">
+                        <img src="assets/icons/payment-mastercard.svg" alt="Mastercard" class="footer-payment-icon">
+                        <img src="assets/icons/payment-mir.svg" alt="МИР" class="footer-payment-icon">
+                        <img src="assets/icons/payment-sbp.svg" alt="СБП" class="footer-payment-icon">
+                    </div>
+                </div>
+                <p>
+                    Медицинские услуги лицензированы и предоставляются ООО "Клиника интегративной медицины" в медицинском центре по адресу: 420032, Россия, Республика Татарстан, г. Москва, ул. Энгельса, д. 7, корп. 3, помещение 1. Лицензия на медицинскую деятельность Л041-01181-16/00355613.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright and Links -->
+        <div class="footer-bottom-grid">
+            <div>© 2014 - 2025 Клиника интегративной медицины Все права защищены</div>
+            <a href="privacy.html" style="color: inherit; text-decoration: none;">Политика конфиденциальности</a>
+            <a href="terms.html" style="color: inherit; text-decoration: none;">Пользовательское соглашение</a>
+        </div>
+
+        <!-- Warning Bar (Bebas Neue Cyrillic) -->
+        <div class="footer-warning-bar">
+            ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМА КОНСУЛЬТАЦИЯ С ВРАЧОМ
+        </div>
+    </div>
+</footer>
+
+<!-- 4 Themes Demo Switcher Widget -->
+<div class="theme-switcher-widget">
+    <span style="font-size: 12px; font-weight: 600; color: #4a5660;" data-i18n="theme_switcher.title">Стиль:</span>
+    <div class="theme-dots">
+        <div class="theme-dot theme-dot-blue active" data-theme-val="blue" title="Голубой (Классика)"></div>
+        <div class="theme-dot theme-dot-green" data-theme-val="green" title="Зеленый (Wellness)"></div>
+        <div class="theme-dot theme-dot-cream" data-theme-val="cream" title="Кремовый (Премиум)"></div>
+        <div class="theme-dot theme-dot-rose" data-theme-val="rose" title="Пыльно-розовый (Эстетика)"></div>
+    </div>
+</div>
+
+<!-- Modal Dialog -->
+<div class="modal-overlay" id="booking-modal">
+    <div class="modal-dialog">
+        <button type="button" class="modal-close" id="modal-close-btn" data-close-modal aria-label="Закрыть">✕</button>
+        <div id="booking-form-wrap">
+            <h3 style="font-size: 24px; margin-bottom: 8px;" data-i18n="booking_modal.title">Запись на прием к специалисту</h3>
+            <p style="font-size: 14px; color: #4a5660; margin-bottom: 20px;" data-i18n="booking_modal.subtitle">Оставьте заявку, и координатор перезвонит в течение 5 минут</p>
+            <form id="booking-form">
+                <input type="text" class="form-control" placeholder="Ваше имя *" required data-i18n="booking_modal.name_placeholder">
+                <input type="tel" class="form-control mask-phone" placeholder="+7 (___) ___-__-__ *" required data-i18n="booking_modal.phone_placeholder">
+                <select class="form-control" required>
+                    <option value="" disabled selected data-i18n="appointment_form.dept_default">Выберите отделение</option>
+                    <option value="endocrinology" selected data-i18n="dept.endocrinology">Эндокринология</option>
+                    <option value="osteopathy">Остеопатия</option>
+                    <option value="spine" data-i18n="dept.spine">Позвоночник и суставы</option>
+                    <option value="neurology" data-i18n="dept.neurology">Неврология</option>
+                    <option value="gastroenterology">Гастроэнтерология</option>
+                    <option value="gynecology">Гинекология</option>
+                    <option value="cardiology">Кардиология</option>
+                </select>
+                <div style="display: flex; gap: 8px; align-items: flex-start; margin-top: 8px; margin-bottom: 12px;">
+                    <input type="checkbox" id="modal-policy" required style="margin-top: 3px; accent-color: var(--color-primary); cursor: pointer;">
+                    <label for="modal-policy" style="font-size: 13px; color: var(--color-secondary-gray); line-height: 1.4; cursor: pointer;" data-i18n="modal.policy">Я согласен на обработку персональных данных</label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="booking_modal.submit_btn">Подтвердить запись</button>
+            </form>
+        </div>
+        <div id="booking-success" style="display: none; text-align: center; padding: 20px 0;">
+            <div style="font-size: 40px; margin-bottom: 12px;">✅</div>
+            <h3 data-i18n="booking_modal.success_title">Заявка принята!</h3>
+            <p style="color: #4a5660; font-size: 14px;" data-i18n="booking_modal.success_desc">Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

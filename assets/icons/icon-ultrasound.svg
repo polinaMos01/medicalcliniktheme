@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Ultrasound waves & sensor -->
+  <rect x="18" y="8" width="12" height="18" rx="4" stroke="currentColor" stroke-width="2.5" fill="currentColor" fill-opacity="0.15"/>
+  <path d="M24 26V32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M14 34C17 37 21 38 24 38C27 38 31 37 34 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M10 39C14 43 19 44 24 44C29 44 34 43 38 39" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="24" cy="15" r="2" fill="currentColor"/>
+</svg>

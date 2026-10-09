@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="blue">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>404 — Страница не найдена — Клиника Интегративной Медицины</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Armenian:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <style>
+        .error-404-hero {
+            padding: 60px 0 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .error-404-num-wrap {
+            position: relative;
+            display: inline-block;
+            line-height: 0.85;
+            user-select: none;
+        }
+        .error-404-digits {
+            font-family: 'Open Sans', sans-serif;
+            font-size: clamp(120px, 20vw, 292px);
+            font-weight: 700;
+            color: var(--color-primary);
+            letter-spacing: -5.84px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .error-404-digit-middle {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .error-pills-img {
+            position: absolute;
+            width: clamp(60px, 10vw, 135px);
+            height: auto;
+            pointer-events: none;
+            z-index: 2;
+            animation: floatPill 4s ease-in-out infinite;
+        }
+        @keyframes floatPill {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(5deg); }
+        }
+        .error-404-desc {
+            font-family: 'Raleway', sans-serif;
+            font-size: clamp(18px, 1.8vw, 22px);
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: -0.4px;
+            color: #000;
+            margin: 24px 0 32px;
+            max-width: 580px;
+        }
+        .error-search-box {
+            width: 100%;
+            max-width: 520px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .error-search-input {
+            width: 100%;
+            height: 56px;
+            border: 1px solid var(--color-border-dark);
+            border-radius: 12px;
+            padding: 0 54px 0 48px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            background: #ffffff;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .error-search-input:focus {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(90, 166, 235, 0.15);
+        }
+        .error-search-icon {
+            position: absolute;
+            left: 16px;
+            width: 22px;
+            height: 22px;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .error-search-btn {
+            position: absolute;
+            right: 8px;
+            height: 40px;
+            padding: 0 16px;
+            border-radius: 8px;
+            background: var(--color-primary);
+            color: #fff;
+            border: none;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .recommended-news-section {
+            padding: 60px 0 90px;
+            border-top: 1px solid var(--color-border-light);
+        }
+        .news-header-row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 36px;
+            gap: 24px;
+        }
+        .news-header-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: clamp(26px, 3.5vw, 44px);
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: -1.44px;
+            max-width: 800px;
+        }
+        .news-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .news-card-item {
+            background: #EFF7FD;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+        }
+        .news-card-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(90, 166, 235, 0.2);
+        }
+        .news-card-thumb {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+        .news-card-body {
+            padding: 20px 24px 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .news-card-date {
+            font-size: 13px;
+            color: var(--color-secondary-gray);
+            margin-bottom: 8px;
+        }
+        .news-card-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.35;
+            color: #000;
+            margin-bottom: 12px;
+        }
+        .news-card-excerpt {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #4a5660;
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+        .news-card-link {
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-primary);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        @media (max-width: 900px) {
+            .news-cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🌟 UNIFIED 2-TIER HEADER (FIGMA 202:46) -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-top-row">
+            <a href="index.html" class="header-logo">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" class="header-logo-img">
+            </a>
+
+            <div class="header-meta-group">
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg" alt="Локация" class="header-meta-icon">
+                    <span data-i18n="nav.address">г. Москва, ул. Центральная, 57</span>
+                </div>
+
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg" alt="Время" class="header-meta-icon">
+                    <span data-i18n="nav.work_hours">Пн-Пт 09:00-20:00; Сб-Вс 10:00-18:00</span>
+                </div>
+            </div>
+
+            <div class="header-phone-group">
+                <a href="tel:+78005553535" class="header-phone-val">+7 (800) 555-35-35</a>
+                
+                <div class="lang-switcher">
+                    <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="hy">HY</button>
+                </div>
+
+                <a href="#booking" class="btn btn-primary" data-open-modal="booking" data-i18n="nav.call_request">Перезвоните мне</a>
+
+                <button class="burger-btn" id="burger-btn" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+                <!-- Bottom Row: Navigation Menu -->
+        <div class="header-nav-row">
+            <a href="doctors.html" data-i18n="nav.doctors">Врачи</a>
+            <a href="departments.html" data-i18n="nav.departments">Направления</a>
+            <a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a>
+            <a href="procedures.html" data-i18n="nav.procedures">Процедуры</a>
+            <a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a>
+            <div class="nav-item-dropdown">
+                <a href="about.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.about">О клинике</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="about.html" data-i18n="nav.about">О нас</a>
+                    <a href="licences.html" data-i18n="nav.licences">Лицензии</a>
+                    <a href="vacancies.html">Вакансии</a>
+                    <a href="blog.html" data-i18n="nav.blog">Блог</a>
+                </div>
+            </div>
+            <div class="nav-item-dropdown">
+                <a href="services.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.patients">Пациенту</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="promotions.html">Акции</a>
+                    <a href="tax-deduction.html">Налоговый вычет</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+            <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Fullscreen Menu -->
+<div class="mobile-menu-overlay" id="mobile-menu">
+    <ul class="mobile-nav-links">
+        <li><a href="doctors.html" data-i18n="nav.doctors">Врачи</a></li>
+        <li><a href="departments.html" data-i18n="nav.departments">Направления</a></li>
+        <li><a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a></li>
+        <li><a href="procedures.html" data-i18n="nav.procedures">Процедуры</a></li>
+        <li><a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a></li>
+        <li><a href="about.html" data-i18n="nav.about">О нас</a></li>
+        <li><a href="licences.html" data-i18n="nav.licences">Лицензии</a></li>
+        <li><a href="vacancies.html">Вакансии</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Блог</a></li>
+        <li><a href="promotions.html">Акции</a></li>
+        <li><a href="tax-deduction.html">Налоговый вычет</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+    </ul>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="lang-switcher" style="justify-content: center;">
+            <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="hy">HY</button>
+        </div>
+        <a href="#booking" class="btn btn-primary" style="width: 100%; text-align: center;" data-open-modal="booking" data-i18n="nav.book_appointment">Записаться на прием</a>
+    </div>
+</div>
+
+<main class="site-main">
+    <div class="container">
+        <!-- 🌟 404 HERO (FIGMA 297:6472) -->
+        <section class="error-404-hero">
+            <div class="error-404-num-wrap">
+                <div class="error-404-digits">
+                    <span>4</span>
+                    <span class="error-404-digit-middle">
+                        0
+                        <img src="assets/images/assets/2ae8b8ac9425b77f39be8636ac7e51545e495e69.png" alt="Pills" class="error-pills-img">
+                    </span>
+                    <span>4</span>
+                </div>
+            </div>
+
+            <div class="error-404-desc">
+                Извините, эта страница или статья была удалена.<br>
+                Но не уходите :))
+            </div>
+
+            <!-- Search bar -->
+            <form action="services.html" method="GET" class="error-search-box">
+                <img src="assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg" alt="Search" class="error-search-icon">
+                <input type="text" name="q" class="error-search-input" placeholder="Найти направление, специалиста или услугу..." required>
+                <button type="submit" class="error-search-btn">Найти</button>
+            </form>
+
+            <div style="margin-top: 24px; display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
+                <a href="index.html" class="btn btn-secondary">На главную</a>
+                <a href="doctors.html" class="btn btn-primary">Наши врачи</a>
+                <a href="services.html" class="btn btn-secondary">Услуги и цены</a>
+            </div>
+        </section>
+
+        <!-- 🌟 RECOMMENDED ARTICLES (FIGMA 297:6626) -->
+        <section class="recommended-news-section">
+            <div class="news-header-row">
+                <h2 class="news-header-title">Мы думаем, что следующие статьи могут быть вам интересны:</h2>
+                <a href="blog.html" class="btn btn-secondary" style="white-space: nowrap;">Все статьи →</a>
+            </div>
+
+            <div class="news-cards-grid">
+                <a href="article.html" class="news-card-item">
+                    <img src="assets/images/assets/72f897b8665ef22eb7b520e1f04cd74ae54ade40.png" alt="Остеохондроз" class="news-card-thumb">
+                    <div class="news-card-body">
+                        <span class="news-card-date">15 мая 2024 • Неврология</span>
+                        <h3 class="news-card-title">Остеохондроз: причины, симптомы и современные методы лечения</h3>
+                        <p class="news-card-excerpt">Комплексный интегративный подход к устранению болевого синдрома и восстановлению биомеханики позвоночника.</p>
+                        <span class="news-card-link">Читать статью →</span>
+                    </div>
+                </a>
+
+                <a href="article.html" class="news-card-item">
+                    <img src="assets/images/assets/0d36bf69dc7a18cb4948ef53457198d003da89c7.png" alt="Остеопатия" class="news-card-thumb">
+                    <div class="news-card-body">
+                        <span class="news-card-date">10 мая 2024 • Остеопатия</span>
+                        <h3 class="news-card-title">Как восстановить подвижность суставов и избавиться от спазмов</h3>
+                        <p class="news-card-excerpt">Мягкие мануальные техники и остеопатическая коррекция для возвращения легкого и свободного движения.</p>
+                        <span class="news-card-link">Читать статью →</span>
+                    </div>
+                </a>
+
+                <a href="article.html" class="news-card-item">
+                    <img src="assets/images/assets/983174d1cc5487e229b4e698eb06977bc00d5f0c.png" alt="Диагностика" class="news-card-thumb">
+                    <div class="news-card-body">
+                        <span class="news-card-date">28 апреля 2024 • Диагностика</span>
+                        <h3 class="news-card-title">УЗИ экспертного класса: почему важна точность первого обследования</h3>
+                        <p class="news-card-excerpt">Современные сканеры с высоким разрешением и опыт ведущих диагностов клиники интегративной медицины.</p>
+                        <span class="news-card-link">Читать статью →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- 🌟 UNIFIED FOOTER (FIGMA 202:26) -->
+<footer class="site-footer" id="contacts">
+    <div class="container">
+        <!-- Top Row: Logo, Hours, Address, Phone, CTA, Socials -->
+        <div class="footer-top-grid">
+            <a href="index.html">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" style="height: 48px;">
+            </a>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/clock.svg" alt="Время" style="width: 20px;" onerror="this.src='assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg';">
+                <span>Пн-Пт 09:00-20:00;<br>Сб-Вс 10:00-18:00</span>
+            </div>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/map.svg" alt="Адрес" style="width: 20px;" onerror="this.src='assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg';">
+                <span>г. Москва, ул. Центральная, д. 10</span>
+            </div>
+
+            <div style="font-size: 20px; font-weight: 600;">
+                +7 (800) 555-35-35
+            </div>
+
+            <a href="#booking" class="btn btn-primary" data-open-modal="booking">Перезвоните мне</a>
+
+            <div class="footer-social-row">
+                <a href="https://t.me/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Telegram">
+                    <img src="assets/icons/social-tg.svg" alt="Telegram">
+                </a>
+                <a href="https://wa.me/78005553535" class="footer-social-icon" target="_blank" rel="noopener" title="WhatsApp">
+                    <img src="assets/icons/social-wa.svg" alt="WhatsApp">
+                </a>
+                <a href="https://vk.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="VK">
+                    <img src="assets/icons/social-vk.svg" alt="VK">
+                </a>
+                <a href="https://instagram.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Instagram">
+                    <img src="assets/icons/social-ig.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+
+        <!-- Middle Row: Disclaimer and License Info -->
+        <div class="footer-mid-grid">
+            <div>
+                <p style="margin-bottom: 14px;">
+                    Сайт носит информационный характер и не является публичной офертой, согласно Статье 437 (2) ГК РФ. Цены приведены, как справочная информация и могут быть изменены. Для получения подробной информации о стоимости, сроках и условиях звоните по телефону клиники.
+                </p>
+                <p>
+                    Мы используем файлы cookie для того, чтобы предоставить пользователям больше возможностей при посещении сайта Медикал Клиник
+                </p>
+            </div>
+
+            <div>
+                <div class="footer-payment-group">
+                    <span class="footer-payment-title">Мы принимаем к оплате:</span>
+                    <div class="footer-payment-icons">
+                        <img src="assets/icons/payment-visa.svg" alt="Visa" class="footer-payment-icon">
+                        <img src="assets/icons/payment-mastercard.svg" alt="Mastercard" class="footer-payment-icon">
+                        <img src="assets/icons/payment-mir.svg" alt="МИР" class="footer-payment-icon">
+                        <img src="assets/icons/payment-sbp.svg" alt="СБП" class="footer-payment-icon">
+                    </div>
+                </div>
+                <p>
+                    Медицинские услуги лицензированы и предоставляются ООО "Клиника интегративной медицины" в медицинском центре по адресу: 420032, Россия, Республика Татарстан, г. Москва, ул. Энгельса, д. 7, корп. 3, помещение 1. Лицензия на медицинскую деятельность Л041-01181-16/00355613.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright and Links -->
+        <div class="footer-bottom-grid">
+            <div>© 2014 - 2025 Клиника интегративной медицины Все права защищены</div>
+            <a href="privacy.html" style="color: inherit; text-decoration: none;">Политика конфиденциальности</a>
+            <a href="terms.html" style="color: inherit; text-decoration: none;">Пользовательское соглашение</a>
+        </div>
+
+        <!-- Warning Bar (Bebas Neue Cyrillic) -->
+        <div class="footer-warning-bar">
+            ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМА КОНСУЛЬТАЦИЯ С ВРАЧОМ
+        </div>
+    </div>
+</footer>
+
+<!-- 4 Themes Demo Switcher Widget -->
+<div class="theme-switcher-widget">
+    <span style="font-size: 12px; font-weight: 600; color: #4a5660;" data-i18n="theme_switcher.title">Стиль:</span>
+    <div class="theme-dots">
+        <div class="theme-dot theme-dot-blue active" data-theme-val="blue" title="Голубой (Классика)"></div>
+        <div class="theme-dot theme-dot-green" data-theme-val="green" title="Зеленый (Wellness)"></div>
+        <div class="theme-dot theme-dot-cream" data-theme-val="cream" title="Кремовый (Премиум)"></div>
+        <div class="theme-dot theme-dot-rose" data-theme-val="rose" title="Пыльно-розовый (Эстетика)"></div>
+    </div>
+</div>
+
+<!-- Modal Dialog -->
+<div class="modal-overlay" id="booking-modal">
+    <div class="modal-dialog">
+        <button type="button" class="modal-close" id="modal-close-btn">✕</button>
+        <div id="booking-form-wrap">
+            <h3 style="font-size: 24px; margin-bottom: 8px;" data-i18n="booking_modal.title">Запись на прием к специалисту</h3>
+            <p style="font-size: 14px; color: #4a5660; margin-bottom: 20px;" data-i18n="booking_modal.subtitle">Оставьте заявку, и координатор перезвонит в течение 5 минут</p>
+            <form id="booking-form">
+                <input type="text" class="form-control" placeholder="Ваше имя *" required data-i18n="booking_modal.name_placeholder">
+                <input type="tel" class="form-control" placeholder="+7 (___) ___-__-__ *" required data-i18n="booking_modal.phone_placeholder">
+                <select class="form-control">
+                    <option value="" data-i18n="appointment_form.dept_default">Выберите отделение</option>
+                    <option value="endocrinology" data-i18n="dept.endocrinology">Эндокринология</option>
+                    <option value="spine" data-i18n="dept.spine">Позвоночник и суставы</option>
+                    <option value="neurology" data-i18n="dept.neurology">Неврология</option>
+                </select>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;" data-i18n="booking_modal.submit_btn">Подтвердить запись</button>
+            </form>
+        </div>
+        <div id="booking-success" style="display: none; text-align: center; padding: 20px 0;">
+            <div style="font-size: 40px; margin-bottom: 12px;">✅</div>
+            <h3 data-i18n="booking_modal.success_title">Заявка принята!</h3>
+            <p style="color: #4a5660; font-size: 14px;" data-i18n="booking_modal.success_desc">Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

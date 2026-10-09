@@ -1,0 +1,329 @@
+/*
+ * ====================================================================
+ * MEDICAL CLINIC — BULLETPROOF RESPONSIVE SYSTEM
+ * Covers: Mobile (320-480px), Tablet (768-1024px), Desktop (1200-1440px),
+ * Ultra-Wide (1540px, 1720px, 1920px+)
+ * ====================================================================
+ */
+
+
+
+/* ================= 🖥️ DESKTOP & WIDE SCREENS (1200px - 1920px+) ================= */
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+@media (min-width: 1600px) {
+  .hero-main-heading {
+    font-size: 100px;
+    line-height: 92%;
+  }
+}
+
+@media (max-width: 1540px) {
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .hero-left-col {
+    max-width: 680px;
+  }
+  .hero-main-heading {
+    font-size: 80px;
+    line-height: 95%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .hero-left-col {
+    max-width: 540px;
+  }
+  .hero-main-heading {
+    font-size: 64px;
+    line-height: 95%;
+  }
+  .hero-visual-col,
+  .hero-circles-wrap {
+    width: 440px;
+    height: 440px;
+  }
+  .circle-bg-4 {
+    width: 480px;
+    height: 480px;
+  }
+  .circle-bg-2 {
+    width: 396px;
+    height: 396px;
+  }
+  .circle-bg-3 {
+    width: 303px;
+    height: 303px;
+  }
+  .circle-bg-1-img {
+    width: 210px;
+    height: 210px;
+  }
+  .figma-chip-doctors {
+    left: -40px;
+  }
+  .figma-chip-patients {
+    right: -20px;
+  }
+  .figma-chip-directions {
+    right: -10px;
+  }
+}
+
+/* ================= 📱 TABLET (768px - 1024px) ================= */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 704px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .header-meta-group {
+    display: none;
+  }
+
+  .header-nav-row {
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 4px;
+  }
+
+  .header-nav-row a {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  .hero-body-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-left-col {
+    max-width: 100%;
+  }
+
+  .hero-visual-col {
+    height: 420px;
+  }
+
+  .hero-circles-wrap {
+    width: 380px;
+    height: 380px;
+  }
+
+  .info-block-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .info-block-item.reversed .info-block-row {
+    direction: ltr;
+  }
+
+  .info-block-media-img {
+    height: 320px;
+  }
+
+  .dept-grid-4col {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .doctors-grid-3col {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .reviews-grid-3col {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer-grid-4col {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .cta-help-card {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .cta-help-img {
+    height: 320px;
+  }
+}
+
+/* ================= 📲 MOBILE & PHABLET (< 768px) ================= */
+@media (max-width: 767px) {
+  .container {
+    max-width: 358px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .section-title-wrap {
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .site-header {
+    padding: 10px 0;
+  }
+
+  .header-top-row {
+    padding-bottom: 0;
+  }
+
+  .header-meta-group,
+  .header-phone-val,
+  .header-nav-row {
+    display: none;
+  }
+
+  .burger-btn {
+    display: block;
+  }
+
+  .header-logo-img {
+    height: 32px;
+  }
+
+  .hero-figma {
+    padding: 24px 0 40px;
+  }
+
+  .hero-main-heading {
+    font-size: 28px;
+    line-height: 105%;
+    margin-bottom: 14px;
+  }
+
+  .hero-subheading {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .hero-visual-col {
+    height: 320px;
+  }
+
+  .hero-circles-wrap {
+    width: 280px;
+    height: 280px;
+  }
+
+  .figma-chip {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .figma-chip-doctors {
+    top: 10px;
+    left: -10px;
+  }
+
+  .figma-chip-patients {
+    top: 0;
+    right: -10px;
+  }
+
+  .figma-chip-directions {
+    bottom: 10px;
+    right: -10px;
+  }
+
+  .figma-avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .chip-num {
+    font-size: 18px;
+  }
+
+  .chip-label {
+    font-size: 11px;
+  }
+
+  .figma-promo-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .figma-promo-thumb {
+    width: 100%;
+    height: 130px;
+  }
+
+  .figma-promo-content {
+    min-height: auto;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .info-block-media-img {
+    height: 220px;
+  }
+
+  .dept-grid-4col {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .dept-search-wrap {
+    min-width: 100%;
+  }
+
+  .doctors-grid-3col,
+  .reviews-grid-3col {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 14px;
+    padding-bottom: 12px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .doctor-item-card,
+  .review-box {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+  }
+
+  .footer-grid-4col {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .theme-switcher-widget {
+    bottom: 20px;
+    right: 16px;
+    padding: 6px 12px;
+  }
+}

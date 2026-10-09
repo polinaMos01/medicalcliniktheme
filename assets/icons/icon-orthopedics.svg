@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Bone / Joint -->
+  <path d="M14 10C12 10 10 12 10 14C10 16 11.5 17.5 13 18C13 22 17 26 21 27V36C19 36 17 38 17 40C17 42 19 44 21 44C23 44 25 42 25 40V27C29 26 33 22 33 18C34.5 17.5 36 16 36 14C36 12 34 10 32 10C30 10 28.5 11.5 28 13C25.5 13 22.5 13 20 13C19.5 11.5 18 10 16 10H14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" fill="currentColor" fill-opacity="0.15"/>
+  <circle cx="24" cy="20" r="3" fill="currentColor"/>
+</svg>

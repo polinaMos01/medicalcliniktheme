@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Brain hemispheres -->
+  <path d="M24 10C21 7 16 7 13 10C10 13 10 17 12 20C9 22 8 27 10 31C12 35 16 38 20 38C22 38 23 37 24 36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="currentColor" fill-opacity="0.15"/>
+  <path d="M24 10C27 7 32 7 35 10C38 13 38 17 36 20C39 22 40 27 38 31C36 35 32 38 28 38C26 38 25 37 24 36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="currentColor" fill-opacity="0.15"/>
+  <path d="M24 10V36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M17 18C15 20 15 24 17 26M31 18C33 20 33 24 31 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="24" cy="42" r="2" fill="currentColor"/>
+</svg>

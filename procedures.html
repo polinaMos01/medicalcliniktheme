@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="blue">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Ультразвуковая диагностика (УЗИ) и специалисты — Клиника Интегративной Медицины</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Armenian:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+<!-- 🌟 UNIFIED 2-TIER HEADER (FIGMA 202:46 / 345:6487) -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-top-row">
+            <a href="index.html" class="header-logo">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" class="header-logo-img">
+            </a>
+
+            <div class="header-meta-group">
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/fa4e0601aa41233c4f1beaace940c3db2812e019.svg" alt="Локация" class="header-meta-icon" onerror="this.src='assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg';">
+                    <span data-i18n="nav.address">г. Москва, ул. Центральная, д. 10</span>
+                </div>
+
+                <div class="header-meta-item">
+                    <img src="assets/images/assets/f057dc2f4ed3a48007251aada1608b47ff63d8a6.svg" alt="Время" class="header-meta-icon" onerror="this.src='assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg';">
+                    <span data-i18n="nav.work_hours">Пн-Пт 09:00-20:00; Сб-Вс 10:00-18:00</span>
+                </div>
+            </div>
+
+            <div class="header-phone-group">
+                <a href="tel:+78005553535" class="header-phone-val">+7 (800) 555-35-35</a>
+                
+                <div class="lang-switcher">
+                    <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="hy">HY</button>
+                </div>
+
+                <a href="#booking" class="btn btn-primary" data-open-modal="booking" data-i18n="nav.call_request">Перезвоните мне</a>
+
+                <button class="burger-btn" id="burger-btn" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Navigation Menu -->
+        <div class="header-nav-row">
+            <a href="doctors.html" data-i18n="nav.doctors">Врачи</a>
+            <a href="departments.html" data-i18n="nav.departments">Направления</a>
+            <a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a>
+            <a href="procedures.html" class="active" data-i18n="nav.procedures">Процедуры</a>
+            <a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a>
+            <div class="nav-item-dropdown">
+                <a href="about.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.about">О клинике</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="about.html" data-i18n="nav.about">О нас</a>
+                    <a href="licences.html" data-i18n="nav.licences">Лицензии</a>
+                    <a href="vacancies.html">Вакансии</a>
+                    <a href="blog.html" data-i18n="nav.blog">Блог</a>
+                </div>
+            </div>
+            <div class="nav-item-dropdown">
+                <a href="services.html" class="nav-link-dropdown">
+                    <span data-i18n="nav.patients">Пациенту</span>
+                    <svg class="dropdown-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="promotions.html">Акции</a>
+                    <a href="tax-deduction.html">Налоговый вычет</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+            <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Fullscreen Menu -->
+<div class="mobile-menu-overlay" id="mobile-menu">
+    <ul class="mobile-nav-links">
+        <li><a href="doctors.html" data-i18n="nav.doctors">Врачи</a></li>
+        <li><a href="departments.html" data-i18n="nav.departments">Направления</a></li>
+        <li><a href="diagnostics.html" data-i18n="nav.diagnostics">Диагностика</a></li>
+        <li><a href="procedures.html" data-i18n="nav.procedures">Процедуры</a></li>
+        <li><a href="treatments.html" data-i18n="nav.treatments">Мы лечим</a></li>
+        <li><a href="about.html" data-i18n="nav.about">О нас</a></li>
+        <li><a href="licences.html" data-i18n="nav.licences">Лицензии</a></li>
+        <li><a href="vacancies.html">Вакансии</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Блог</a></li>
+        <li><a href="promotions.html">Акции</a></li>
+        <li><a href="tax-deduction.html">Налоговый вычет</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+    </ul>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="lang-switcher" style="justify-content: center;">
+            <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="hy">HY</button>
+        </div>
+        <a href="#booking" class="btn btn-primary" style="width: 100%; text-align: center;" data-open-modal="booking" data-i18n="nav.book_appointment">Записаться на прием</a>
+    </div>
+</div>
+
+<main class="site-main">
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs" style="padding: 24px 0 16px; font-size: 14px; color: var(--color-gray-light);">
+            <a href="index.html" style="color: var(--color-secondary-gray); text-decoration: none;" data-i18n="nav.home">Главная</a> / 
+            <a href="departments.html" style="color: var(--color-secondary-gray); text-decoration: none;">Направления и специалисты</a> / 
+            <span style="color: var(--color-primary);">Ультразвуковая диагностика (УЗИ)</span>
+        </div>
+
+        <!-- 🌟 ALL SPECIALTIES & DIRECTIONS DIRECTORY BAR (CHECKLIST 1) -->
+        <section class="specialties-directory-bar reveal-on-scroll">
+            <h2 class="specialties-directory-title">Направления и специалисты клиники интегративной медицины:</h2>
+            <div class="specialties-chips-grid">
+                <a href="doctors.html?spec=endocrinologist" class="specialty-chip-link">Врач-эндокринолог</a>
+                <a href="doctors.html?spec=osteopath" class="specialty-chip-link">Врач-остеопат</a>
+                <a href="doctors.html?spec=neurologist" class="specialty-chip-link">Врач-невролог</a>
+                <a href="doctors.html?spec=orthopedist" class="specialty-chip-link">Травматолог-ортопед</a>
+                <a href="doctors.html?spec=podologist" class="specialty-chip-link">Подолог</a>
+                <a href="doctors.html?spec=podiatrist" class="specialty-chip-link">Подиатр</a>
+                <a href="doctors.html?spec=psychotherapist" class="specialty-chip-link">Психотерапевт</a>
+                <a href="doctors.html?spec=kinesiologist" class="specialty-chip-link">Прикладной кинезиолог</a>
+                <a href="doctors.html?spec=hirudotherapist" class="specialty-chip-link">Гирудотерапевт</a>
+                <a href="doctors.html?spec=vertebroneurologist" class="specialty-chip-link">Вертеброневролог</a>
+                <a href="doctors.html?spec=vertebrist" class="specialty-chip-link">Вертебролог</a>
+                <a href="doctors.html?spec=phlebologist" class="specialty-chip-link">Врач-флеболог</a>
+                <a href="doctors.html?spec=therapist" class="specialty-chip-link">Врач-терапевт</a>
+                <a href="doctors.html?spec=urologist" class="specialty-chip-link">Врач-уролог</a>
+                <a href="doctors.html?spec=nutritionist" class="specialty-chip-link">Диетолог-нутрициолог</a>
+                <a href="doctors.html?spec=epileptologist" class="specialty-chip-link">Эпилептолог</a>
+                <a href="doctors.html?spec=rheumatologist" class="specialty-chip-link">Врач-ревматолог</a>
+                <a href="doctors.html?spec=homeopath" class="specialty-chip-link">Врач-гомеопат</a>
+                <a href="doctors.html?spec=manual_therapist" class="specialty-chip-link">Мануальный терапевт</a>
+                <a href="doctors.html?spec=reflexologist" class="specialty-chip-link">Рефлексотерапевт</a>
+                <a href="procedures.html" class="specialty-chip-link active">Врач УЗД / Процедуры УЗИ</a>
+            </div>
+        </section>
+
+        <!-- 🌟 HERO SECTION (FIGMA 345:6488) -->
+        <section class="procedure-hero-grid reveal-on-scroll">
+            <div>
+                <h1 class="procedure-hero-title">УЗИ</h1>
+                <p class="procedure-hero-desc">
+                    Ультразвуковое исследование (УЗИ) — это современный и безопасный метод диагностики, который позволяет получить подробное изображение внутренних органов и тканей с помощью высокочастотных звуковых волн. Этот неинвазивный способ диагностики широко применяется в медицине для оценки состояния различных систем организма.
+                </p>
+                <a href="#booking" class="btn btn-primary" data-open-modal="booking" style="padding: 14px 36px; display: inline-flex; width: fit-content;">Записаться на прием</a>
+
+                <!-- 3 Feature Tags (Figma 345:7283, 345:7307, 345:7337) -->
+                <div class="tags-pill-row">
+                    <div class="tag-pill">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <span>Безопасность</span>
+                    </div>
+                    <div class="tag-pill">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        <span>Информативность</span>
+                    </div>
+                    <div class="tag-pill">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        <span>Многофункциональность</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/assets/0d36bf69dc7a18cb4948ef53457198d003da89c7.png" alt="УЗИ процедура" class="procedure-hero-img" onerror="this.src='assets/images/banner_1click_figma.png';">
+            </div>
+        </section>
+
+        <!-- 🌟 ABOUT SERVICE (FIGMA 345:7447) -->
+        <section class="about-service-section reveal-on-scroll">
+            <h2 class="doc-section-h2" style="margin-bottom: 32px;">Об услуге</h2>
+            <div class="about-service-grid">
+                <div>
+                    <p style="font-family: 'Raleway', sans-serif; font-size: 16px; line-height: 24px; color: #000; margin-bottom: 24px;">
+                        УЗИ — это одна из самых распространенных и информативных диагностических процедур, которая позволяет получить детальную визуализацию внутренних органов и тканей без использования вредного излучения. В нашей клинике мы предлагаем профессиональное проведение УЗИ с использованием современного оборудования, что гарантирует высокое качество результатов и комфорт для пациента.<br><br>
+                        УЗИ основано на использовании высокочастотных звуковых волн, которые отражаются от внутренних структур организма. Процедура не вызывает боли или дискомфорта, не требует специальной подготовки в большинстве случаев и занимает от 15 до 30 минут.
+                    </p>
+                    <a href="#booking" class="btn btn-primary" data-open-modal="booking" style="padding: 12px 36px; display: inline-flex;">Записаться на прием</a>
+                </div>
+                <div>
+                    <img src="assets/images/assets/72f897b8665ef22eb7b520e1f04cd74ae54ade40.png" alt="УЗИ аппарат" style="width: 100%; height: 387px; object-fit: cover; border-radius: 20px;" onerror="this.src='assets/images/why_us.png';">
+                </div>
+            </div>
+
+            <!-- 3 Features (Figma 345:7376) -->
+            <div class="features-cards-3col" style="margin-top: 40px;">
+                <div class="feature-card-item">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; box-shadow: 0 4px 12px rgba(90,166,235,0.15);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h3 class="feature-card-title">Квалифицированные специалисты</h3>
+                    <p class="feature-card-desc">Мы гордимся тем, что наши специалисты постоянно повышают свою квалификацию и следят за последними достижениями в области здравоохранения.</p>
+                </div>
+                <div class="feature-card-item">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; box-shadow: 0 4px 12px rgba(90,166,235,0.15);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3 class="feature-card-title">Современное оборудование</h3>
+                    <p class="feature-card-desc">Мы используем только новейшее медицинское оборудование и технологии для диагностики и лечения, что обеспечивает высокую точность обследований и эффективность процедур.</p>
+                </div>
+                <div class="feature-card-item">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; box-shadow: 0 4px 12px rgba(90,166,235,0.15);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <h3 class="feature-card-title">Индивидуальный подход</h3>
+                    <p class="feature-card-desc">Для нас каждый пациент уникален, и поэтому мы предлагаем персонализированные планы лечения, учитывающие индивидуальные потребности и пожелания.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 DOCTORS (FIGMA 345:6475) -->
+        <section class="doc-detail-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+                <h2 class="doc-section-h2" style="margin-bottom: 0;">Наши врачи</h2>
+                <a href="doctors.html" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+                    <span>Все врачи</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <div class="doctors-grid-3col">
+                <!-- Doctor 1 -->
+                <div class="doctor-fig-card reveal-on-scroll">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_1.png" alt="Иванов Алексей" onerror="this.src='assets/images/assets/2a1dbd9ac683b4b357ce2eae10e5ae613d8af76f.png';">
+                        <div class="doctor-fig-tag">Врач высшей категории</div>
+                    </div>
+                    <div class="doc-single-rating-box" style="padding: 0 4px;">
+                        <span class="rating-score">(4,8) <span style="color:#FDCB4D">★</span></span>
+                        <span class="reviews-count">23 отзыва</span>
+                    </div>
+                    <div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; margin-bottom: 4px;">Иванов Алексей Сергеевич</h3>
+                        <div class="doc-single-specialty-row" style="font-size: 16px; font-weight: 400;">
+                            <span>Остеопат</span>
+                            <span class="doc-blue-dot"></span>
+                            <span>23 года стажа</span>
+                        </div>
+                    </div>
+                    <div class="doc-single-prices" style="width: 100%; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 12px;">
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>В клинике</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>Онлайн</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>На дом</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Подробнее о враче</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-fig-card reveal-on-scroll delay-1">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_2.png" alt="Смирнова Елена" onerror="this.src='assets/images/assets/eeee5577c2e4b2fd83209c691016504608918387.png';">
+                        <div class="doctor-fig-tag">Врач высшей категории</div>
+                    </div>
+                    <div class="doc-single-rating-box" style="padding: 0 4px;">
+                        <span class="rating-score">(4,8) <span style="color:#FDCB4D">★</span></span>
+                        <span class="reviews-count">23 отзыва</span>
+                    </div>
+                    <div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; margin-bottom: 4px;">Смирнова Елена Викторовна</h3>
+                        <div class="doc-single-specialty-row" style="font-size: 16px; font-weight: 400;">
+                            <span>Эндокринолог, врач УЗД</span>
+                            <span class="doc-blue-dot"></span>
+                            <span>18 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="doc-single-prices" style="width: 100%; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 12px;">
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>В клинике</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>Онлайн</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>На дом</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Подробнее о враче</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-fig-card reveal-on-scroll delay-2">
+                    <div class="doctor-fig-photo-wrap">
+                        <img src="assets/images/doctor_3.png" alt="Александров Михаил" onerror="this.src='assets/images/assets/d796a8fcd359b75d15978d27588ee0e4b9f4229c.png';">
+                        <div class="doctor-fig-tag">Врач высшей категории</div>
+                    </div>
+                    <div class="doc-single-rating-box" style="padding: 0 4px;">
+                        <span class="rating-score">(4,8) <span style="color:#FDCB4D">★</span></span>
+                        <span class="reviews-count">23 отзыва</span>
+                    </div>
+                    <div>
+                        <h3 style="font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 500; margin-bottom: 4px;">Александров Михаил Юрьевич</h3>
+                        <div class="doc-single-specialty-row" style="font-size: 16px; font-weight: 400;">
+                            <span>Невролог, вертебролог</span>
+                            <span class="doc-blue-dot"></span>
+                            <span>15 лет стажа</span>
+                        </div>
+                    </div>
+                    <div class="doc-single-prices" style="width: 100%; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 12px;">
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>В клинике</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>Онлайн</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                        <div class="doc-price-item">
+                            <div class="doc-price-label"><span class="doc-blue-dot"></span><span>На дом</span></div>
+                            <div class="doc-price-val" style="font-size: 20px;">2 999 ₽</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="booking">Записаться на приём</button>
+                        <a href="doctor-single.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Подробнее о враче</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 СИМПТОМЫ (FIGMA 345:7493) -->
+        <section class="doc-detail-section">
+            <h2 class="doc-section-h2">Симптомы</h2>
+            
+            <div class="symptoms-cards-grid">
+                <a href="department-single.html?id=spine" class="symptom-card-item">
+                    <span class="symptom-card-name">Остеохондроз</span>
+                    <svg class="symptom-card-icon" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </a>
+                <a href="department-single.html?id=spine" class="symptom-card-item">
+                    <span class="symptom-card-name">Грыжи и протрузии</span>
+                    <svg class="symptom-card-icon" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+                </a>
+                <a href="department-single.html?id=gastro" class="symptom-card-item">
+                    <span class="symptom-card-name">Расстройства ЖКТ</span>
+                    <svg class="symptom-card-icon" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </a>
+                <a href="department-single.html?id=endocrine" class="symptom-card-item">
+                    <span class="symptom-card-name">Эндокринные расстройства</span>
+                    <svg class="symptom-card-icon" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+                </a>
+                <a href="department-single.html?id=headache" class="symptom-card-item">
+                    <span class="symptom-card-name">Головные боли и слабость</span>
+                    <svg class="symptom-card-icon" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><circle cx="12" cy="12" r="9"/><line x1="9" y1="10" x2="9.01" y2="10"/><line x1="15" y1="10" x2="15.01" y2="10"/><path d="M10 16a5 5 0 0 0 4 0"/></svg>
+                </a>
+                <a href="department-single.html?id=joints" class="symptom-card-item">
+                    <span class="symptom-card-name">Боль в суставах</span>
+                    <svg class="symptom-card-icon" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+                </a>
+                <a href="department-single.html?id=sleep" class="symptom-card-item">
+                    <span class="symptom-card-name">Нарушения сна</span>
+                    <svg class="symptom-card-icon" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </a>
+                <a href="department-single.html?id=phlebo" class="symptom-card-item">
+                    <span class="symptom-card-name">Варикоз и тяжесть в ногах</span>
+                    <svg class="symptom-card-icon" viewBox="0 0 24 24" fill="none" stroke="#5aa6eb" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- 🌟 АКЦИИ (FIGMA 345:7754) -->
+        <section class="doc-detail-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                <h2 class="doc-section-h2" style="margin-bottom: 0;">Акции</h2>
+                <div style="display: flex; gap: 12px;">
+                    <button type="button" class="btn btn-secondary" style="width: 44px; height: 44px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 12px;">←</button>
+                    <button type="button" class="btn btn-secondary" style="width: 44px; height: 44px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 12px;">→</button>
+                </div>
+            </div>
+
+            <div class="promos-cards-2col">
+                <div class="promo-card-item">
+                    <img src="assets/images/assets/ff5218d5b484737ec9b28119305559d42a6de4a7.png" alt="Акция 1" class="promo-card-img" onerror="this.src='assets/images/banner_1click_figma.png';">
+                    <div class="promo-card-content">
+                        <div class="promo-card-title">Полная диагностика щитовидной железы у эндокринолога: консультация, узи, анализы</div>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                            <div class="promo-card-price">6 999 ₽</div>
+                            <a href="#booking" class="btn btn-primary btn-sm" data-open-modal="booking" style="padding: 8px 20px;">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promo-card-item">
+                    <img src="assets/images/assets/8aee10234590df09eee4648c0a8905cd5e109ec5.png" alt="Акция 2" class="promo-card-img" onerror="this.src='assets/images/banner_1click_figma.png';">
+                    <div class="promo-card-content">
+                        <div class="promo-card-title">Комплексное УЗИ обследование для женщин: органы брюшной полости, почки, щитовидная железа</div>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                            <div class="promo-card-price">5 500 ₽</div>
+                            <a href="#booking" class="btn btn-primary btn-sm" data-open-modal="booking" style="padding: 8px 20px;">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 ЦЕНЫ (FIGMA 345:6549) -->
+        <section class="doc-detail-section">
+            <h2 class="doc-section-h2">Цены на ультразвуковую диагностику</h2>
+            <div class="doc-card-eff7fd" style="padding: 16px 24px;">
+                <div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,0.08); font-family: 'Raleway', sans-serif; font-size: 16px;">
+                    <span>УЗИ органов брюшной полости (печень, желчный пузырь, поджелудочная, селезенка)</span>
+                    <strong style="font-family: 'Open Sans', sans-serif; font-size: 18px;">2 400 ₽</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,0.08); font-family: 'Raleway', sans-serif; font-size: 16px;">
+                    <span>УЗИ почек и надпочечников</span>
+                    <strong style="font-family: 'Open Sans', sans-serif; font-size: 18px;">1 800 ₽</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,0.08); font-family: 'Raleway', sans-serif; font-size: 16px;">
+                    <span>УЗИ щитовидной железы с лимфатическими узлами</span>
+                    <strong style="font-family: 'Open Sans', sans-serif; font-size: 18px;">2 000 ₽</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,0.08); font-family: 'Raleway', sans-serif; font-size: 16px;">
+                    <span>Дуплексное сканирование брахиоцефальных артерий (сосуды шеи / БЦА)</span>
+                    <strong style="font-family: 'Open Sans', sans-serif; font-size: 18px;">2 600 ₽</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 16px 0; font-family: 'Raleway', sans-serif; font-size: 16px;">
+                    <span>УЗИ крупных суставов (пара: плечевые / коленные / тазобедренные)</span>
+                    <strong style="font-family: 'Open Sans', sans-serif; font-size: 18px;">2 500 ₽</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 FAQ (FIGMA 345:6548) -->
+        <section class="doc-detail-section" id="faq">
+            <h2 class="doc-section-h2">Часто задаваемые вопросы</h2>
+            
+            <div class="doc-card-eff7fd">
+                <div class="faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 16px;">
+                    <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 600; cursor: pointer;">
+                        <span>Как подготовиться к УЗИ брюшной полости?</span>
+                        <span style="font-size: 20px; color: #5aa6eb;">+</span>
+                    </div>
+                    <div class="faq-answer" style="margin-top: 10px; font-family: 'Raleway', sans-serif; font-size: 15px; line-height: 22px; color: #333;">
+                        Исследование проводится строго натощак (последний прием пищи за 6–8 часов до процедуры). За 2–3 дня рекомендуется исключить продукты, вызывающие повышенное газообразование.
+                    </div>
+                </div>
+
+                <div class="faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 16px;">
+                    <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 600; cursor: pointer;">
+                        <span>Безопасно ли УЗИ и как часто его можно делать?</span>
+                        <span style="font-size: 20px; color: #5aa6eb;">+</span>
+                    </div>
+                    <div class="faq-answer" style="margin-top: 10px; font-family: 'Raleway', sans-serif; font-size: 15px; line-height: 22px; color: #333;">
+                        Ультразвуковое исследование абсолютно безопасно, так как не несет лучевой нагрузки. Его можно проводить столько раз, сколько требуется для контроля за здоровьем и ходом лечения.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 600; cursor: pointer;">
+                        <span>Когда будут готовы результаты обследования?</span>
+                        <span style="font-size: 20px; color: #5aa6eb;">+</span>
+                    </div>
+                    <div class="faq-answer" style="margin-top: 10px; font-family: 'Raleway', sans-serif; font-size: 15px; line-height: 22px; color: #333;">
+                        Протокол ультразвукового исследования со снимками и подробным описанием выдается пациенту на руки сразу по завершении процедуры в течение 5–10 минут.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 CONTACT FORM (FIGMA 345:7779) -->
+        <section class="questions-section">
+            <div class="questions-card">
+                <div>
+                    <h2 class="doc-booking-title">Остались вопросы?</h2>
+                    <p class="doc-booking-desc">
+                        Если у вас есть вопросы, пожелания или комментарии, пожалуйста, заполните форму обратной связи ниже. Мы постараемся ответить на ваше сообщение в кратчайшие сроки.
+                    </p>
+                    <form id="questions-form" onsubmit="event.preventDefault(); alert('Спасибо! Мы ответим на ваш вопрос в течение 15 минут.'); this.reset();">
+                        <input type="text" class="form-control-fig" placeholder="Ваше имя *" required style="margin-bottom: 12px;">
+                        <input type="tel" class="form-control-fig mask-phone" placeholder="Телефон *" required style="margin-bottom: 12px;">
+                        <input type="text" class="form-control-fig" placeholder="Ваш вопрос *" required style="margin-bottom: 12px;">
+                        <label class="custom-checkbox-row" style="margin-bottom: 16px;">
+                            <input type="checkbox" required checked>
+                            <span>Нажимая кнопку Отправить, вы принимаете условия пользовательского соглашения и политики конфиденциальности</span>
+                        </label>
+                        <button type="submit" class="btn btn-primary" style="padding: 12px 36px;">Отправить</button>
+                    </form>
+                </div>
+                <div>
+                    <img src="assets/images/questions_doc.png" alt="Вопросы" style="width: 100%; height: 420px; border-radius: 20px; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- 🌟 UNIFIED FOOTER (FIGMA 345:6323 / 202:26) -->
+<footer class="site-footer" id="contacts">
+    <div class="container">
+        <!-- Top Row: Logo, Hours, Address, Phone, CTA, Socials -->
+        <div class="footer-top-grid">
+            <a href="index.html">
+                <img src="assets/images/assets/aec2cde32bb8a186faf80b86e8fd9eacf61c9341.png" alt="Medical Clinic" style="height: 48px;">
+            </a>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/assets/f057dc2f4ed3a48007251aada1608b47ff63d8a6.svg" alt="Время" style="width: 20px;" onerror="this.src='assets/images/assets/a7e5deb507afb2375e43e59383bc9a071454ab00.svg';">
+                <span>Пн-Пт 09:00-20:00;<br>Сб-Вс 10:00-18:00</span>
+            </div>
+
+            <div class="footer-meta-item">
+                <img src="assets/images/assets/fa4e0601aa41233c4f1beaace940c3db2812e019.svg" alt="Адрес" style="width: 20px;" onerror="this.src='assets/images/assets/4a84f4712afe31754bfd5e656bc10a8ced41f936.svg';">
+                <span>г. Москва, ул. Центральная, д. 10</span>
+            </div>
+
+            <div style="font-size: 20px; font-weight: 600;">
+                +7 (800) 555-35-35
+            </div>
+
+            <a href="#booking" class="btn btn-primary" data-open-modal="booking">Перезвоните мне</a>
+
+            <div class="footer-social-row">
+                <a href="https://t.me/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Telegram">
+                    <img src="assets/icons/social-tg.svg" alt="Telegram">
+                </a>
+                <a href="https://wa.me/78005553535" class="footer-social-icon" target="_blank" rel="noopener" title="WhatsApp">
+                    <img src="assets/icons/social-wa.svg" alt="WhatsApp">
+                </a>
+                <a href="https://vk.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="VK">
+                    <img src="assets/icons/social-vk.svg" alt="VK">
+                </a>
+                <a href="https://instagram.com/medclinic_demo" class="footer-social-icon" target="_blank" rel="noopener" title="Instagram">
+                    <img src="assets/icons/social-ig.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+
+        <!-- Middle Row: Disclaimer and License Info -->
+        <div class="footer-mid-grid">
+            <div>
+                <p style="margin-bottom: 14px;">
+                    Сайт носит информационный характер и не является публичной офертой, согласно Статье 437 (2) ГК РФ. Цены приведены, как справочная информация и могут быть изменены. Для получения подробной информации о стоимости, сроках и условиях звоните по телефону клиники.
+                </p>
+                <p>
+                    Мы используем файлы cookie для того, чтобы предоставить пользователям больше возможностей при посещении сайта Медикал Клиник
+                </p>
+            </div>
+
+            <div>
+                <div style="margin-bottom: 16px;">
+                    <span style="font-size: 14px; font-weight: 600; display: block; margin-bottom: 8px;">Мы принимаем к оплате:</span>
+                    <div style="display: flex; gap: 16px; align-items: center;">
+                        <span style="font-size: 18px; font-weight: bold; color: #1434cb;">VISA</span>
+                        <span style="font-size: 18px; font-weight: bold; color: #0f754e;">МИР</span>
+                        <span style="font-size: 18px; font-weight: bold; color: #eb001b;">MasterCard</span>
+                    </div>
+                </div>
+
+                <p style="font-size: 13px; color: var(--color-gray-light); line-height: 1.4;">
+                    Медицинские услуги лицензированы и предоставляются ООО "Клиника интегративной медицины" в медицинском центре по адресу: 420032, Россия, Республика Татарстан, г. Москва, ул. Энгельса, д. 7, корп. 3, помещение 1. Лицензия на медицинскую деятельность Л041-01181-16/00355613.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Copyright, Legal Links, Warning -->
+        <div class="footer-bot-flex">
+            <div>© 2014 - 2025 Клиника интегративной медицины Все права защищены</div>
+            <div style="display: flex; gap: 20px;">
+                <a href="privacy.html" style="color: var(--color-black); text-decoration: none;">Политика конфиденциальности</a>
+                <a href="terms.html" style="color: var(--color-black); text-decoration: none;">Пользовательское соглашение</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; padding-top: 24px; border-top: 1px solid rgba(0,0,0,0.1); color: var(--color-gray-light); font-size: 16px; font-weight: 500;">
+            Имеются противопоказания, необходима консультация с врачом
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- 4 Themes Demo Switcher Widget -->
+<div class="theme-switcher-widget">
+    <span style="font-size: 12px; font-weight: 600; color: #4a5660;" data-i18n="theme_switcher.title">Стиль:</span>
+    <div class="theme-dots">
+        <div class="theme-dot theme-dot-blue active" data-theme-val="blue" title="Голубой (Классика)"></div>
+        <div class="theme-dot theme-dot-green" data-theme-val="green" title="Зеленый (Wellness)"></div>
+        <div class="theme-dot theme-dot-cream" data-theme-val="cream" title="Кремовый (Премиум)"></div>
+        <div class="theme-dot theme-dot-rose" data-theme-val="rose" title="Пыльно-розовый (Эстетика)"></div>
+    </div>
+</div>
+
+<!-- Modal Dialog -->
+<div class="modal-overlay" id="booking-modal">
+    <div class="modal-dialog">
+        <button type="button" class="modal-close" id="modal-close-btn">✕</button>
+        <div id="booking-form-wrap">
+            <h3 style="font-size: 24px; margin-bottom: 8px;" data-i18n="booking_modal.title">Запись на прием к специалисту</h3>
+            <p style="font-size: 14px; color: #4a5660; margin-bottom: 20px;" data-i18n="booking_modal.subtitle">Оставьте заявку, и координатор перезвонит в течение 5 минут</p>
+            <form id="booking-form">
+                <input type="text" class="form-control" placeholder="Ваше имя *" required data-i18n="booking_modal.name_placeholder">
+                <input type="tel" class="form-control" placeholder="+7 (___) ___-__-__ *" required data-i18n="booking_modal.phone_placeholder">
+                <select class="form-control">
+                    <option value="" data-i18n="appointment_form.dept_default">Выберите отделение</option>
+                    <option value="us" selected>Ультразвуковая диагностика (УЗИ)</option>
+                    <option value="endocrinology" data-i18n="dept.endocrinology">Эндокринология</option>
+                    <option value="spine" data-i18n="dept.spine">Позвоночник и суставы</option>
+                    <option value="neurology" data-i18n="dept.neurology">Неврология</option>
+                </select>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;" data-i18n="booking_modal.submit_btn">Подтвердить запись</button>
+            </form>
+        </div>
+        <div id="booking-success" style="display: none; text-align: center; padding: 20px 0;">
+            <div style="font-size: 40px; margin-bottom: 12px;">✅</div>
+            <h3 data-i18n="booking_modal.success_title">Заявка принята!</h3>
+            <p style="color: #4a5660; font-size: 14px;" data-i18n="booking_modal.success_desc">Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

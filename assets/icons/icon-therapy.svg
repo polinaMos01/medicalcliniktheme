@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Stethoscope -->
+  <path d="M14 10V18C14 23.5 18.5 28 24 28C29.5 28 34 23.5 34 18V10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M12 10H16M32 10H36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M24 28V34C24 36.2 25.8 38 28 38H31" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="36" cy="38" r="4" stroke="currentColor" stroke-width="2.5" fill="currentColor" fill-opacity="0.15"/>
+</svg>
